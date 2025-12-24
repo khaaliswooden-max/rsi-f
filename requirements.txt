@@ -1,5 +1,5 @@
-# Zuup Preference Collection Dependencies
-# =========================================
+# Zuup Preference Collection - HF Spaces Dependencies
+# ====================================================
 
 # Core UI Framework
 gradio>=5.0.0
@@ -8,13 +8,9 @@ gradio>=5.0.0
 pandas>=2.0.0
 numpy>=1.24.0
 
-# HTTP client for LLM API calls (optional - for real response generation)
+# HTTP client (optional - for LLM API calls)
 httpx>=0.25.0
 requests>=2.31.0
 
 # Utilities
 python-dateutil>=2.8.2
-
-# Python 3.13+ compatibility
-audioop-lts>=0.2.2
-

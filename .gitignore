@@ -1,10 +1,10 @@
-# Zuup Preference Collection - Git Ignore
-# ==========================================
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
 
-# Preference data (contains potentially sensitive annotations)
-preference_data/
-
-# Python
+# Python cache
 __pycache__/
 *.py[cod]
 *$py.class
@@ -26,12 +26,6 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual environments
-venv/
-ENV/
-env/
-.venv/
-
 # IDE
 .idea/
 .vscode/
@@ -43,21 +37,12 @@ env/
 .DS_Store
 Thumbs.db
 
-# Gradio
-flagged/
-*.gradio/
-
-# Exports (may contain preference data)
-*_dpo_*.jsonl
-*_rm_*.jsonl
-*_raw_*.jsonl
+# Local preference data (optional - remove if you want to track)
+# preference_data/
 
 # Logs
 *.log
-logs/
 
-# Secrets
+# Environment variables
 .env
-*.env
-secrets/
-
+.env.local
