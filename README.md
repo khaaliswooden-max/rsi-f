@@ -8,7 +8,7 @@ sdk_version: 5.9.1
 app_file: app.py
 pinned: false
 license: mit
-short_description: Collect human preference data for domain-specific AI training
+short_description: Expert preference collection for AI training
 ---
 
 # 🎯 Zuup Preference Collection
