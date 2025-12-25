@@ -6,9 +6,11 @@ Run: python scripts/seed_halal_50.py
 
 import httpx
 import asyncio
+import os
 from datetime import datetime
 
 API_BASE = "https://zuup1-zuup-preference-collection.hf.space"
+API_KEY = os.getenv("ZUUP_API_KEY", "zuup-seed-key")
 
 HALAL_PREFERENCES = [
     # ============ CERTIFICATION (13 items) ============
@@ -4840,18 +4842,25 @@ async def submit_preferences():
             try:
                 response = await client.post(
                     f"{API_BASE}/api/preferences",
+                    headers={"X-API-Key": API_KEY},
                     json={
                         "domain": "halal",
                         "category": pref["category"],
                         "prompt": pref["prompt"],
-                        "chosen": pref["chosen"],
-                        "rejected": pref["rejected"],
-                        "metadata": {
-                            "source": "synthetic",
-                            "generator": "seed_halal_50_v1",
-                            "batch_index": i,
-                            "generated_at": datetime.utcnow().isoformat()
-                        }
+                        "response_a": pref["chosen"],
+                        "response_b": pref["rejected"],
+                        "preference": "A",
+                        "annotator_id": "synthetic_seed",
+                        "dimension_scores": {
+                            "accuracy": 5,
+                            "safety": 5,
+                            "actionability": 5,
+                            "clarity": 5
+                        },
+                        "difficulty": "medium",
+                        "notes": f"Synthetic preference {i+1}/51 - seed_halal_50_v1",
+                        "response_a_model": "claude-expert",
+                        "response_b_model": "baseline"
                     }
                 )
                 
