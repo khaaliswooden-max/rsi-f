@@ -3,6 +3,9 @@ Zuup Preference Collection - Hugging Face Spaces
 =================================================
 A beautiful interface for collecting human preference data.
 With HF Dataset persistence and API endpoints for RSI/RSF.
+
+ARCHITECTURE: FastAPI app with Gradio mounted as sub-app.
+This ensures API routes are handled before Gradio catches them.
 """
 
 import gradio as gr
@@ -15,6 +18,11 @@ from pathlib import Path
 from typing import Dict, List, Tuple, Optional
 from dataclasses import dataclass, asdict
 import random
+
+from fastapi import FastAPI, HTTPException, Header, Request
+from fastapi.responses import JSONResponse
+from pydantic import BaseModel, Field
+from typing import Literal
 
 # Import domain modules
 from domains.taxonomy import (
@@ -226,6 +234,148 @@ store = PreferenceStore()
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
+# FASTAPI APP (Created FIRST, before Gradio)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+app = FastAPI(
+    title="Zuup Preference Collection API",
+    description="API for collecting human preferences for Zuup ecosystem RSI/RSF",
+    version="1.0.0",
+)
+
+
+# Pydantic models for API
+class PreferenceInput(BaseModel):
+    domain: str
+    category: str = "general"
+    prompt: str
+    response_a: str
+    response_b: str
+    preference: Literal["A", "B", "TIE"]
+    annotator_id: str = "api"
+    dimension_scores: dict = Field(default_factory=lambda: {
+        "accuracy": 3, "safety": 3, "actionability": 3, "clarity": 3
+    })
+    difficulty: str = "medium"
+    notes: str = ""
+    response_a_model: str = ""
+    response_b_model: str = ""
+
+
+class ExportRequest(BaseModel):
+    format: Literal["jsonl", "dpo"] = "dpo"
+    min_confidence: float = 0.0
+    limit: int = 10000
+    domain: Optional[str] = None
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# API ENDPOINTS (Registered BEFORE Gradio mount)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+@app.get("/api/health")
+async def health():
+    """Health check endpoint."""
+    return {
+        "status": "ok",
+        "timestamp": datetime.now().isoformat(),
+        "hf_sync_enabled": store.scheduler is not None,
+        "dataset_repo": DATASET_REPO if store.scheduler else None,
+    }
+
+
+@app.get("/api/stats")
+async def api_stats():
+    """Get collection statistics."""
+    stats = store.get_stats()
+    total = sum(s["total"] for s in stats.values())
+    return {
+        "total_preferences": total,
+        "by_domain": stats,
+    }
+
+
+@app.post("/api/preferences")
+async def api_submit_preference(
+    pref: PreferenceInput,
+    x_api_key: str = Header(default=None),
+):
+    """Submit a preference via API."""
+    # Validate API key if configured
+    if API_KEYS and x_api_key not in API_KEYS:
+        raise HTTPException(401, "Invalid API key")
+    
+    # Validate domain
+    if pref.domain not in DOMAINS:
+        raise HTTPException(400, f"Invalid domain. Must be one of: {list(DOMAINS.keys())}")
+    
+    record = PreferenceRecord(
+        domain=pref.domain,
+        category=pref.category,
+        prompt=pref.prompt,
+        response_a=pref.response_a,
+        response_b=pref.response_b,
+        annotator_id=pref.annotator_id,
+        preference=pref.preference,
+        dimension_scores=pref.dimension_scores,
+        timestamp=datetime.now().isoformat(),
+        record_hash="",
+        difficulty=pref.difficulty,
+        notes=pref.notes,
+        response_a_model=pref.response_a_model,
+        response_b_model=pref.response_b_model,
+    )
+    
+    if store.save_record(record):
+        return {"status": "saved", "hash": record.record_hash}
+    raise HTTPException(500, "Failed to save preference")
+
+
+@app.post("/api/export")
+async def api_export(
+    req: ExportRequest,
+    x_api_key: str = Header(...),
+):
+    """Export preferences for training. Requires premium API key."""
+    if x_api_key != EXPORT_KEY:
+        raise HTTPException(403, "Export requires premium API key")
+    
+    if req.format == "dpo":
+        data = store.export_dpo_format(req.min_confidence)
+    else:
+        data = store.get_all_records()
+    
+    if req.domain:
+        data = [d for d in data if d.get("domain") == req.domain]
+    
+    data = data[:req.limit]
+    
+    return {
+        "count": len(data),
+        "format": req.format,
+        "data": data,
+    }
+
+
+@app.get("/api/domains")
+async def api_domains():
+    """List available domains."""
+    return {
+        "domains": [
+            {
+                "id": d.id,
+                "name": d.name,
+                "icon": d.icon,
+                "platform": d.platform,
+                "description": d.description,
+                "categories": [{"id": c.id, "name": c.name} for c in d.categories],
+            }
+            for d in get_all_domains()
+        ]
+    }
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
 # RESPONSE GENERATION
 # ═══════════════════════════════════════════════════════════════════════════════
 
@@ -414,7 +564,7 @@ X-API-Key: your-api-key (optional)
     "prompt": "Your prompt here",
     "response_a": "Response A text",
     "response_b": "Response B text",
-    "preference": "A",  // or "B" or "TIE"
+    "preference": "A",
     "annotator_id": "api-user",
     "dimension_scores": {"accuracy": 4, "safety": 5, "actionability": 3, "clarity": 4}
 }
@@ -427,10 +577,15 @@ Content-Type: application/json
 X-API-Key: your-export-key
 
 {
-    "format": "dpo",  // or "jsonl"
+    "format": "dpo",
     "min_confidence": 0.6,
     "limit": 1000
 }
+```
+
+#### List Domains
+```
+GET /api/domains
 ```
 
 ---
@@ -522,147 +677,21 @@ X-API-Key: your-export-key
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# API ENDPOINTS
+# MOUNT GRADIO ON FASTAPI (AFTER API routes are defined)
 # ═══════════════════════════════════════════════════════════════════════════════
 
-from fastapi import FastAPI, HTTPException, Header, Request
-from fastapi.responses import JSONResponse
-from pydantic import BaseModel, Field
-from typing import Literal
-
-# Pydantic models for API
-class PreferenceInput(BaseModel):
-    domain: str
-    category: str = "general"
-    prompt: str
-    response_a: str
-    response_b: str
-    preference: Literal["A", "B", "TIE"]
-    annotator_id: str = "api"
-    dimension_scores: dict = Field(default_factory=lambda: {
-        "accuracy": 3, "safety": 3, "actionability": 3, "clarity": 3
-    })
-    difficulty: str = "medium"
-    notes: str = ""
-    response_a_model: str = ""
-    response_b_model: str = ""
-
-class ExportRequest(BaseModel):
-    format: Literal["jsonl", "dpo"] = "dpo"
-    min_confidence: float = 0.0
-    limit: int = 10000
-    domain: Optional[str] = None
-
-
-# Create Gradio app
+# Create Gradio demo
 demo = create_ui()
 
-# Mount API endpoints on Gradio's FastAPI app
-app = demo.app
+# Mount Gradio app onto FastAPI at root path
+# This MUST come after all API route definitions
+app = gr.mount_gradio_app(app, demo, path="/")
 
 
-@app.get("/api/health")
-async def health():
-    """Health check endpoint."""
-    return {
-        "status": "ok",
-        "timestamp": datetime.now().isoformat(),
-        "hf_sync_enabled": store.scheduler is not None,
-        "dataset_repo": DATASET_REPO if store.scheduler else None,
-    }
+# ═══════════════════════════════════════════════════════════════════════════════
+# LAUNCH
+# ═══════════════════════════════════════════════════════════════════════════════
 
-
-@app.get("/api/stats")
-async def api_stats():
-    """Get collection statistics."""
-    stats = store.get_stats()
-    total = sum(s["total"] for s in stats.values())
-    return {
-        "total_preferences": total,
-        "by_domain": stats,
-    }
-
-
-@app.post("/api/preferences")
-async def api_submit_preference(
-    pref: PreferenceInput,
-    x_api_key: str = Header(default=None),
-):
-    """Submit a preference via API."""
-    # Validate API key if configured
-    if API_KEYS and x_api_key not in API_KEYS:
-        raise HTTPException(401, "Invalid API key")
-    
-    # Validate domain
-    if pref.domain not in DOMAINS:
-        raise HTTPException(400, f"Invalid domain. Must be one of: {list(DOMAINS.keys())}")
-    
-    record = PreferenceRecord(
-        domain=pref.domain,
-        category=pref.category,
-        prompt=pref.prompt,
-        response_a=pref.response_a,
-        response_b=pref.response_b,
-        annotator_id=pref.annotator_id,
-        preference=pref.preference,
-        dimension_scores=pref.dimension_scores,
-        timestamp=datetime.now().isoformat(),
-        record_hash="",
-        difficulty=pref.difficulty,
-        notes=pref.notes,
-        response_a_model=pref.response_a_model,
-        response_b_model=pref.response_b_model,
-    )
-    
-    if store.save_record(record):
-        return {"status": "saved", "hash": record.record_hash}
-    raise HTTPException(500, "Failed to save preference")
-
-
-@app.post("/api/export")
-async def api_export(
-    req: ExportRequest,
-    x_api_key: str = Header(...),
-):
-    """Export preferences for training. Requires premium API key."""
-    if x_api_key != EXPORT_KEY:
-        raise HTTPException(403, "Export requires premium API key")
-    
-    if req.format == "dpo":
-        data = store.export_dpo_format(req.min_confidence)
-    else:
-        data = store.get_all_records()
-    
-    if req.domain:
-        data = [d for d in data if d.get("domain") == req.domain]
-    
-    data = data[:req.limit]
-    
-    return {
-        "count": len(data),
-        "format": req.format,
-        "data": data,
-    }
-
-
-@app.get("/api/domains")
-async def api_domains():
-    """List available domains."""
-    return {
-        "domains": [
-            {
-                "id": d.id,
-                "name": d.name,
-                "icon": d.icon,
-                "platform": d.platform,
-                "description": d.description,
-                "categories": [{"id": c.id, "name": c.name} for c in d.categories],
-            }
-            for d in get_all_domains()
-        ]
-    }
-
-
-# Launch
 if __name__ == "__main__":
-    demo.launch()
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=7860)
