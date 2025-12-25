@@ -4858,7 +4858,7 @@ async def submit_preferences():
                             "clarity": 5
                         },
                         "difficulty": "medium",
-                        "notes": f"Synthetic preference {i+1}/51 - seed_halal_50_v1",
+                        "notes": f"Synthetic preference {i+1}/{len(HALAL_PREFERENCES)} - seed_halal_50_v1",
                         "response_a_model": "claude-expert",
                         "response_b_model": "baseline"
                     }
@@ -4866,7 +4866,7 @@ async def submit_preferences():
                 
                 if response.status_code == 200:
                     results["success"] += 1
-                    print(f"✓ [{i+1}/50] {pref['category']}: {pref['prompt'][:50]}...")
+                    print(f"[OK] [{i+1}/51] {pref['category']}: {pref['prompt'][:50]}...")
                 else:
                     results["failed"] += 1
                     results["errors"].append({
@@ -4874,12 +4874,12 @@ async def submit_preferences():
                         "status": response.status_code,
                         "response": response.text
                     })
-                    print(f"✗ [{i+1}/50] Failed: {response.status_code}")
+                    print(f"[FAIL] [{i+1}/51] Status {response.status_code}: {response.text[:100]}")
                     
             except Exception as e:
                 results["failed"] += 1
                 results["errors"].append({"index": i, "error": str(e)})
-                print(f"✗ [{i+1}/50] Error: {e}")
+                print(f"[ERR] [{i+1}/51] Error: {e}")
             
             # Rate limiting
             await asyncio.sleep(0.1)
@@ -4888,7 +4888,7 @@ async def submit_preferences():
 
 
 if __name__ == "__main__":
-    print(f"Submitting 50 halal preferences to {API_BASE}")
+    print(f"Submitting {len(HALAL_PREFERENCES)} halal preferences to {API_BASE}")
     print("=" * 60)
     
     results = asyncio.run(submit_preferences())
