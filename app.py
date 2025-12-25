@@ -128,14 +128,17 @@ class PreferenceStore:
                     local_path = self.data_dir / filename
                     if not local_path.exists():
                         try:
-                            hf_hub_download(
+                            # Download to cache and get the actual file path
+                            downloaded = hf_hub_download(
                                 repo_id=DATASET_REPO,
                                 filename=f,
                                 repo_type="dataset",
-                                local_dir=self.data_dir.parent,
                                 token=HF_TOKEN,
                             )
-                            print(f"✓ Pulled {f}")
+                            # Copy to our data directory
+                            import shutil
+                            shutil.copy(downloaded, local_path)
+                            print(f"✓ Pulled {f} -> {local_path}")
                         except Exception as e:
                             print(f"Could not pull {f}: {e}")
         except Exception as e:
