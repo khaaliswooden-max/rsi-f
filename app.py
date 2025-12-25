@@ -425,8 +425,55 @@ Thank you for this {domain_name} question. Here's my analysis:
 # ═══════════════════════════════════════════════════════════════════════════════
 
 CUSTOM_CSS = """
-.main-header { text-align: center; padding: 1.5rem; margin-bottom: 1rem; }
-.main-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.gradio-container {
+    font-family: 'Inter', system-ui, sans-serif !important;
+}
+
+.main-header { 
+    text-align: center; 
+    padding: 1.5rem; 
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.1) 100%);
+    border-radius: 12px;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.main-header h1 { 
+    font-size: 2rem; 
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.main-header p {
+    color: #94a3b8 !important;
+}
+
+/* Ensure all text is readable */
+.prose, .prose p, .markdown-text, span, label {
+    color: #e2e8f0 !important;
+}
+
+/* Input and dropdown styling */
+input, textarea, select {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+    color: #f1f5f9 !important;
+}
+
+/* Button improvements */
+.primary {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%) !important;
+}
+
+/* Slider labels */
+.label-wrap span {
+    color: #e2e8f0 !important;
+}
 """
 
 
@@ -436,7 +483,36 @@ def create_ui():
     with gr.Blocks(
         title="Zuup Preference Collection",
         css=CUSTOM_CSS,
-        theme=gr.themes.Soft()
+        theme=gr.themes.Base(
+            primary_hue="indigo",
+            secondary_hue="purple",
+            neutral_hue="slate",
+        ).set(
+            body_background_fill="#0f172a",
+            body_background_fill_dark="#0f172a",
+            block_background_fill="#1e293b",
+            block_background_fill_dark="#1e293b",
+            block_border_color="#334155",
+            block_border_color_dark="#334155",
+            block_label_text_color="#e2e8f0",
+            block_label_text_color_dark="#e2e8f0",
+            block_title_text_color="#f1f5f9",
+            block_title_text_color_dark="#f1f5f9",
+            body_text_color="#e2e8f0",
+            body_text_color_dark="#e2e8f0",
+            body_text_color_subdued="#94a3b8",
+            body_text_color_subdued_dark="#94a3b8",
+            input_background_fill="#1e293b",
+            input_background_fill_dark="#1e293b",
+            input_border_color="#334155",
+            input_border_color_dark="#334155",
+            button_primary_background_fill="#6366f1",
+            button_primary_background_fill_hover="#4f46e5",
+            button_primary_text_color="#ffffff",
+            button_secondary_background_fill="#334155",
+            button_secondary_background_fill_hover="#475569",
+            button_secondary_text_color="#e2e8f0",
+        )
     ) as demo:
         
         # State
@@ -509,17 +585,41 @@ def create_ui():
                 
                 def get_stats_html():
                     stats = store.get_stats()
-                    html = '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">'
+                    html = '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; padding: 1rem;">'
                     for domain_id, s in stats.items():
                         domain = get_domain(domain_id)
                         if not domain:
                             continue
                         progress = min(100, (s["total"] / s["target"]) * 100) if s["target"] > 0 else 0
+                        
+                        # Color based on progress
+                        if progress >= 100:
+                            progress_color = "#10b981"  # green
+                        elif progress >= 50:
+                            progress_color = "#f59e0b"  # amber
+                        else:
+                            progress_color = "#6366f1"  # indigo
+                        
                         html += f'''
-                        <div style="background: #f0f0f0; padding: 1rem; border-radius: 8px;">
-                            <strong>{domain.icon} {domain.name}</strong><br>
-                            <span>{s["total"]} / {s["target"]} ({progress:.1f}%)</span><br>
-                            <span>{s["annotators"]} annotators</span>
+                        <div style="background: #1e293b; border-radius: 12px; padding: 1.25rem; border: 1px solid #334155; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+                            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                                <span style="font-size: 1.75rem;">{domain.icon}</span>
+                                <div>
+                                    <div style="font-weight: 600; font-size: 1.1rem; color: #f1f5f9;">{domain.name}</div>
+                                    <div style="font-size: 0.8rem; color: #94a3b8;">{domain.platform}</div>
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span style="color: #94a3b8; font-size: 0.9rem;">Collected</span>
+                                <span style="font-weight: 600; color: {progress_color};">{s["total"]} / {s["target"]}</span>
+                            </div>
+                            <div style="background: #334155; height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 0.75rem;">
+                                <div style="width: {progress}%; height: 100%; background: linear-gradient(90deg, {progress_color}, {progress_color}cc); border-radius: 4px;"></div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: #94a3b8;">
+                                <span>👥 {s["annotators"]} annotators</span>
+                                <span style="color: {progress_color};">{progress:.1f}% complete</span>
+                            </div>
                         </div>'''
                     html += '</div>'
                     return html
