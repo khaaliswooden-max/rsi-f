@@ -311,6 +311,6 @@ def get_atari_css() -> str:
     return ATARI_CSS
 
 
-def get_atari_theme() -> gr.themes.Theme:
+def get_atari_theme():
     """Return the Atari Gradio theme."""
     return atari_theme
