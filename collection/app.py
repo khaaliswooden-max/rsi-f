@@ -29,6 +29,7 @@ from domains.taxonomy import (
     DOMAINS,
 )
 from domains.prompt_generator import get_random_prompt, generate_prompt_pair
+from atari_theme import ATARI_CSS, atari_theme
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -181,198 +182,6 @@ def generate_responses(prompt: str, domain: str) -> Tuple[str, str]:
 # Initialize store
 store = PreferenceStore()
 
-# Custom CSS for beautiful styling
-CUSTOM_CSS = """
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap');
-
-:root {
-    --zuup-primary: #6366f1;
-    --zuup-secondary: #8b5cf6;
-    --zuup-accent: #f59e0b;
-    --zuup-dark: #0f172a;
-    --zuup-darker: #020617;
-    --zuup-surface: #1e293b;
-    --zuup-surface-light: #334155;
-    --zuup-text: #f1f5f9;
-    --zuup-text-muted: #94a3b8;
-    --zuup-success: #10b981;
-    --zuup-warning: #f59e0b;
-    --zuup-error: #ef4444;
-    --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
-    --gradient-dark: linear-gradient(180deg, #0f172a 0%, #020617 100%);
-}
-
-.gradio-container {
-    background: var(--gradient-dark) !important;
-    font-family: 'Outfit', sans-serif !important;
-    min-height: 100vh;
-}
-
-.main-header {
-    text-align: center;
-    padding: 2rem 1rem;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
-    border-radius: 1rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid rgba(99, 102, 241, 0.2);
-}
-
-.main-header h1 {
-    font-family: 'Outfit', sans-serif !important;
-    font-size: 2.5rem !important;
-    font-weight: 700 !important;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 0.5rem !important;
-}
-
-.main-header p {
-    color: var(--zuup-text-muted) !important;
-    font-size: 1.1rem !important;
-}
-
-.domain-card {
-    background: var(--zuup-surface) !important;
-    border: 1px solid var(--zuup-surface-light) !important;
-    border-radius: 0.75rem !important;
-    padding: 1rem !important;
-    transition: all 0.2s ease !important;
-}
-
-.domain-card:hover {
-    border-color: var(--zuup-primary) !important;
-    box-shadow: 0 0 20px rgba(99, 102, 241, 0.15) !important;
-}
-
-.response-panel {
-    background: var(--zuup-surface) !important;
-    border: 2px solid var(--zuup-surface-light) !important;
-    border-radius: 1rem !important;
-    padding: 1.5rem !important;
-    font-family: 'JetBrains Mono', monospace !important;
-    font-size: 0.9rem !important;
-    line-height: 1.6 !important;
-    max-height: 500px !important;
-    overflow-y: auto !important;
-}
-
-.response-panel-a {
-    border-left: 4px solid #3b82f6 !important;
-}
-
-.response-panel-b {
-    border-left: 4px solid #f59e0b !important;
-}
-
-.preference-btn {
-    padding: 1rem 2rem !important;
-    font-size: 1.1rem !important;
-    font-weight: 600 !important;
-    border-radius: 0.75rem !important;
-    transition: all 0.2s ease !important;
-    min-width: 150px !important;
-}
-
-.btn-a {
-    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
-    border: none !important;
-}
-
-.btn-a:hover {
-    transform: translateY(-2px) !important;
-    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4) !important;
-}
-
-.btn-b {
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
-    border: none !important;
-}
-
-.btn-b:hover {
-    transform: translateY(-2px) !important;
-    box-shadow: 0 4px 20px rgba(245, 158, 11, 0.4) !important;
-}
-
-.btn-tie {
-    background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%) !important;
-    border: none !important;
-}
-
-.slider-label {
-    color: var(--zuup-text) !important;
-    font-weight: 500 !important;
-}
-
-.stat-card {
-    background: var(--zuup-surface) !important;
-    border-radius: 0.75rem !important;
-    padding: 1rem !important;
-    text-align: center !important;
-}
-
-.stat-number {
-    font-size: 2rem !important;
-    font-weight: 700 !important;
-    color: var(--zuup-primary) !important;
-}
-
-.progress-bar {
-    height: 8px !important;
-    border-radius: 4px !important;
-    background: var(--zuup-surface-light) !important;
-    overflow: hidden !important;
-}
-
-.progress-fill {
-    height: 100% !important;
-    background: var(--gradient-primary) !important;
-    border-radius: 4px !important;
-    transition: width 0.3s ease !important;
-}
-
-.prompt-display {
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%) !important;
-    border: 1px solid rgba(99, 102, 241, 0.3) !important;
-    border-radius: 1rem !important;
-    padding: 1.5rem !important;
-    font-size: 1rem !important;
-    line-height: 1.7 !important;
-}
-
-.dimension-slider {
-    margin: 0.75rem 0 !important;
-}
-
-.footer-info {
-    text-align: center;
-    padding: 1rem;
-    color: var(--zuup-text-muted);
-    font-size: 0.85rem;
-    margin-top: 2rem;
-}
-
-/* Scrollbar styling */
-::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--zuup-dark);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--zuup-surface-light);
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--zuup-primary);
-}
-"""
-
 
 def create_ui():
     """Create the main Gradio interface."""
@@ -386,32 +195,14 @@ def create_ui():
     
     with gr.Blocks(
         title="Zuup Preference Collection",
-        css=CUSTOM_CSS,
-        theme=gr.themes.Base(
-            primary_hue="indigo",
-            secondary_hue="purple",
-            neutral_hue="slate",
-            font=("Outfit", "sans-serif"),
-            font_mono=("JetBrains Mono", "monospace"),
-        ).set(
-            body_background_fill="#0f172a",
-            body_background_fill_dark="#020617",
-            block_background_fill="#1e293b",
-            block_background_fill_dark="#1e293b",
-            block_border_color="#334155",
-            block_label_text_color="#f1f5f9",
-            block_title_text_color="#f1f5f9",
-            input_background_fill="#0f172a",
-            input_border_color="#334155",
-            button_primary_background_fill="#6366f1",
-            button_primary_background_fill_hover="#4f46e5",
-        )
+        css=ATARI_CSS,
+        theme=atari_theme,
     ) as demo:
         
         # Header
         gr.HTML("""
             <div class="main-header">
-                <h1>🎯 Zuup Preference Collection</h1>
+                <h1>Z*U*U*P  PREFERENCE  COLLECTOR</h1>
                 <p>Collecting expert human feedback to train domain-specific AI systems</p>
             </div>
         """)
@@ -564,32 +355,32 @@ def create_ui():
                         target = domain_stats["target"]
                         progress = min(100, (collected / target) * 100) if target > 0 else 0
                         
-                        # Color based on progress
+                        # Atari palette: phosphor green for complete, orange for in-progress
                         if progress >= 100:
-                            progress_color = "#10b981"  # green
+                            progress_color = "#7cd0ac"
                         elif progress >= 50:
-                            progress_color = "#f59e0b"  # amber
+                            progress_color = "#fc6323"
                         else:
-                            progress_color = "#6366f1"  # indigo
+                            progress_color = "#3854a8"
                         
                         html += f'''
-                        <div style="background: #1e293b; border-radius: 1rem; padding: 1.5rem; border: 1px solid #334155;">
+                        <div style="background: #141420; border-radius: 6px; padding: 1.5rem; border: 2px solid #2a2a3a;">
                             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
                                 <span style="font-size: 1.5rem;">{domain.icon}</span>
                                 <div>
-                                    <div style="font-weight: 600; color: #f1f5f9;">{domain.name}</div>
-                                    <div style="font-size: 0.8rem; color: #94a3b8;">{domain.platform}</div>
+                                    <div style="font-weight: 600; color: #e0e0e0;">{domain.name}</div>
+                                    <div style="font-size: 0.8rem; color: #909090;">{domain.platform}</div>
                                 </div>
                             </div>
                             <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                                <span style="color: #94a3b8;">Collected</span>
+                                <span style="color: #909090;">Collected</span>
                                 <span style="font-weight: 600; color: {progress_color};">{collected} / {target}</span>
                             </div>
-                            <div style="background: #334155; height: 8px; border-radius: 4px; overflow: hidden;">
-                                <div style="width: {progress}%; height: 100%; background: linear-gradient(90deg, {progress_color}, {progress_color}dd); border-radius: 4px;"></div>
+                            <div style="background: #2a2a3a; height: 8px; border-radius: 4px; overflow: hidden;">
+                                <div style="width: {progress}%; height: 100%; background: {progress_color}; box-shadow: 0 0 8px {progress_color}80; border-radius: 4px;"></div>
                             </div>
-                            <div style="display: flex; justify-content: space-between; margin-top: 0.75rem; font-size: 0.85rem; color: #94a3b8;">
-                                <span>👥 {domain_stats["annotators"]} annotators</span>
+                            <div style="display: flex; justify-content: space-between; margin-top: 0.75rem; font-size: 0.85rem; color: #909090;">
+                                <span>Annotators: {domain_stats["annotators"]}</span>
                                 <span>{progress:.1f}% complete</span>
                             </div>
                         </div>
@@ -670,33 +461,33 @@ def create_ui():
                     ])
                     
                     dimensions_list = "".join([
-                        f'<span style="background: #334155; padding: 0.25rem 0.5rem; border-radius: 0.25rem; margin-right: 0.5rem; font-size: 0.85rem;">{d.name}</span>'
+                        f'<span style="background: #2a2a3a; padding: 0.25rem 0.5rem; border-radius: 4px; margin-right: 0.5rem; font-size: 0.85rem; border: 1px solid #3a3a4a;">{d.name}</span>'
                         for d in domain.dimensions
                     ])
                     
                     domain_info_html += f'''
-                    <details style="background: #1e293b; border-radius: 1rem; border: 1px solid #334155;">
-                        <summary style="padding: 1rem; cursor: pointer; font-weight: 600; color: #f1f5f9;">
+                    <details style="background: #141420; border-radius: 6px; border: 2px solid #2a2a3a;">
+                        <summary style="padding: 1rem; cursor: pointer; font-weight: 600; color: #e0e0e0;">
                             <span style="font-size: 1.25rem; margin-right: 0.5rem;">{domain.icon}</span>
                             {domain.name} 
-                            <span style="font-weight: 400; color: #94a3b8;">({domain.platform})</span>
+                            <span style="font-weight: 400; color: #909090;">({domain.platform})</span>
                         </summary>
-                        <div style="padding: 0 1.5rem 1.5rem 1.5rem; color: #cbd5e1;">
+                        <div style="padding: 0 1.5rem 1.5rem 1.5rem; color: #c0c0c0;">
                             <p style="margin-bottom: 1rem;">{domain.description}</p>
                             
                             <div style="margin-bottom: 1rem;">
-                                <strong style="color: #f1f5f9;">Categories:</strong>
+                                <strong style="color: #e0e0e0;">Categories:</strong>
                                 <ul style="margin: 0.5rem 0 0 1.5rem; padding: 0;">{categories_list}</ul>
                             </div>
                             
                             <div style="margin-bottom: 1rem;">
-                                <strong style="color: #f1f5f9;">Scoring Dimensions:</strong><br>
+                                <strong style="color: #e0e0e0;">Scoring Dimensions:</strong><br>
                                 <div style="margin-top: 0.5rem;">{dimensions_list}</div>
                             </div>
                             
                             <div style="display: flex; gap: 2rem; font-size: 0.9rem;">
-                                <div><strong style="color: #f1f5f9;">Target:</strong> {domain.min_samples} samples</div>
-                                <div><strong style="color: #f1f5f9;">Annotators:</strong> {domain.annotator_requirements}</div>
+                                <div><strong style="color: #e0e0e0;">Target:</strong> {domain.min_samples} samples</div>
+                                <div><strong style="color: #e0e0e0;">Annotators:</strong> {domain.annotator_requirements}</div>
                             </div>
                         </div>
                     </details>
@@ -708,9 +499,9 @@ def create_ui():
         # Footer
         gr.HTML("""
             <div class="footer-info">
-                <p>🔬 Zuup Innovation Lab • Preference Collection System v1.0</p>
-                <p style="font-size: 0.75rem; margin-top: 0.5rem;">
-                    Building domain-expert AI through human expertise
+                <p>Zuup Innovation Lab * Preference Collection System v1.0</p>
+                <p style="font-size: 0.85rem; margin-top: 0.5rem;">
+                    [ PRESS START ] Building domain-expert AI through human expertise
                 </p>
             </div>
         """)

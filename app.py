@@ -33,6 +33,7 @@ from domains.taxonomy import (
 )
 from domains.prompt_generator import get_random_prompt
 from llm_client import generate_response_pair
+from atari_theme import ATARI_CSS, atari_theme
 
 # HuggingFace Hub imports for persistence
 try:
@@ -392,95 +393,14 @@ def generate_responses(prompt: str, domain: str) -> Tuple[str, str]:
 # GRADIO UI
 # ═══════════════════════════════════════════════════════════════════════════════
 
-CUSTOM_CSS = """
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-.gradio-container {
-    font-family: 'Inter', system-ui, sans-serif !important;
-}
-
-.main-header { 
-    text-align: center; 
-    padding: 1.5rem; 
-    margin-bottom: 1rem;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.1) 100%);
-    border-radius: 12px;
-    border: 1px solid rgba(99, 102, 241, 0.2);
-}
-
-.main-header h1 { 
-    font-size: 2rem; 
-    margin-bottom: 0.5rem;
-    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.main-header p {
-    color: #94a3b8 !important;
-}
-
-/* Ensure all text is readable */
-.prose, .prose p, .markdown-text, span, label {
-    color: #e2e8f0 !important;
-}
-
-/* Input and dropdown styling */
-input, textarea, select {
-    background: #1e293b !important;
-    border-color: #334155 !important;
-    color: #f1f5f9 !important;
-}
-
-/* Button improvements */
-.primary {
-    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%) !important;
-}
-
-/* Slider labels */
-.label-wrap span {
-    color: #e2e8f0 !important;
-}
-"""
-
 
 def create_ui():
     """Create the Gradio interface."""
     
     with gr.Blocks(
         title="Zuup Preference Collection",
-        css=CUSTOM_CSS,
-        theme=gr.themes.Base(
-            primary_hue="indigo",
-            secondary_hue="purple",
-            neutral_hue="slate",
-        ).set(
-            body_background_fill="#0f172a",
-            body_background_fill_dark="#0f172a",
-            block_background_fill="#1e293b",
-            block_background_fill_dark="#1e293b",
-            block_border_color="#334155",
-            block_border_color_dark="#334155",
-            block_label_text_color="#e2e8f0",
-            block_label_text_color_dark="#e2e8f0",
-            block_title_text_color="#f1f5f9",
-            block_title_text_color_dark="#f1f5f9",
-            body_text_color="#e2e8f0",
-            body_text_color_dark="#e2e8f0",
-            body_text_color_subdued="#94a3b8",
-            body_text_color_subdued_dark="#94a3b8",
-            input_background_fill="#1e293b",
-            input_background_fill_dark="#1e293b",
-            input_border_color="#334155",
-            input_border_color_dark="#334155",
-            button_primary_background_fill="#6366f1",
-            button_primary_background_fill_hover="#4f46e5",
-            button_primary_text_color="#ffffff",
-            button_secondary_background_fill="#334155",
-            button_secondary_background_fill_hover="#475569",
-            button_secondary_text_color="#e2e8f0",
-        )
+        css=ATARI_CSS,
+        theme=atari_theme,
     ) as demo:
         
         # State
@@ -493,7 +413,7 @@ def create_ui():
         # Header
         gr.HTML("""
             <div class="main-header">
-                <h1>🎯 Zuup Preference Collection</h1>
+                <h1>Z*U*U*P  PREFERENCE  COLLECTOR</h1>
                 <p>Collecting expert human feedback to train domain-specific AI systems</p>
             </div>
         """)
@@ -516,16 +436,25 @@ def create_ui():
                     
                     with gr.Column(scale=3):
                         gr.Markdown("### 📋 Prompt")
-                        prompt_display = gr.Markdown("*Click 'Load New Pair' to begin*")
+                        prompt_display = gr.Markdown(
+                            "*Click 'Load New Pair' to begin*",
+                            elem_classes=["prompt-display"]
+                        )
                         
                         gr.Markdown("### 🔍 Compare Responses")
                         with gr.Row():
                             with gr.Column():
                                 gr.Markdown("#### 🅰️ Response A")
-                                response_a_display = gr.Markdown("*Waiting...*")
+                                response_a_display = gr.Markdown(
+                                    "*Waiting...*",
+                                    elem_classes=["response-panel", "response-panel-a"]
+                                )
                             with gr.Column():
                                 gr.Markdown("#### 🅱️ Response B")
-                                response_b_display = gr.Markdown("*Waiting...*")
+                                response_b_display = gr.Markdown(
+                                    "*Waiting...*",
+                                    elem_classes=["response-panel", "response-panel-b"]
+                                )
                         
                         gr.Markdown("### 📏 Rate Quality (1-5)")
                         with gr.Row():
@@ -539,9 +468,21 @@ def create_ui():
                         
                         gr.Markdown("### 🏆 Select Winner")
                         with gr.Row():
-                            prefer_a_btn = gr.Button("🅰️ Prefer A", variant="primary")
-                            prefer_tie_btn = gr.Button("🤝 Tie", variant="secondary")
-                            prefer_b_btn = gr.Button("🅱️ Prefer B", variant="primary")
+                            prefer_a_btn = gr.Button(
+                                "🅰️ Prefer A",
+                                variant="primary",
+                                elem_classes=["preference-btn", "btn-a"]
+                            )
+                            prefer_tie_btn = gr.Button(
+                                "🤝 Tie",
+                                variant="secondary",
+                                elem_classes=["preference-btn", "btn-tie"]
+                            )
+                            prefer_b_btn = gr.Button(
+                                "🅱️ Prefer B",
+                                variant="primary",
+                                elem_classes=["preference-btn", "btn-b"]
+                            )
                         
                         submit_status = gr.Markdown("")
             
@@ -560,32 +501,32 @@ def create_ui():
                             continue
                         progress = min(100, (s["total"] / s["target"]) * 100) if s["target"] > 0 else 0
                         
-                        # Color based on progress
+                        # Atari palette: phosphor green for complete, orange for in-progress
                         if progress >= 100:
-                            progress_color = "#10b981"  # green
+                            progress_color = "#7cd0ac"
                         elif progress >= 50:
-                            progress_color = "#f59e0b"  # amber
+                            progress_color = "#fc6323"
                         else:
-                            progress_color = "#6366f1"  # indigo
+                            progress_color = "#3854a8"
                         
                         html += f'''
-                        <div style="background: #1e293b; border-radius: 12px; padding: 1.25rem; border: 1px solid #334155; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+                        <div style="background: #141420; border-radius: 6px; padding: 1.25rem; border: 2px solid #2a2a3a;">
                             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
                                 <span style="font-size: 1.75rem;">{domain.icon}</span>
                                 <div>
-                                    <div style="font-weight: 600; font-size: 1.1rem; color: #f1f5f9;">{domain.name}</div>
-                                    <div style="font-size: 0.8rem; color: #94a3b8;">{domain.platform}</div>
+                                    <div style="font-weight: 600; font-size: 1.1rem; color: #e0e0e0;">{domain.name}</div>
+                                    <div style="font-size: 0.8rem; color: #909090;">{domain.platform}</div>
                                 </div>
                             </div>
                             <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                                <span style="color: #94a3b8; font-size: 0.9rem;">Collected</span>
+                                <span style="color: #909090; font-size: 0.9rem;">Collected</span>
                                 <span style="font-weight: 600; color: {progress_color};">{s["total"]} / {s["target"]}</span>
                             </div>
-                            <div style="background: #334155; height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 0.75rem;">
-                                <div style="width: {progress}%; height: 100%; background: linear-gradient(90deg, {progress_color}, {progress_color}cc); border-radius: 4px;"></div>
+                            <div style="background: #2a2a3a; height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 0.75rem;">
+                                <div style="width: {progress}%; height: 100%; background: {progress_color}; box-shadow: 0 0 8px {progress_color}80; border-radius: 4px;"></div>
                             </div>
-                            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: #94a3b8;">
-                                <span>👥 {s["annotators"]} annotators</span>
+                            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: #909090;">
+                                <span>Annotators: {s["annotators"]}</span>
                                 <span style="color: {progress_color};">{progress:.1f}% complete</span>
                             </div>
                         </div>'''
