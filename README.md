@@ -52,6 +52,11 @@ A beautiful Gradio interface for collecting human preference data across 10 spec
 - **Reward Model**: Includes dimension scores for reward modeling
 - **Raw JSONL**: Complete records with all metadata
 
+## Data and persistence
+
+- **Local JSONL**: `preference_data/{domain_id}_preferences.jsonl` is the canonical path for each domain. All 10 domains are supported; stats and export include every domain in the taxonomy.
+- **Real LLM responses**: Set `LLM_BACKEND=ollama` (default) and run Ollama locally, or set `LLM_BACKEND=anthropic` / `LLM_BACKEND=openai` with the corresponding API keys. See `llm_client.py` for options.
+
 ---
 
 Built by Zuup Innovation Lab 🔬

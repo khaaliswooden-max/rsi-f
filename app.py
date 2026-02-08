@@ -32,6 +32,7 @@ from domains.taxonomy import (
     DOMAINS,
 )
 from domains.prompt_generator import get_random_prompt
+from llm_client import generate_response_pair
 
 # HuggingFace Hub imports for persistence
 try:
@@ -383,41 +384,8 @@ async def api_domains():
 # ═══════════════════════════════════════════════════════════════════════════════
 
 def generate_responses(prompt: str, domain: str) -> Tuple[str, str]:
-    """Generate placeholder responses for comparison."""
-    domain_info = get_domain(domain)
-    domain_name = domain_info.name if domain_info else domain
-    
-    response_a = f"""**Response A**
-
-Based on my analysis of your {domain_name} query:
-
-1. **Primary Analysis**: The core issue involves understanding fundamental requirements.
-2. **Key Considerations**: Regulatory factors, technical feasibility, resource implications.
-3. **Recommended Approach**: A phased approach prioritizing risk mitigation.
-4. **Next Steps**: Document current state, identify stakeholders, develop roadmap.
-
-*[Placeholder response - integrate with LLM in production]*"""
-
-    response_b = f"""**Response B**
-
-Thank you for this {domain_name} question. Here's my analysis:
-
-**Executive Summary**: This requires balancing immediate needs against long-term objectives.
-
-**Technical Perspective**:
-- Option 1: Conservative approach minimizing risk
-- Option 2: Aggressive approach maximizing benefits  
-- Option 3: Balanced trade-off approach
-
-**Recommendations**:
-1. Conduct thorough assessment
-2. Engage stakeholders early
-3. Establish success metrics
-4. Implement iterative improvements
-
-*[Placeholder response - integrate with LLM in production]*"""
-
-    return response_a, response_b
+    """Generate two responses for comparison via shared LLM client; fallback to placeholders if LLM unavailable."""
+    return generate_response_pair(prompt, domain_id=domain)
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
