@@ -756,7 +756,10 @@ demo = create_ui()
 
 # Mount Gradio app onto FastAPI at root path
 # This MUST come after all API route definitions
-app = gr.mount_gradio_app(app, demo, path="/")
+# When behind a proxy (e.g. Hugging Face Spaces), set GRADIO_ROOT_PATH to the public path
+# to avoid "Invalid port" and wrong URLs (e.g. root_path="/spaces/username/repo")
+_root_path = os.getenv("GRADIO_ROOT_PATH", "").strip() or None
+app = gr.mount_gradio_app(app, demo, path="/", root_path=_root_path)
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
