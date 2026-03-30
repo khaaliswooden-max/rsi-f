@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bp-dark1: #252a31;
+  --bp-dark2: #1c2127;
+  --bp-dark3: #111418;
+  --bp-dark4: #0d1117;
+  --bp-border: #383e47;
+  --bp-blue: #4c90f0;
+  --bp-green: #32a467;
+  --bp-orange: #c87619;
+  --bp-red: #e76a6e;
+  --bp-text: #f6f7f9;
+  --bp-text-secondary: #abb3bf;
+  --bp-text-muted: #738091;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #111418;
+  color: #f6f7f9;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1c2127;
+}
+::-webkit-scrollbar-thumb {
+  background: #383e47;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4c90f0;
+}
+
+/* Range input — Palantir slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: #383e47;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #4c90f0;
+  border: 2px solid #1c2127;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px #4c90f0;
+  transition: box-shadow 0.15s ease;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 3px rgba(76, 144, 240, 0.3);
+}
+input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #4c90f0;
+  border: 2px solid #1c2127;
+  cursor: pointer;
+}
+
+/* Focus ring */
+*:focus-visible {
+  outline: 2px solid #4c90f0;
+  outline-offset: 1px;
+}
+
+/* Selection */
+::selection {
+  background: rgba(76, 144, 240, 0.3);
+  color: #f6f7f9;
+}
