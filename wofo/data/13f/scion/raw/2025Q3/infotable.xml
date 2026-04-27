@@ -1,0 +1,143 @@
+<?xml version="1.0" ?>
+<informationTable xsi:schemaLocation="http://www.sec.gov/edgar/document/thirteenf/informationtable eis_13FDocument.xsd" xmlns="http://www.sec.gov/edgar/document/thirteenf/informationtable" xmlns:n1="http://www.sec.gov/edgar/document/thirteenf/informationtable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <infoTable>
+    <nameOfIssuer>BRUKER CORP</nameOfIssuer>
+    <titleOfClass>6.375 PREF SER A</titleOfClass>
+    <cusip>116794207</cusip>
+    <value>13137181</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>48334</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>DFND</investmentDiscretion>
+    <otherManager>1,2</otherManager>
+    <votingAuthority>
+      <Sole>48334</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>HALLIBURTON CO</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>406216101</cusip>
+    <value>61500000</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>2500000</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <putCall>Call</putCall>
+    <investmentDiscretion>DFND</investmentDiscretion>
+    <otherManager>1,2</otherManager>
+    <votingAuthority>
+      <Sole>0</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>LULULEMON ATHLETICA INC</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>550021109</cusip>
+    <value>17793000</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>100000</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>DFND</investmentDiscretion>
+    <otherManager>1,2</otherManager>
+    <votingAuthority>
+      <Sole>100000</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>MOLINA HEALTHCARE INC</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>60855R100</cusip>
+    <value>23920000</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>125000</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>DFND</investmentDiscretion>
+    <otherManager>1,2</otherManager>
+    <votingAuthority>
+      <Sole>125000</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>NVIDIA CORPORATION</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>67066G104</cusip>
+    <value>186580000</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>1000000</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <putCall>Put</putCall>
+    <investmentDiscretion>DFND</investmentDiscretion>
+    <otherManager>1,2</otherManager>
+    <votingAuthority>
+      <Sole>0</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>PALANTIR TECHNOLOGIES INC</nameOfIssuer>
+    <titleOfClass>CL A</titleOfClass>
+    <cusip>69608A108</cusip>
+    <value>912100000</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>5000000</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <putCall>Put</putCall>
+    <investmentDiscretion>DFND</investmentDiscretion>
+    <otherManager>1,2</otherManager>
+    <votingAuthority>
+      <Sole>0</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>PFIZER INC</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>717081103</cusip>
+    <value>152880000</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>6000000</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <putCall>Call</putCall>
+    <investmentDiscretion>DFND</investmentDiscretion>
+    <otherManager>1,2</otherManager>
+    <votingAuthority>
+      <Sole>0</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>SLM CORP</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>78442P106</cusip>
+    <value>13287895</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>480054</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>DFND</investmentDiscretion>
+    <otherManager>1,2</otherManager>
+    <votingAuthority>
+      <Sole>480054</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+</informationTable>

@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<informationTable xsi:schemaLocation="http://www.sec.gov/edgar/document/thirteenf/informationtable eis_13FDocument.xsd" xmlns="http://www.sec.gov/edgar/document/thirteenf/informationtable" xmlns:n1="http://www.sec.gov/edgar/document/thirteenf/informationtable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <infoTable>
+    <nameOfIssuer>ALPHA METALLURGICAL RESOUR I</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>020764106</cusip>
+    <value>51777581</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>460327</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>460327</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>AUTONATION INC</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>05329W102</cusip>
+    <value>12117650</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>61000</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>61000</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>NOBLE CORP PLC</nameOfIssuer>
+    <titleOfClass>ORD SHS A</titleOfClass>
+    <cusip>G65431127</cusip>
+    <value>45898153</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>1728744</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>1728744</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>VALARIS LTD</nameOfIssuer>
+    <titleOfClass>CL A</titleOfClass>
+    <cusip>G9460G101</cusip>
+    <value>79325849</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>1883777</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>1883777</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>WARRIOR MET COAL INC</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>93627C101</cusip>
+    <value>82482313</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>1799745</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>1799745</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+</informationTable>

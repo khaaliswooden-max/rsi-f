@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<informationTable xsi:schemaLocation="http://www.sec.gov/edgar/document/thirteenf/informationtable eis_13FDocument.xsd" xmlns="http://www.sec.gov/edgar/document/thirteenf/informationtable" xmlns:n1="http://www.sec.gov/edgar/document/thirteenf/informationtable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <infoTable>
+    <nameOfIssuer>ALPHA METALLURGICAL RESOUR I</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>020764106</cusip>
+    <value>108534840</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>543000</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>543000</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>TRANSOCEAN LTD</nameOfIssuer>
+    <titleOfClass>REGISTERED SHS</titleOfClass>
+    <cusip>H8817H100</cusip>
+    <value>111675749</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>27040133</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>27040133</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>VALARIS LTD</nameOfIssuer>
+    <titleOfClass>CL A</titleOfClass>
+    <cusip>G9460G101</cusip>
+    <value>23138539</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>459098</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>459098</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>WARRIOR MET COAL INC</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>93627C101</cusip>
+    <value>158691099</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>1799831</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>1799831</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+</informationTable>

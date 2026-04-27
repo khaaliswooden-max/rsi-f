@@ -10,28 +10,40 @@ separate concern that lives alongside it for now.
 ```
 wofo/
 ├── thirteenf/        # SEC 13F-HR fetch / parse / analyze pipeline
-│   ├── fetch.py      # EDGAR pull (requires WOFO_SEC_UA env var)
+│   ├── fetch.py      # EDGAR pull via canonical submissions API
 │   ├── parse.py      # XML → dataclasses
 │   ├── analyze.py    # panel + qoq + concentration
 │   └── cli.py        # `python -m wofo.thirteenf.cli {pull,analyze}`
 ├── prices/           # Pluggable price data sources
 │   ├── source.py     # PriceSource protocol
 │   ├── synthetic.py  # Deterministic random walk (tests / offline)
-│   └── stooq.py      # Free Stooq daily-CSV adapter (prototyping)
+│   ├── stooq.py      # Stooq daily-CSV adapter (now requires apikey)
+│   ├── yahoo.py      # Yahoo v8 chart adapter (free, unauthenticated)
+│   └── cache.py      # Filesystem-cached PriceSource wrapper
 ├── research/         # Strategy generators
-│   ├── follow_the_filer.py   # 13F panel → dated target weights
-│   └── issuer_map.py         # Issuer name → ticker (heuristic + overrides)
+│   ├── follow_the_filer.py     # 13F panel → dated target weights
+│   ├── issuer_map.py           # Issuer name → ticker (heuristic + overrides)
+│   └── portfolio_of_filers.py  # Multi-manager combiners (eq / value / consensus)
 ├── backtest/         # Minimal portfolio backtester
 │   ├── portfolio.py  # Target weights × prices → daily NAV
 │   └── metrics.py    # CAGR / Sharpe / max drawdown
+├── evals/            # Eval harness for the RSI loop
+│   ├── signal.py     # Alpha / beta / info ratio / capture ratios
+│   ├── rubric.py     # Rubric scoring (LLM judge + heuristic fallback)
+│   └── registry.py   # Suite runner + versioned on-disk reports
 ├── agent/            # Phase-1 (research-only) agent
-│   ├── tools.py      # Read-only tools the agent may call
-│   ├── runner.py     # Claude tool-use loop
-│   └── demo_e2e.py   # Plumbing demo (no API key required)
+│   ├── tools.py            # Read-only tools the agent may call
+│   ├── runner.py           # Claude tool-use loop
+│   ├── demo_e2e.py         # Plumbing demo (synthetic prices)
+│   ├── backtest_real.py    # SA LP backtest with cached Yahoo prices
+│   └── multi_filer.py      # SA LP + Scion + Pabrai comparison
 └── data/
-    └── 13f/
-        ├── raw/      # one dir per quarter, primary_doc + infotable
-        └── processed/  # JSON outputs + REPORT.md
+    ├── 13f/
+    │   ├── raw/         # SA LP filings (default location)
+    │   ├── scion/raw/   # Scion Asset Management (Michael Burry)
+    │   ├── pabrai/raw/  # Dalal Street LLC (Mohnish Pabrai)
+    │   └── processed/   # JSON outputs + REPORT.md + MULTI_FILER_REPORT.md
+    └── prices/          # Cached daily bars (CSV per ticker × window)
 ```
 
 ## Architecture, governance, and counsel
@@ -67,22 +79,42 @@ The analyze step prints a per-quarter summary and writes JSON +
 
 ## Quick start: end-to-end strategy → backtest demo
 
-The demo wires panel → follow-the-filer → synthetic backtest. Synthetic
-prices are NOT real returns — this is a plumbing check.
+Three demos, increasing in fidelity:
 
 ```bash
+# 1. Plumbing check — synthetic prices, no network.
 python -m wofo.agent.demo_e2e
+
+# 2. Real prices — SA LP backtest vs SPY using cached Yahoo daily bars.
+python -m wofo.agent.backtest_real
+
+# 3. Multi-filer comparison — SA LP + Scion + Pabrai, plus three
+#    portfolio-of-filers combinations (equal, value, consensus).
+python -m wofo.agent.multi_filer
 ```
 
-To run with real prices, swap `SyntheticPriceSource` for a real adapter:
+The `wofo/data/prices/` directory is checked in for reproducibility.
+Delete it and re-run to refresh from Yahoo. To swap in a paid feed,
+implement the `wofo.prices.PriceSource` protocol — see
+`wofo/prices/yahoo.py` for a reference.
 
-```python
-from wofo.prices.stooq import StooqPriceSource
-src = StooqPriceSource()
-```
+## Multi-filer findings (so far)
 
-Or implement your own adapter against the `wofo.prices.PriceSource`
-protocol — Polygon, Tiingo, IBKR historical, etc.
+The latest `multi_filer.py` run produces something like:
+
+| Strategy | Total ret | Sharpe | MaxDD | α (annual) | β |
+|---|---:|---:|---:|---:|---:|
+| SA LP solo | 94.5% | 1.45 | 35.7% | 42.5% | 1.63 |
+| Scion solo | -5.2% | -0.04 | 26.3% | -9.3% | 0.54 |
+| Pabrai solo | 52.0% | 1.10 | 26.2% | 34.9% | 0.52 |
+| Equal-weight 3 | 51.9% | **1.43** | **21.3%** | 25.3% | 0.90 |
+| Value-weight 3 | 61.4% | 1.31 | 29.2% | 29.1% | 1.17 |
+| Consensus (≥2) | -2.9% | -0.09 | 10.7% | -3.4% | 0.14 |
+
+Key observation: equal-weighting three orthogonal mandates produces
+roughly the same Sharpe as the best single manager with materially
+lower drawdown. Consensus is mostly empty because the mandates don't
+overlap — a real signal, not a bug.
 
 ## Quick start: agent loop (Phase 1, research only)
 

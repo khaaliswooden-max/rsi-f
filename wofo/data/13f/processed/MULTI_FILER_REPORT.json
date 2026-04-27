@@ -1,0 +1,188 @@
+[
+  {
+    "label": "SA LP solo",
+    "summary": {
+      "start_date": "2025-02-14",
+      "end_date": "2026-04-24",
+      "n_days": 299,
+      "start_nav": 999671.4640769112,
+      "end_nav": 1944784.1854128067,
+      "total_return": 0.9454233268612955,
+      "cagr": 0.7507790956526934,
+      "sharpe": 1.4458780756993375,
+      "max_drawdown": 0.35667311854842815
+    },
+    "signal": {
+      "n_days": 299,
+      "total_return_strategy": 0.9454233268612955,
+      "total_return_benchmark": 0.17096930973814528,
+      "cagr_strategy": 0.7507790956526934,
+      "cagr_benchmark": 0.14205549706603393,
+      "info_ratio": 1.4153059178086531,
+      "alpha_annual": 0.42486529978308846,
+      "beta": 1.6260871688482341,
+      "r_squared": 0.43873463927303563,
+      "up_capture": 2.104606995764481,
+      "down_capture": 1.6935277474597037,
+      "max_drawdown_strategy": 0.35667311854842815,
+      "max_drawdown_benchmark": 0.18998904129504898
+    },
+    "rebalances": 31,
+    "skipped_count": 0
+  },
+  {
+    "label": "Scion solo",
+    "summary": {
+      "start_date": "2025-02-14",
+      "end_date": "2026-04-24",
+      "n_days": 299,
+      "start_nav": 999809.6099947193,
+      "end_nav": 947716.7575793981,
+      "total_return": -0.05210277226240734,
+      "cagr": -0.0440338682855036,
+      "sharpe": -0.04306368619769732,
+      "max_drawdown": 0.26331662046069404
+    },
+    "signal": {
+      "n_days": 299,
+      "total_return_strategy": -0.05210277226240734,
+      "total_return_benchmark": 0.1709693097381455,
+      "cagr_strategy": -0.0440338682855036,
+      "cagr_benchmark": 0.14205549706603415,
+      "info_ratio": -0.6381763058586633,
+      "alpha_annual": -0.0934109214566896,
+      "beta": 0.543951099499788,
+      "r_squared": 0.15567728843307832,
+      "up_capture": 0.8480012899856134,
+      "down_capture": 1.0104883261954245,
+      "max_drawdown_strategy": 0.26331662046069404,
+      "max_drawdown_benchmark": 0.18998904129504904
+    },
+    "rebalances": 14,
+    "skipped_count": 0
+  },
+  {
+    "label": "Pabrai solo",
+    "summary": {
+      "start_date": "2025-02-13",
+      "end_date": "2026-04-24",
+      "n_days": 300,
+      "start_nav": 999625.2159427863,
+      "end_nav": 1519326.9204654265,
+      "total_return": 0.5198965534622781,
+      "cagr": 0.421219281468564,
+      "sharpe": 1.1029257168633069,
+      "max_drawdown": 0.26242826975429145
+    },
+    "signal": {
+      "n_days": 300,
+      "total_return_strategy": 0.5198965534622781,
+      "total_return_benchmark": 0.1709117565328533,
+      "cagr_strategy": 0.421219281468564,
+      "cagr_benchmark": 0.14165969981371385,
+      "info_ratio": 0.7180120753846814,
+      "alpha_annual": 0.3488353655736849,
+      "beta": 0.5214709092043666,
+      "r_squared": 0.06442940551683604,
+      "up_capture": 0.7765005002162806,
+      "down_capture": 0.4133351594643321,
+      "max_drawdown_strategy": 0.26242826975429145,
+      "max_drawdown_benchmark": 0.18998904129504912
+    },
+    "rebalances": 22,
+    "skipped_count": 0
+  },
+  {
+    "label": "Equal-weight 3",
+    "summary": {
+      "start_date": "2025-02-13",
+      "end_date": "2026-04-24",
+      "n_days": 300,
+      "start_nav": 999875.0719809288,
+      "end_nav": 1518448.8618426186,
+      "total_return": 0.5186385823523969,
+      "cagr": 0.42023153036831973,
+      "sharpe": 1.432534736342423,
+      "max_drawdown": 0.21323769296349512
+    },
+    "signal": {
+      "n_days": 300,
+      "total_return_strategy": 0.5186385823523969,
+      "total_return_benchmark": 0.17091175653285307,
+      "cagr_strategy": 0.42023153036831973,
+      "cagr_benchmark": 0.14165969981371385,
+      "info_ratio": 1.1240289026929098,
+      "alpha_annual": 0.2530465860150917,
+      "beta": 0.9039672833153571,
+      "r_squared": 0.3938951527787375,
+      "up_capture": 1.251499357081782,
+      "down_capture": 1.0166851077879986,
+      "max_drawdown_strategy": 0.21323769296349512,
+      "max_drawdown_benchmark": 0.18998904129504898
+    },
+    "rebalances": 24,
+    "skipped_count": 0
+  },
+  {
+    "label": "Value-weight 3",
+    "summary": {
+      "start_date": "2025-02-13",
+      "end_date": "2026-04-24",
+      "n_days": 300,
+      "start_nav": 999625.2159427863,
+      "end_nav": 1613505.8739177817,
+      "total_return": 0.614110816918539,
+      "cagr": 0.49483174134823726,
+      "sharpe": 1.306997798841821,
+      "max_drawdown": 0.2923964777498549
+    },
+    "signal": {
+      "n_days": 300,
+      "total_return_strategy": 0.614110816918539,
+      "total_return_benchmark": 0.1709117565328533,
+      "cagr_strategy": 0.49483174134823726,
+      "cagr_benchmark": 0.14165969981371385,
+      "info_ratio": 1.1205715727991665,
+      "alpha_annual": 0.2909098373775225,
+      "beta": 1.1740414718536165,
+      "r_squared": 0.38293512206636915,
+      "up_capture": 1.6344942017005077,
+      "down_capture": 1.3752747496179805,
+      "max_drawdown_strategy": 0.2923964777498549,
+      "max_drawdown_benchmark": 0.18998904129504912
+    },
+    "rebalances": 25,
+    "skipped_count": 0
+  },
+  {
+    "label": "Consensus (>=2 managers)",
+    "summary": {
+      "start_date": "2025-02-13",
+      "end_date": "2026-04-24",
+      "n_days": 300,
+      "start_nav": 1000000.0,
+      "end_nav": 970703.029733826,
+      "total_return": -0.02929697026617395,
+      "cagr": -0.024657797078437405,
+      "sharpe": -0.08643489439838922,
+      "max_drawdown": 0.10721616987374032
+    },
+    "signal": {
+      "n_days": 300,
+      "total_return_strategy": -0.02929697026617395,
+      "total_return_benchmark": 0.17091175653285307,
+      "cagr_strategy": -0.024657797078437405,
+      "cagr_benchmark": 0.14165969981371385,
+      "info_ratio": -0.7375137059562886,
+      "alpha_annual": -0.03432314384703819,
+      "beta": 0.13953631761155785,
+      "r_squared": 0.029187716436352117,
+      "up_capture": 0.2067855080688905,
+      "down_capture": 0.2587831868335236,
+      "max_drawdown_strategy": 0.10721616987374032,
+      "max_drawdown_benchmark": 0.18998904129504912
+    },
+    "rebalances": 11,
+    "skipped_count": 0
+  }
+]

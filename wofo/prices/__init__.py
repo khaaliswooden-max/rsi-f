@@ -12,5 +12,6 @@ behind the same protocol.
 """
 from .source import PriceSource, PriceBar, NotFound
 from .synthetic import SyntheticPriceSource
+from .cache import CachingPriceSource
 
-__all__ = ["PriceSource", "PriceBar", "NotFound", "SyntheticPriceSource"]
+__all__ = ["PriceSource", "PriceBar", "NotFound", "SyntheticPriceSource", "CachingPriceSource"]
