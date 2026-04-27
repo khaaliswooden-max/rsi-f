@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "cik": "0002045724",
+    "manager_name": "Situational Awareness LP",
+    "period_of_report": "12-31-2024",
+    "period_iso": "2024-12-31",
+    "report_type": "13F HOLDINGS REPORT",
+    "form_13f_file_number": "028-24925",
+    "crd_number": "000333011",
+    "sec_file_number": "801-132039",
+    "is_amendment": false,
+    "other_included_managers_count": 0,
+    "table_entry_total": 6,
+    "table_value_total": 254813765
+  },
+  "holdings": [
+    {
+      "name_of_issuer": "CONSTELLATION ENERGY CORP",
+      "title_of_class": "COM",
+      "cusip": "21037T109",
+      "value_usd": 21565644,
+      "shares_or_principal": 96400,
+      "sh_or_prn": "SH",
+      "put_call": null,
+      "investment_discretion": "SOLE",
+      "other_managers": "",
+      "voting_sole": 96400,
+      "voting_shared": 0,
+      "voting_none": 0
+    },
+    {
+      "name_of_issuer": "MODINE MFG CO",
+      "title_of_class": "COM",
+      "cusip": "607828100",
+      "value_usd": 7693926,
+      "shares_or_principal": 66367,
+      "sh_or_prn": "SH",
+      "put_call": null,
+      "investment_discretion": "SOLE",
+      "other_managers": "",
+      "voting_sole": 66367,
+      "voting_shared": 0,
+      "voting_none": 0
+    },
+    {
+      "name_of_issuer": "MARVELL TECHNOLOGY INC",
+      "title_of_class": "COM",
+      "cusip": "573874104",
+      "value_usd": 86802213,
+      "shares_or_principal": 785896,
+      "sh_or_prn": "SH",
+      "put_call": null,
+      "investment_discretion": "SOLE",
+      "other_managers": "",
+      "voting_sole": 785896,
+      "voting_shared": 0,
+      "voting_none": 0
+    },
+    {
+      "name_of_issuer": "TALEN ENERGY CORP",
+      "title_of_class": "COM",
+      "cusip": "87422Q109",
+      "value_usd": 27979751,
+      "shares_or_principal": 138878,
+      "sh_or_prn": "SH",
+      "put_call": null,
+      "investment_discretion": "SOLE",
+      "other_managers": "",
+      "voting_sole": 138878,
+      "voting_shared": 0,
+      "voting_none": 0
+    },
+    {
+      "name_of_issuer": "VERTIV HOLDINGS CO",
+      "title_of_class": "COM CL A",
+      "cusip": "92537N108",
+      "value_usd": 51709137,
+      "shares_or_principal": 455146,
+      "sh_or_prn": "SH",
+      "put_call": null,
+      "investment_discretion": "SOLE",
+      "other_managers": "",
+      "voting_sole": 455146,
+      "voting_shared": 0,
+      "voting_none": 0
+    },
+    {
+      "name_of_issuer": "VISTRA CORP",
+      "title_of_class": "COM",
+      "cusip": "92840M102",
+      "value_usd": 59063094,
+      "shares_or_principal": 428397,
+      "sh_or_prn": "SH",
+      "put_call": null,
+      "investment_discretion": "SOLE",
+      "other_managers": "",
+      "voting_sole": 428397,
+      "voting_shared": 0,
+      "voting_none": 0
+    }
+  ]
+}
