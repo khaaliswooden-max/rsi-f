@@ -14,6 +14,20 @@ wofo/
 │   ├── parse.py      # XML → dataclasses
 │   ├── analyze.py    # panel + qoq + concentration
 │   └── cli.py        # `python -m wofo.thirteenf.cli {pull,analyze}`
+├── prices/           # Pluggable price data sources
+│   ├── source.py     # PriceSource protocol
+│   ├── synthetic.py  # Deterministic random walk (tests / offline)
+│   └── stooq.py      # Free Stooq daily-CSV adapter (prototyping)
+├── research/         # Strategy generators
+│   ├── follow_the_filer.py   # 13F panel → dated target weights
+│   └── issuer_map.py         # Issuer name → ticker (heuristic + overrides)
+├── backtest/         # Minimal portfolio backtester
+│   ├── portfolio.py  # Target weights × prices → daily NAV
+│   └── metrics.py    # CAGR / Sharpe / max drawdown
+├── agent/            # Phase-1 (research-only) agent
+│   ├── tools.py      # Read-only tools the agent may call
+│   ├── runner.py     # Claude tool-use loop
+│   └── demo_e2e.py   # Plumbing demo (no API key required)
 └── data/
     └── 13f/
         ├── raw/      # one dir per quarter, primary_doc + infotable
@@ -50,6 +64,54 @@ python -m wofo.thirteenf.cli analyze
 
 The analyze step prints a per-quarter summary and writes JSON +
 `REPORT.md` to `wofo/data/13f/processed/`.
+
+## Quick start: end-to-end strategy → backtest demo
+
+The demo wires panel → follow-the-filer → synthetic backtest. Synthetic
+prices are NOT real returns — this is a plumbing check.
+
+```bash
+python -m wofo.agent.demo_e2e
+```
+
+To run with real prices, swap `SyntheticPriceSource` for a real adapter:
+
+```python
+from wofo.prices.stooq import StooqPriceSource
+src = StooqPriceSource()
+```
+
+Or implement your own adapter against the `wofo.prices.PriceSource`
+protocol — Polygon, Tiingo, IBKR historical, etc.
+
+## Quick start: agent loop (Phase 1, research only)
+
+```bash
+pip install anthropic
+export ANTHROPIC_API_KEY=sk-ant-...
+
+python - <<'PY'
+from wofo.agent import run_research_loop
+out = run_research_loop(
+    "Summarize Situational Awareness LP's Q4 2025 portfolio "
+    "and the largest position changes from Q3 to Q4."
+)
+print(out["final_text"])
+PY
+```
+
+The agent has access only to read-only research tools
+(`list_local_filings`, `summarize_panel`, `top_holdings`,
+`qoq_activity`). It cannot place orders, transfer funds, or modify any
+account. See `wofo/agent/tools.py` for the tool schemas.
+
+## Tests
+
+```bash
+python -m pytest
+```
+
+All tests run against committed sample data (no network required).
 
 ## What `wofo` will not do
 
