@@ -1,0 +1,541 @@
+{
+  "periods": [
+    "2024-12-31",
+    "2025-03-31",
+    "2025-06-30",
+    "2025-09-30",
+    "2025-12-31"
+  ],
+  "issuers": {
+    "21037T109": "CONSTELLATION ENERGY CORP",
+    "607828100": "Modine Mfg Co",
+    "573874104": "MARVELL TECHNOLOGY INC",
+    "87422Q109": "Talen Energy Corp",
+    "92537N108": "VERTIV HOLDINGS CO",
+    "92840M102": "VISTRA CORP",
+    "038169207": "APPLIED DIGITAL CORP",
+    "11135F101": "BROADCOM INC",
+    "21874A106": "CORE SCIENTIFIC INC NEW",
+    "21873S108": "COREWEAVE INC",
+    "26884L109": "EQT CORP",
+    "Q4982L109": "IREN LIMITED",
+    "458140100": "INTEL CORP",
+    "683344105": "Onto Innovation Inc",
+    "92189F676": "VANECK ETF TRUST",
+    "G11448100": "BITDEER TECHNOLOGIES GROUP",
+    "093712AH0": "BLOOM ENERGY CORP",
+    "17253JAA4": "CIPHER MINING INC",
+    "19247G107": "COHERENT CORP",
+    "36317J209": "GALAXY DIGITAL INC.",
+    "44812J104": "HUT 8 CORP",
+    "55024UAD1": "LUMENTUM HLDGS INC",
+    "595112103": "MICRON TECHNOLOGY INC",
+    "67066G104": "NVIDIA CORPORATION",
+    "767292105": "RIOT PLATFORMS INC",
+    "80004C200": "SANDISK CORP",
+    "G7997R103": "SEAGATE TECHNOLOGY HLDNGS PL",
+    "83418M103": "SOLARIS ENERGY INFRAS INC",
+    "874039100": "TAIWAN SEMICONDUCTOR MFG LTD",
+    "M87915274": "TOWER SEMICONDUCTOR LTD",
+    "92189F106": "VANECK ETF TRUST",
+    "958102AT2": "WESTERN DIGITAL CORP",
+    "05614L209": "BABCOCK & WILCOX ENTERPRISES",
+    "09173B107": "BITFARMS LTD",
+    "093712107": "BLOOM ENERGY CORP",
+    "17253J106": "CIPHER MINING INC",
+    "18452B209": "CLEANSPARK INC",
+    "456788108": "INFOSYS LTD",
+    "49427F108": "KILROY RLTY CORP",
+    "53115L104": "LIBERTY ENERGY INC",
+    "55024U109": "LUMENTUM HLDGS INC",
+    "73933G202": "POWER SOLUTIONS INTL INC",
+    "74347M108": "PROPETRO HLDG CORP",
+    "G96115103": "WHITEFIBER INC"
+  },
+  "rows": {
+    "2024-12-31|21037T109": {
+      "value_usd": 21565644,
+      "shares": 96400,
+      "lines": 1,
+      "name": "CONSTELLATION ENERGY CORP"
+    },
+    "2024-12-31|607828100": {
+      "value_usd": 7693926,
+      "shares": 66367,
+      "lines": 1,
+      "name": "MODINE MFG CO"
+    },
+    "2024-12-31|573874104": {
+      "value_usd": 86802213,
+      "shares": 785896,
+      "lines": 1,
+      "name": "MARVELL TECHNOLOGY INC"
+    },
+    "2024-12-31|87422Q109": {
+      "value_usd": 27979751,
+      "shares": 138878,
+      "lines": 1,
+      "name": "TALEN ENERGY CORP"
+    },
+    "2024-12-31|92537N108": {
+      "value_usd": 51709137,
+      "shares": 455146,
+      "lines": 1,
+      "name": "VERTIV HOLDINGS CO"
+    },
+    "2024-12-31|92840M102": {
+      "value_usd": 59063094,
+      "shares": 428397,
+      "lines": 1,
+      "name": "VISTRA CORP"
+    },
+    "2025-03-31|038169207": {
+      "value_usd": 22680072,
+      "shares": 4035600,
+      "lines": 1,
+      "name": "Applied Digital Corp"
+    },
+    "2025-03-31|11135F101": {
+      "value_usd": 117201000,
+      "shares": 700000,
+      "lines": 1,
+      "name": "Broadcom Inc"
+    },
+    "2025-03-31|21037T109": {
+      "value_usd": 36978942,
+      "shares": 183400,
+      "lines": 1,
+      "name": "Constellation Energy Corp"
+    },
+    "2025-03-31|21874A106": {
+      "value_usd": 32736225,
+      "shares": 4521578,
+      "lines": 1,
+      "name": "Core Scientific Inc New"
+    },
+    "2025-03-31|21873S108": {
+      "value_usd": 45423000,
+      "shares": 1225000,
+      "lines": 1,
+      "name": "CoreWeave Inc"
+    },
+    "2025-03-31|26884L109": {
+      "value_usd": 52863535,
+      "shares": 989398,
+      "lines": 1,
+      "name": "EQT Corp"
+    },
+    "2025-03-31|Q4982L109": {
+      "value_usd": 20499732,
+      "shares": 3366130,
+      "lines": 1,
+      "name": "IREN Limited"
+    },
+    "2025-03-31|458140100": {
+      "value_usd": 459591354,
+      "shares": 0,
+      "lines": 1,
+      "name": "Intel Corp"
+    },
+    "2025-03-31|607828100": {
+      "value_usd": 55016242,
+      "shares": 716824,
+      "lines": 1,
+      "name": "Modine Mfg Co"
+    },
+    "2025-03-31|683344105": {
+      "value_usd": 71192241,
+      "shares": 586717,
+      "lines": 1,
+      "name": "Onto Innovation Inc"
+    },
+    "2025-03-31|87422Q109": {
+      "value_usd": 29630030,
+      "shares": 148395,
+      "lines": 1,
+      "name": "Talen Energy Corp"
+    },
+    "2025-03-31|92840M102": {
+      "value_usd": 61755354,
+      "shares": 525846,
+      "lines": 1,
+      "name": "Vistra Corp"
+    },
+    "2025-06-30|038169207": {
+      "value_usd": 66379426,
+      "shares": 6591800,
+      "lines": 1,
+      "name": "APPLIED DIGITAL CORP"
+    },
+    "2025-06-30|11135F101": {
+      "value_usd": 328466194,
+      "shares": 1191606,
+      "lines": 1,
+      "name": "BROADCOM INC"
+    },
+    "2025-06-30|21037T109": {
+      "value_usd": 103024992,
+      "shares": 319200,
+      "lines": 1,
+      "name": "CONSTELLATION ENERGY CORP"
+    },
+    "2025-06-30|21874A106": {
+      "value_usd": 136458229,
+      "shares": 7994038,
+      "lines": 1,
+      "name": "CORE SCIENTIFIC INC NEW"
+    },
+    "2025-06-30|26884L109": {
+      "value_usd": 125116520,
+      "shares": 2145345,
+      "lines": 1,
+      "name": "EQT CORP"
+    },
+    "2025-06-30|458140100": {
+      "value_usd": 453317760,
+      "shares": 0,
+      "lines": 1,
+      "name": "INTEL CORP"
+    },
+    "2025-06-30|Q4982L109": {
+      "value_usd": 93253595,
+      "shares": 6400384,
+      "lines": 1,
+      "name": "IREN LIMITED"
+    },
+    "2025-06-30|92189F676": {
+      "value_usd": 570058608,
+      "shares": 0,
+      "lines": 1,
+      "name": "VANECK ETF TRUST"
+    },
+    "2025-06-30|92840M102": {
+      "value_usd": 246948438,
+      "shares": 1274178,
+      "lines": 1,
+      "name": "VISTRA CORP"
+    },
+    "2025-09-30|038169207": {
+      "value_usd": 139111716,
+      "shares": 6064155,
+      "lines": 1,
+      "name": "APPLIED DIGITAL CORP"
+    },
+    "2025-09-30|G11448100": {
+      "value_usd": 15886864,
+      "shares": 929600,
+      "lines": 1,
+      "name": "BITDEER TECHNOLOGIES GROUP"
+    },
+    "2025-09-30|093712AH0": {
+      "value_usd": 56220650,
+      "shares": 3048002,
+      "lines": 2,
+      "name": "BLOOM ENERGY CORP"
+    },
+    "2025-09-30|11135F101": {
+      "value_usd": 75879300,
+      "shares": 0,
+      "lines": 1,
+      "name": "BROADCOM INC"
+    },
+    "2025-09-30|17253JAA4": {
+      "value_usd": 72272807,
+      "shares": 5740493,
+      "lines": 1,
+      "name": "CIPHER MINING INC"
+    },
+    "2025-09-30|19247G107": {
+      "value_usd": 16631968,
+      "shares": 154400,
+      "lines": 1,
+      "name": "COHERENT CORP"
+    },
+    "2025-09-30|21874A106": {
+      "value_usd": 362038780,
+      "shares": 20180534,
+      "lines": 1,
+      "name": "CORE SCIENTIFIC INC NEW"
+    },
+    "2025-09-30|21873S108": {
+      "value_usd": 1071529479,
+      "shares": 4115456,
+      "lines": 3,
+      "name": "COREWEAVE INC"
+    },
+    "2025-09-30|26884L109": {
+      "value_usd": 66262320,
+      "shares": 1217386,
+      "lines": 1,
+      "name": "EQT CORP"
+    },
+    "2025-09-30|36317J209": {
+      "value_usd": 92554875,
+      "shares": 2737500,
+      "lines": 1,
+      "name": "GALAXY DIGITAL INC."
+    },
+    "2025-09-30|44812J104": {
+      "value_usd": 20851190,
+      "shares": 599000,
+      "lines": 1,
+      "name": "HUT 8 CORP"
+    },
+    "2025-09-30|Q4982L109": {
+      "value_usd": 338854358,
+      "shares": 7220421,
+      "lines": 1,
+      "name": "IREN LIMITED"
+    },
+    "2025-09-30|458140100": {
+      "value_usd": 678964770,
+      "shares": 0,
+      "lines": 1,
+      "name": "INTEL CORP"
+    },
+    "2025-09-30|55024UAD1": {
+      "value_usd": 67947696,
+      "shares": 417600,
+      "lines": 1,
+      "name": "LUMENTUM HLDGS INC"
+    },
+    "2025-09-30|595112103": {
+      "value_usd": 50196000,
+      "shares": 0,
+      "lines": 1,
+      "name": "MICRON TECHNOLOGY INC"
+    },
+    "2025-09-30|67066G104": {
+      "value_usd": 298528000,
+      "shares": 0,
+      "lines": 1,
+      "name": "NVIDIA CORPORATION"
+    },
+    "2025-09-30|767292105": {
+      "value_usd": 68369062,
+      "shares": 3592699,
+      "lines": 1,
+      "name": "RIOT PLATFORMS INC"
+    },
+    "2025-09-30|80004C200": {
+      "value_usd": 12903000,
+      "shares": 115000,
+      "lines": 1,
+      "name": "SANDISK CORP"
+    },
+    "2025-09-30|G7997R103": {
+      "value_usd": 11464726,
+      "shares": 48567,
+      "lines": 1,
+      "name": "SEAGATE TECHNOLOGY HLDNGS PL"
+    },
+    "2025-09-30|83418M103": {
+      "value_usd": 45977491,
+      "shares": 1150300,
+      "lines": 1,
+      "name": "SOLARIS ENERGY INFRAS INC"
+    },
+    "2025-09-30|874039100": {
+      "value_usd": 75408300,
+      "shares": 0,
+      "lines": 1,
+      "name": "TAIWAN SEMICONDUCTOR MFG LTD"
+    },
+    "2025-09-30|M87915274": {
+      "value_usd": 34024380,
+      "shares": 470600,
+      "lines": 1,
+      "name": "TOWER SEMICONDUCTOR LTD"
+    },
+    "2025-09-30|92189F106": {
+      "value_usd": 195816000,
+      "shares": 0,
+      "lines": 1,
+      "name": "VANECK ETF TRUST"
+    },
+    "2025-09-30|92840M102": {
+      "value_usd": 252327327,
+      "shares": 1287910,
+      "lines": 1,
+      "name": "VISTRA CORP"
+    },
+    "2025-09-30|958102AT2": {
+      "value_usd": 18347689,
+      "shares": 152821,
+      "lines": 1,
+      "name": "WESTERN DIGITAL CORP"
+    },
+    "2025-12-31|038169207": {
+      "value_usd": 278033751,
+      "shares": 11339060,
+      "lines": 1,
+      "name": "APPLIED DIGITAL CORP"
+    },
+    "2025-12-31|05614L209": {
+      "value_usd": 8583726,
+      "shares": 1353900,
+      "lines": 1,
+      "name": "BABCOCK & WILCOX ENTERPRISES"
+    },
+    "2025-12-31|G11448100": {
+      "value_usd": 20043480,
+      "shares": 1788000,
+      "lines": 1,
+      "name": "BITDEER TECHNOLOGIES GROUP"
+    },
+    "2025-12-31|09173B107": {
+      "value_usd": 16208185,
+      "shares": 6897100,
+      "lines": 1,
+      "name": "BITFARMS LTD"
+    },
+    "2025-12-31|093712107": {
+      "value_usd": 911000117,
+      "shares": 10076022,
+      "lines": 2,
+      "name": "BLOOM ENERGY CORP"
+    },
+    "2025-12-31|17253J106": {
+      "value_usd": 154523813,
+      "shares": 10469093,
+      "lines": 1,
+      "name": "CIPHER MINING INC"
+    },
+    "2025-12-31|18452B209": {
+      "value_usd": 16600848,
+      "shares": 1640400,
+      "lines": 1,
+      "name": "CLEANSPARK INC"
+    },
+    "2025-12-31|19247G107": {
+      "value_usd": 88648971,
+      "shares": 480300,
+      "lines": 1,
+      "name": "COHERENT CORP"
+    },
+    "2025-12-31|21874A106": {
+      "value_usd": 418694320,
+      "shares": 28756478,
+      "lines": 1,
+      "name": "CORE SCIENTIFIC INC NEW"
+    },
+    "2025-12-31|21873S108": {
+      "value_usd": 1211162272,
+      "shares": 6098812,
+      "lines": 2,
+      "name": "COREWEAVE INC"
+    },
+    "2025-12-31|26884L109": {
+      "value_usd": 170567260,
+      "shares": 2482225,
+      "lines": 2,
+      "name": "EQT CORP"
+    },
+    "2025-12-31|44812J104": {
+      "value_usd": 39517588,
+      "shares": 860200,
+      "lines": 1,
+      "name": "HUT 8 CORP"
+    },
+    "2025-12-31|Q4982L109": {
+      "value_usd": 328622455,
+      "shares": 8700621,
+      "lines": 1,
+      "name": "IREN LIMITED"
+    },
+    "2025-12-31|456788108": {
+      "value_usd": 8910000,
+      "shares": 0,
+      "lines": 1,
+      "name": "INFOSYS LTD"
+    },
+    "2025-12-31|458140100": {
+      "value_usd": 746760097,
+      "shares": 1,
+      "lines": 2,
+      "name": "INTEL CORP"
+    },
+    "2025-12-31|49427F108": {
+      "value_usd": 49616149,
+      "shares": 1327700,
+      "lines": 1,
+      "name": "KILROY RLTY CORP"
+    },
+    "2025-12-31|53115L104": {
+      "value_usd": 10470512,
+      "shares": 567200,
+      "lines": 1,
+      "name": "LIBERTY ENERGY INC"
+    },
+    "2025-12-31|55024U109": {
+      "value_usd": 478577256,
+      "shares": 1298400,
+      "lines": 1,
+      "name": "LUMENTUM HLDGS INC"
+    },
+    "2025-12-31|73933G202": {
+      "value_usd": 24701622,
+      "shares": 432300,
+      "lines": 1,
+      "name": "POWER SOLUTIONS INTL INC"
+    },
+    "2025-12-31|74347M108": {
+      "value_usd": 8656953,
+      "shares": 910300,
+      "lines": 1,
+      "name": "PROPETRO HLDG CORP"
+    },
+    "2025-12-31|767292105": {
+      "value_usd": 78144759,
+      "shares": 6167700,
+      "lines": 1,
+      "name": "RIOT PLATFORMS INC"
+    },
+    "2025-12-31|80004C200": {
+      "value_usd": 250245996,
+      "shares": 1054200,
+      "lines": 1,
+      "name": "SANDISK CORP"
+    },
+    "2025-12-31|83418M103": {
+      "value_usd": 85803005,
+      "shares": 1866500,
+      "lines": 1,
+      "name": "SOLARIS ENERGY INFRAS INC"
+    },
+    "2025-12-31|M87915274": {
+      "value_usd": 84895130,
+      "shares": 723004,
+      "lines": 1,
+      "name": "TOWER SEMICONDUCTOR LTD"
+    },
+    "2025-12-31|G96115103": {
+      "value_usd": 27770080,
+      "shares": 1757600,
+      "lines": 1,
+      "name": "WHITEFIBER INC"
+    }
+  },
+  "totals": {
+    "2024-12-31": {
+      "value_usd": 254813765,
+      "n_positions": 6
+    },
+    "2025-03-31": {
+      "value_usd": 1005567727,
+      "n_positions": 12
+    },
+    "2025-06-30": {
+      "value_usd": 2123023762,
+      "n_positions": 9
+    },
+    "2025-09-30": {
+      "value_usd": 4138368748,
+      "n_positions": 25
+    },
+    "2025-12-31": {
+      "value_usd": 5516758345,
+      "n_positions": 25
+    }
+  }
+}
