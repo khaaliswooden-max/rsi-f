@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect, useMemo } from "react";
 import {
   ChevronDown,
   RefreshCw,
@@ -14,9 +14,16 @@ import {
   User,
   Tag,
   SlidersHorizontal,
+  WifiOff,
+  Key,
 } from "lucide-react";
 import clsx from "clsx";
-import { DOMAINS, DIMENSION_LABELS, type PreferenceSubmission } from "@/src/utils/api";
+import {
+  api,
+  DIMENSION_LABELS,
+  FALLBACK_DOMAINS,
+  type DomainInfo,
+} from "@/src/utils/api";
 
 const DIMENSIONS_BY_DOMAIN: Record<string, string[]> = {
   procurement: ["accuracy", "compliance", "actionability", "clarity"],
@@ -26,30 +33,25 @@ const DIMENSIONS_BY_DOMAIN: Record<string, string[]> = {
   default: ["accuracy", "safety", "actionability", "clarity"],
 };
 
-const SAMPLE_PROMPTS: Record<string, string> = {
-  procurement: "You are evaluating a federal procurement assistant. Analyze the following solicitation clause and identify any potential FAR/DFARS compliance issues:\n\n\"The contractor shall deliver all end items within 30 days of award. Late delivery penalties of 2% per day apply. The contractor bears full liability for any subcontractor delays.\"\n\nProvide a detailed compliance analysis with specific FAR references.",
-  defense_wm: "Given a set of multi-spectral satellite imagery from a 5km² urban area, describe an approach to build a persistent 3D world model that supports real-time ISR tasking. Include sensor fusion strategy, uncertainty quantification, and update cadence.",
-  default: "A user asks: 'What is the best approach for implementing a microservices architecture for a legacy COBOL system migration?' Provide a detailed technical recommendation.",
-};
-
-const SAMPLE_RESPONSES = {
-  a: "This is **Response A** — a high-quality, detailed answer that addresses all aspects of the query with specific technical depth, regulatory citations, and actionable recommendations. The response is well-structured and demonstrates domain expertise.\n\nKey points covered:\n1. Primary regulatory framework analysis\n2. Risk mitigation strategies\n3. Step-by-step implementation guidance\n4. Common pitfalls and how to avoid them",
-  b: "This is **Response B** — an alternative approach that may prioritize different aspects. While covering the core requirements, it takes a different angle on the problem, possibly more concise or focused on a specific subset of concerns.\n\nThe response provides a direct answer with practical guidance, though may lack some depth compared to Response A in certain technical areas.",
-};
-
-type Preference = "A" | "B" | "tie" | null;
-
-interface DimensionScores {
-  [key: string]: number;
-}
+type Preference = "A" | "B" | "TIE" | null;
+type DimensionScores = Record<string, number>;
 
 export default function AnnotationView() {
   const [annotatorId, setAnnotatorId] = useState("");
-  const [selectedDomain, setSelectedDomain] = useState(DOMAINS[0].id);
-  const [selectedCategory, setSelectedCategory] = useState(DOMAINS[0].categories[0]);
-  const [prompt, setPrompt] = useState(SAMPLE_PROMPTS.procurement);
-  const [responseA, setResponseA] = useState(SAMPLE_RESPONSES.a);
-  const [responseB, setResponseB] = useState(SAMPLE_RESPONSES.b);
+  const [apiKey, setApiKey] = useState("");
+  const [domains, setDomains] = useState<DomainInfo[]>(FALLBACK_DOMAINS);
+  const [offline, setOffline] = useState(false);
+
+  const [selectedDomain, setSelectedDomain] = useState(domains[0].id);
+  const [selectedCategory, setSelectedCategory] = useState<string | "">(
+    domains[0].categories[0] ?? ""
+  );
+
+  const [prompt, setPrompt] = useState("");
+  const [responseA, setResponseA] = useState("");
+  const [responseB, setResponseB] = useState("");
+  const [pairLoaded, setPairLoaded] = useState(false);
+
   const [preference, setPreference] = useState<Preference>(null);
   const [notes, setNotes] = useState("");
   const [loading, setLoading] = useState(false);
@@ -57,49 +59,98 @@ export default function AnnotationView() {
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
   const [submitMsg, setSubmitMsg] = useState("");
 
-  const domain = DOMAINS.find((d) => d.id === selectedDomain)!;
+  const domain = useMemo(
+    () => domains.find((d) => d.id === selectedDomain) ?? domains[0],
+    [domains, selectedDomain]
+  );
   const dimensions = DIMENSIONS_BY_DOMAIN[selectedDomain] || DIMENSIONS_BY_DOMAIN.default;
 
   const [scores, setScores] = useState<DimensionScores>(() =>
     Object.fromEntries(dimensions.map((d) => [d, 3]))
   );
 
+  // Pull live domain list from the backend on mount; fall back silently if unreachable.
+  useEffect(() => {
+    let cancelled = false;
+    api
+      .domains()
+      .then((d) => {
+        if (cancelled || !Array.isArray(d) || d.length === 0) return;
+        setDomains(d);
+        setOffline(false);
+        if (!d.find((x) => x.id === selectedDomain)) {
+          setSelectedDomain(d[0].id);
+          setSelectedCategory(d[0].categories[0] ?? "");
+        }
+      })
+      .catch(() => setOffline(true));
+    return () => {
+      cancelled = true;
+    };
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
   const handleDomainChange = (id: string) => {
     setSelectedDomain(id);
-    const d = DOMAINS.find((x) => x.id === id)!;
-    setSelectedCategory(d.categories[0]);
+    const d = domains.find((x) => x.id === id);
+    setSelectedCategory(d?.categories[0] ?? "");
     const dims = DIMENSIONS_BY_DOMAIN[id] || DIMENSIONS_BY_DOMAIN.default;
-    setScores(Object.fromEntries(dims.map((d) => [d, 3])));
+    setScores(Object.fromEntries(dims.map((dim) => [dim, 3])));
     setPreference(null);
-    setPrompt(SAMPLE_PROMPTS[id] || SAMPLE_PROMPTS.default);
+    setPairLoaded(false);
+    setPrompt("");
+    setResponseA("");
+    setResponseB("");
   };
 
   const handleLoadPair = useCallback(async () => {
     setLoading(true);
     setPreference(null);
     setSubmitStatus("idle");
-    // In production: const pair = await api.loadPair(selectedDomain, selectedCategory);
-    await new Promise((r) => setTimeout(r, 600));
-    setPrompt(SAMPLE_PROMPTS[selectedDomain] || SAMPLE_PROMPTS.default);
-    setResponseA(SAMPLE_RESPONSES.a);
-    setResponseB(SAMPLE_RESPONSES.b);
-    setLoading(false);
+    try {
+      const pair = await api.loadPair(selectedDomain, selectedCategory || undefined);
+      setPrompt(pair.prompt);
+      setResponseA(pair.response_a);
+      setResponseB(pair.response_b);
+      if (pair.category) setSelectedCategory(pair.category);
+      setPairLoaded(true);
+      setOffline(false);
+    } catch (e) {
+      setOffline(true);
+      setSubmitStatus("error");
+      setSubmitMsg("Could not reach the backend. Start the FastAPI server (`python app.py`) to load real prompts.");
+    } finally {
+      setLoading(false);
+    }
   }, [selectedDomain, selectedCategory]);
 
   const handleSubmit = async () => {
-    if (!preference || !annotatorId.trim()) return;
+    if (!preference || !annotatorId.trim() || !pairLoaded) return;
     setSubmitting(true);
     setSubmitStatus("idle");
     try {
-      // In production: await api.submitPreference({ ... })
-      await new Promise((r) => setTimeout(r, 800));
+      await api.submitPreference(
+        {
+          domain: selectedDomain,
+          category: selectedCategory || "general",
+          prompt,
+          response_a: responseA,
+          response_b: responseB,
+          preference,
+          annotator_id: annotatorId.trim(),
+          dimension_scores: scores,
+          notes,
+        },
+        apiKey || undefined,
+      );
       setSubmitStatus("success");
-      setSubmitMsg("Preference recorded successfully.");
+      setSubmitMsg("Preference recorded. Loading next pair...");
       setPreference(null);
       setNotes("");
-    } catch {
+      // Auto-load the next pair so the annotator can keep going.
+      handleLoadPair();
+    } catch (e: any) {
       setSubmitStatus("error");
-      setSubmitMsg("Failed to submit. Check your connection.");
+      setSubmitMsg(e?.message?.includes("401") ? "API key required or invalid." : "Failed to submit. Check your connection.");
     } finally {
       setSubmitting(false);
     }
@@ -115,7 +166,7 @@ export default function AnnotationView() {
   return (
     <div className="flex flex-col h-full overflow-hidden">
       {/* Config bar */}
-      <div className="shrink-0 flex items-center gap-3 px-5 py-3 bg-bp-dark2 border-b border-bp-border">
+      <div className="shrink-0 flex items-center gap-3 px-5 py-3 bg-bp-dark2 border-b border-bp-border flex-wrap">
         {/* Annotator ID */}
         <div className="flex items-center gap-2 min-w-0">
           <User className="w-3.5 h-3.5 text-bp-text-muted shrink-0" />
@@ -124,6 +175,17 @@ export default function AnnotationView() {
             value={annotatorId}
             onChange={(e) => setAnnotatorId(e.target.value)}
             placeholder="Annotator ID"
+            className="w-36 bg-bp-dark3 border border-bp-border rounded px-2.5 py-1.5 text-xs text-bp-text placeholder:text-bp-text-disabled focus:border-bp-blue focus:outline-none transition-colors"
+          />
+        </div>
+
+        <div className="flex items-center gap-2 min-w-0">
+          <Key className="w-3.5 h-3.5 text-bp-text-muted shrink-0" />
+          <input
+            type="password"
+            value={apiKey}
+            onChange={(e) => setApiKey(e.target.value)}
+            placeholder="API key (optional)"
             className="w-36 bg-bp-dark3 border border-bp-border rounded px-2.5 py-1.5 text-xs text-bp-text placeholder:text-bp-text-disabled focus:border-bp-blue focus:outline-none transition-colors"
           />
         </div>
@@ -139,7 +201,7 @@ export default function AnnotationView() {
               onChange={(e) => handleDomainChange(e.target.value)}
               className="appearance-none bg-bp-dark3 border border-bp-border rounded pl-2.5 pr-7 py-1.5 text-xs text-bp-text focus:border-bp-blue focus:outline-none transition-colors cursor-pointer"
             >
-              {DOMAINS.map((d) => (
+              {domains.map((d) => (
                 <option key={d.id} value={d.id}>
                   {d.icon} {d.name}
                 </option>
@@ -153,6 +215,7 @@ export default function AnnotationView() {
               onChange={(e) => setSelectedCategory(e.target.value)}
               className="appearance-none bg-bp-dark3 border border-bp-border rounded pl-2.5 pr-7 py-1.5 text-xs text-bp-text focus:border-bp-blue focus:outline-none transition-colors cursor-pointer"
             >
+              <option value="">All categories</option>
               {domain.categories.map((c) => (
                 <option key={c} value={c}>
                   {c.replace(/_/g, " ")}
@@ -164,6 +227,13 @@ export default function AnnotationView() {
         </div>
 
         <div className="flex-1" />
+
+        {offline && (
+          <div className="flex items-center gap-1.5 px-2 py-1 rounded bg-bp-orange/10 border border-bp-orange/30 text-2xs text-bp-orange">
+            <WifiOff className="w-3 h-3" />
+            Backend offline
+          </div>
+        )}
 
         <button
           onClick={handleLoadPair}
@@ -183,7 +253,7 @@ export default function AnnotationView() {
             <div className="flex items-center justify-between px-4 py-2.5 border-b border-bp-border">
               <span className="text-2xs font-semibold text-bp-text-muted uppercase tracking-widest">Prompt</span>
               <span className="text-2xs font-mono text-bp-text-disabled px-1.5 py-0.5 rounded bg-bp-dark3 border border-bp-border">
-                {domain.icon} {domain.name} / {selectedCategory.replace(/_/g, " ")}
+                {domain.icon} {domain.name}{selectedCategory ? ` / ${selectedCategory.replace(/_/g, " ")}` : ""}
               </span>
             </div>
             <div className="px-4 py-3">
@@ -191,8 +261,12 @@ export default function AnnotationView() {
                 <div className="flex items-center gap-2 text-bp-text-muted text-sm py-2">
                   <Loader2 className="w-4 h-4 animate-spin" /> Loading prompt...
                 </div>
-              ) : (
+              ) : pairLoaded ? (
                 <p className="text-sm text-bp-text leading-relaxed whitespace-pre-wrap font-mono">{prompt}</p>
+              ) : (
+                <p className="text-sm text-bp-text-muted leading-relaxed">
+                  Click <span className="text-bp-text">Load New Pair</span> to fetch a prompt and two model responses for this domain.
+                </p>
               )}
             </div>
           </section>
@@ -202,7 +276,6 @@ export default function AnnotationView() {
             {(["A", "B"] as const).map((label) => {
               const text = label === "A" ? responseA : responseB;
               const selected = preference === label;
-              const color = label === "A" ? "bp-blue" : "bp-green";
               return (
                 <section
                   key={label}
@@ -242,8 +315,10 @@ export default function AnnotationView() {
                       <div className="flex items-center gap-2 text-bp-text-muted text-sm py-2">
                         <Loader2 className="w-4 h-4 animate-spin" /> Loading...
                       </div>
-                    ) : (
+                    ) : pairLoaded ? (
                       <p className="text-sm text-bp-text-secondary leading-relaxed whitespace-pre-wrap">{text}</p>
+                    ) : (
+                      <p className="text-sm text-bp-text-disabled italic">Awaiting pair…</p>
                     )}
                   </div>
                 </section>
@@ -303,7 +378,7 @@ export default function AnnotationView() {
                   {(
                     [
                       { val: "A", label: "Prefer A", icon: ThumbsUp, color: "blue" },
-                      { val: "tie", label: "Tie", icon: Minus, color: "muted" },
+                      { val: "TIE", label: "Tie", icon: Minus, color: "muted" },
                       { val: "B", label: "Prefer B", icon: ThumbsDown, color: "green" },
                     ] as const
                   ).map(({ val, label, icon: Icon, color }) => {
@@ -312,12 +387,14 @@ export default function AnnotationView() {
                       <button
                         key={val}
                         onClick={() => setPreference(val)}
+                        disabled={!pairLoaded}
                         className={clsx(
                           "flex flex-col items-center gap-1.5 py-3 px-2 rounded border text-xs font-medium transition-all duration-100",
+                          !pairLoaded && "opacity-40 cursor-not-allowed",
                           active && color === "blue" && "border-bp-blue bg-bp-blue/15 text-bp-blue",
                           active && color === "green" && "border-bp-green bg-bp-green/15 text-bp-green",
                           active && color === "muted" && "border-bp-border bg-bp-dark1 text-bp-text",
-                          !active &&
+                          !active && pairLoaded &&
                             "border-bp-border text-bp-text-muted hover:border-bp-border hover:text-bp-text hover:bg-bp-dark1"
                         )}
                       >
@@ -359,7 +436,7 @@ export default function AnnotationView() {
               <div className="px-4 pb-4">
                 <button
                   onClick={handleSubmit}
-                  disabled={!preference || !annotatorId.trim() || submitting}
+                  disabled={!preference || !annotatorId.trim() || submitting || !pairLoaded}
                   className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded text-sm font-medium bg-bp-blue text-white hover:bg-bp-blue-dim active:bg-bp-blue-dark transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
                 >
                   {submitting ? (

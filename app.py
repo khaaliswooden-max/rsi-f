@@ -34,6 +34,7 @@ from domains.taxonomy import (
 from domains.prompt_generator import get_random_prompt
 from llm_client import generate_response_pair
 from atari_theme import ATARI_CSS, atari_theme
+from wofo_api import register_wofo_routes
 
 # HuggingFace Hub imports for persistence
 try:
@@ -291,12 +292,47 @@ async def health():
 
 @app.get("/api/stats")
 async def api_stats():
-    """Get collection statistics."""
-    stats = store.get_stats()
-    total = sum(s["total"] for s in stats.values())
+    """Get collection statistics.
+
+    Shape matches what the Next.js client (`src/utils/api.ts`) expects:
+    `{ total, by_domain: {<id>: {collected, target, annotators, preference_distribution}}, last_sync }`.
+    """
+    raw = store.get_stats()
+    by_domain = {
+        domain_id: {
+            "collected": s["total"],
+            "target": s["target"],
+            "annotators": s["annotators"],
+            "preference_distribution": s["preference_distribution"],
+        }
+        for domain_id, s in raw.items()
+    }
     return {
-        "total_preferences": total,
-        "by_domain": stats,
+        "total": sum(s["collected"] for s in by_domain.values()),
+        "by_domain": by_domain,
+        "last_sync": datetime.now().isoformat() if store.scheduler else None,
+    }
+
+
+class LoadPairRequest(BaseModel):
+    domain: str
+    category: Optional[str] = None
+
+
+@app.post("/api/load_pair")
+async def api_load_pair(req: LoadPairRequest):
+    """Generate a fresh prompt + response pair for the annotation UI."""
+    if req.domain not in DOMAINS:
+        raise HTTPException(400, f"Invalid domain. Must be one of: {list(DOMAINS.keys())}")
+    prompt_obj = get_random_prompt(req.domain, req.category)
+    response_a, response_b = generate_response_pair(prompt_obj.prompt, domain_id=req.domain)
+    return {
+        "prompt": prompt_obj.prompt,
+        "response_a": response_a,
+        "response_b": response_b,
+        "domain": req.domain,
+        "category": prompt_obj.category,
+        "difficulty": getattr(prompt_obj, "difficulty", "medium"),
     }
 
 
@@ -364,20 +400,28 @@ async def api_export(
 
 @app.get("/api/domains")
 async def api_domains():
-    """List available domains."""
-    return {
-        "domains": [
-            {
-                "id": d.id,
-                "name": d.name,
-                "icon": d.icon,
-                "platform": d.platform,
-                "description": d.description,
-                "categories": [{"id": c.id, "name": c.name} for c in d.categories],
-            }
-            for d in get_all_domains()
-        ]
-    }
+    """List available domains with current collection counts.
+
+    Returned as a flat array of `DomainInfo` records (matches the Next.js
+    client shape). Categories are flattened to a list of slug strings since
+    that's what every existing UI surface needs; full category objects are
+    available via per-domain endpoints if we ever add them.
+    """
+    raw_stats = store.get_stats()
+    out = []
+    for d in get_all_domains():
+        s = raw_stats.get(d.id, {})
+        out.append({
+            "id": d.id,
+            "name": d.name,
+            "icon": d.icon,
+            "platform": d.platform,
+            "description": d.description,
+            "categories": [c.id for c in d.categories],
+            "min_samples": d.min_samples,
+            "collected": s.get("total", 0),
+        })
+    return out
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -691,6 +735,10 @@ GET /api/domains
 # ═══════════════════════════════════════════════════════════════════════════════
 # MOUNT GRADIO ON FASTAPI (AFTER API routes are defined)
 # ═══════════════════════════════════════════════════════════════════════════════
+
+# Wofo read-only research endpoints. Registered before Gradio mounts so the
+# Gradio catch-all doesn't intercept /api/wofo/*.
+register_wofo_routes(app)
 
 # Create Gradio demo
 demo = create_ui()

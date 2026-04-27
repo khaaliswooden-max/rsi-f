@@ -9,14 +9,51 @@ import {
   Code2,
   Activity,
   Database,
+  BarChart3,
 } from "lucide-react";
 import clsx from "clsx";
 
-const NAV = [
+const ANNOTATION_NAV = [
   { href: "/annotate", label: "Annotate", icon: MessageSquareDiff, description: "Label preference pairs" },
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard, description: "Collection progress" },
   { href: "/domains", label: "Domains", icon: BookOpen, description: "Platform taxonomy" },
 ];
+
+const RESEARCH_NAV = [
+  { href: "/research", label: "Research", icon: BarChart3, description: "Wofo filers, backtest, RSI loop" },
+];
+
+function NavItem({
+  href,
+  label,
+  icon: Icon,
+  active,
+}: {
+  href: string;
+  label: string;
+  icon: React.ElementType;
+  active: boolean;
+}) {
+  return (
+    <Link
+      href={href}
+      className={clsx(
+        "flex items-center gap-3 px-3 py-2 rounded text-sm transition-all duration-100 group",
+        active
+          ? "bg-bp-blue/15 text-bp-text border border-bp-blue/20"
+          : "text-bp-text-secondary hover:bg-bp-dark1 hover:text-bp-text border border-transparent"
+      )}
+    >
+      <Icon
+        className={clsx(
+          "w-4 h-4 shrink-0 transition-colors",
+          active ? "text-bp-blue" : "text-bp-text-muted group-hover:text-bp-text-secondary"
+        )}
+      />
+      {label}
+    </Link>
+  );
+}
 
 export default function Sidebar() {
   const path = usePathname();
@@ -29,61 +66,36 @@ export default function Sidebar() {
           <Database className="w-4 h-4 text-bp-blue" />
         </div>
         <div>
-          <div className="text-xs font-semibold text-bp-text tracking-wide leading-none">ZUUP</div>
-          <div className="text-2xs text-bp-text-muted leading-none mt-0.5 tracking-widest uppercase">Preferences</div>
+          <div className="text-xs font-semibold text-bp-text tracking-wide leading-none">RSI-F</div>
+          <div className="text-2xs text-bp-text-muted leading-none mt-0.5 tracking-widest uppercase">
+            Preferences · Wofo
+          </div>
         </div>
       </div>
 
       {/* Nav */}
       <nav className="flex-1 py-3 px-2 space-y-0.5">
         <p className="px-2 pt-1 pb-2 text-2xs font-semibold text-bp-text-disabled uppercase tracking-widest">
-          Workspace
+          Annotation
         </p>
-        {NAV.map(({ href, label, icon: Icon }) => {
-          const active = path.startsWith(href);
-          return (
-            <Link
-              key={href}
-              href={href}
-              className={clsx(
-                "flex items-center gap-3 px-3 py-2 rounded text-sm transition-all duration-100 group",
-                active
-                  ? "bg-bp-blue/15 text-bp-text border border-bp-blue/20"
-                  : "text-bp-text-secondary hover:bg-bp-dark1 hover:text-bp-text border border-transparent"
-              )}
-            >
-              <Icon
-                className={clsx(
-                  "w-4 h-4 shrink-0 transition-colors",
-                  active ? "text-bp-blue" : "text-bp-text-muted group-hover:text-bp-text-secondary"
-                )}
-              />
-              {label}
-            </Link>
-          );
-        })}
+        {ANNOTATION_NAV.map(({ href, label, icon }) => (
+          <NavItem key={href} href={href} label={label} icon={icon} active={path.startsWith(href)} />
+        ))}
+
+        <div className="pt-3">
+          <p className="px-2 pt-1 pb-2 text-2xs font-semibold text-bp-text-disabled uppercase tracking-widest">
+            Wooden FO
+          </p>
+          {RESEARCH_NAV.map(({ href, label, icon }) => (
+            <NavItem key={href} href={href} label={label} icon={icon} active={path.startsWith(href)} />
+          ))}
+        </div>
 
         <div className="pt-3">
           <p className="px-2 pt-1 pb-2 text-2xs font-semibold text-bp-text-disabled uppercase tracking-widest">
             Developer
           </p>
-          <Link
-            href="/api-docs"
-            className={clsx(
-              "flex items-center gap-3 px-3 py-2 rounded text-sm transition-all duration-100 group",
-              path.startsWith("/api-docs")
-                ? "bg-bp-blue/15 text-bp-text border border-bp-blue/20"
-                : "text-bp-text-secondary hover:bg-bp-dark1 hover:text-bp-text border border-transparent"
-            )}
-          >
-            <Code2
-              className={clsx(
-                "w-4 h-4 shrink-0 transition-colors",
-                path.startsWith("/api-docs") ? "text-bp-blue" : "text-bp-text-muted group-hover:text-bp-text-secondary"
-              )}
-            />
-            API Reference
-          </Link>
+          <NavItem href="/api-docs" label="API Reference" icon={Code2} active={path.startsWith("/api-docs")} />
         </div>
       </nav>
 
