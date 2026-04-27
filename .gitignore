@@ -46,3 +46,9 @@ Thumbs.db
 # Environment variables
 .env
 .env.local
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+tsconfig.tsbuildinfo
