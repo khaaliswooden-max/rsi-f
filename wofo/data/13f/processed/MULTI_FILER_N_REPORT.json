@@ -1,0 +1,786 @@
+[
+  {
+    "label": "Situational Awareness LP",
+    "summary": {
+      "start_date": "2025-02-14",
+      "end_date": "2026-04-24",
+      "n_days": 299,
+      "start_nav": 999499.9999999999,
+      "end_nav": 2130400.83380982,
+      "total_return": 1.131466567093367,
+      "cagr": 0.890655987411586,
+      "sharpe": 1.4319697806477187,
+      "max_drawdown": 0.46039996774443215
+    },
+    "benchmark": {
+      "n_days": 299,
+      "total_return_strategy": 1.131466567093367,
+      "total_return_benchmark": 0.1709693097381455,
+      "cagr_strategy": 0.890655987411586,
+      "cagr_benchmark": 0.14205549706603415,
+      "info_ratio": 1.4749581544670325,
+      "alpha_annual": 0.47035730815624865,
+      "beta": 2.1480277136662416,
+      "r_squared": 0.534354568873328,
+      "up_capture": 2.5877456738667854,
+      "down_capture": 2.1167865899056446,
+      "max_drawdown_strategy": 0.46039996774443215,
+      "max_drawdown_benchmark": 0.18998904129504907
+    },
+    "factors": {
+      "alpha_daily": 0.002025490593438428,
+      "alpha_annual": 0.5104236295464839,
+      "loadings": {
+        "mkt_rf": 1.4237142672626226,
+        "smb": 1.539609743096479,
+        "hml": -1.5362304427563491
+      },
+      "r_squared": 0.6532200282748308,
+      "n": 298,
+      "t_stats": {
+        "mkt_rf": 10.985269829326148,
+        "smb": 8.175516090362324,
+        "hml": -8.413766414607657,
+        "alpha": 1.683718351995234
+      },
+      "factor_source": "etf_proxy",
+      "factor_proxy": true
+    },
+    "rebalances": 24
+  },
+  {
+    "label": "Scion Asset Management (Burry)",
+    "summary": {
+      "start_date": "2025-02-14",
+      "end_date": "2026-04-24",
+      "n_days": 299,
+      "start_nav": 999499.9999999999,
+      "end_nav": 956295.9338310077,
+      "total_return": -0.0432256790084965,
+      "cagr": -0.03650497001305397,
+      "sharpe": 0.04963888158393998,
+      "max_drawdown": 0.3118044393732868
+    },
+    "benchmark": {
+      "n_days": 299,
+      "total_return_strategy": -0.0432256790084965,
+      "total_return_benchmark": 0.1709693097381455,
+      "cagr_strategy": -0.03650497001305397,
+      "cagr_benchmark": 0.14205549706603415,
+      "info_ratio": -0.5185737431402911,
+      "alpha_annual": -0.14307427918146698,
+      "beta": 1.0543936600403672,
+      "r_squared": 0.3701400803085475,
+      "up_capture": 1.2267161953086785,
+      "down_capture": 1.4239012235040223,
+      "max_drawdown_strategy": 0.3118044393732868,
+      "max_drawdown_benchmark": 0.18998904129504907
+    },
+    "factors": {
+      "alpha_daily": -0.0004972059378599537,
+      "alpha_annual": -0.1252958963407083,
+      "loadings": {
+        "mkt_rf": 0.7687014286513155,
+        "smb": 0.5615989456480144,
+        "hml": -0.6153759315718528
+      },
+      "r_squared": 0.42171813444577544,
+      "n": 298,
+      "t_stats": {
+        "mkt_rf": 7.7835696624901765,
+        "smb": 3.9134883686244097,
+        "hml": -4.422907195131254,
+        "alpha": -0.5423863587188157
+      },
+      "factor_source": "etf_proxy",
+      "factor_proxy": true
+    },
+    "rebalances": 15
+  },
+  {
+    "label": "Dalal Street LLC (Pabrai)",
+    "summary": {
+      "start_date": "2025-02-13",
+      "end_date": "2026-04-24",
+      "n_days": 300,
+      "start_nav": 999625.2159427863,
+      "end_nav": 1515427.8099956617,
+      "total_return": 0.5159959811201855,
+      "cagr": 0.41815614884399976,
+      "sharpe": 1.0970515657894633,
+      "max_drawdown": 0.26242826975429145
+    },
+    "benchmark": {
+      "n_days": 300,
+      "total_return_strategy": 0.5159959811201855,
+      "total_return_benchmark": 0.1709117565328533,
+      "cagr_strategy": 0.41815614884399976,
+      "cagr_benchmark": 0.14165969981371385,
+      "info_ratio": 0.7125181313843572,
+      "alpha_annual": 0.3465039074884182,
+      "beta": 0.5229743517954552,
+      "r_squared": 0.06474936197444466,
+      "up_capture": 0.7769337922986945,
+      "down_capture": 0.4163074150933116,
+      "max_drawdown_strategy": 0.26242826975429145,
+      "max_drawdown_benchmark": 0.18998904129504912
+    },
+    "factors": {
+      "alpha_daily": 0.0011860871059599634,
+      "alpha_annual": 0.29889395070191077,
+      "loadings": {
+        "mkt_rf": 0.5631075776081904,
+        "smb": 0.9182082606391059,
+        "hml": 0.23382882818105535
+      },
+      "r_squared": 0.15227342667884392,
+      "n": 299,
+      "t_stats": {
+        "mkt_rf": 3.9917932118240165,
+        "smb": 4.478945506011281,
+        "hml": 1.1766900020003752,
+        "alpha": 0.9072656342834728
+      },
+      "factor_source": "etf_proxy",
+      "factor_proxy": true
+    },
+    "rebalances": 22
+  },
+  {
+    "label": "Baupost Group (Klarman)",
+    "summary": {
+      "start_date": "2025-02-13",
+      "end_date": "2026-04-24",
+      "n_days": 300,
+      "start_nav": 999529.3464076265,
+      "end_nav": 1305236.8877568562,
+      "total_return": 0.3058514914524144,
+      "cagr": 0.2511541469750074,
+      "sharpe": 1.339414973056631,
+      "max_drawdown": 0.1419343043261227
+    },
+    "benchmark": {
+      "n_days": 300,
+      "total_return_strategy": 0.3058514914524144,
+      "total_return_benchmark": 0.1709117565328533,
+      "cagr_strategy": 0.2511541469750074,
+      "cagr_benchmark": 0.14165969981371385,
+      "info_ratio": 0.7762734305639971,
+      "alpha_annual": 0.12602269861678245,
+      "beta": 0.7642393035596671,
+      "r_squared": 0.6412639836888812,
+      "up_capture": 0.8774823497941745,
+      "down_capture": 0.7500007456146403,
+      "max_drawdown_strategy": 0.1419343043261227,
+      "max_drawdown_benchmark": 0.18998904129504918
+    },
+    "factors": {
+      "alpha_daily": 0.0003606892813619656,
+      "alpha_annual": 0.09089369890321533,
+      "loadings": {
+        "mkt_rf": 0.937956111412703,
+        "smb": 0.208748940532207,
+        "hml": 0.4449563749498764
+      },
+      "r_squared": 0.7679004374237387,
+      "n": 299,
+      "t_stats": {
+        "mkt_rf": 27.32327836919708,
+        "smb": 4.184393208148495,
+        "hml": 9.201424544211216,
+        "alpha": 1.1337694179222486
+      },
+      "factor_source": "etf_proxy",
+      "factor_proxy": true
+    },
+    "rebalances": 27
+  },
+  {
+    "label": "Pershing Square (Ackman)",
+    "summary": {
+      "start_date": "2025-04-16",
+      "end_date": "2026-04-24",
+      "n_days": 257,
+      "start_nav": 1000000.0,
+      "end_nav": 1135850.737728732,
+      "total_return": 0.1358507377287319,
+      "cagr": 0.13284848443281172,
+      "sharpe": 0.844243277837844,
+      "max_drawdown": 0.15693153244167304
+    },
+    "benchmark": {
+      "n_days": 257,
+      "total_return_strategy": 0.1358507377287319,
+      "total_return_benchmark": 0.3581783641820242,
+      "cagr_strategy": 0.13284848443281172,
+      "cagr_benchmark": 0.34956653463306675,
+      "info_ratio": -1.5125821840147278,
+      "alpha_annual": -0.14512225565748488,
+      "beta": 0.9159779581349696,
+      "r_squared": 0.5312807151362033,
+      "up_capture": 0.9109119089598512,
+      "down_capture": 1.1435564338335387,
+      "max_drawdown_strategy": 0.15693153244167304,
+      "max_drawdown_benchmark": 0.09133132097249042
+    },
+    "factors": {
+      "alpha_daily": -0.0006057436841228682,
+      "alpha_annual": -0.1526474083989628,
+      "loadings": {
+        "mkt_rf": 0.8384981875781787,
+        "smb": 0.2821952571529945,
+        "hml": -0.020222864207324
+      },
+      "r_squared": 0.5651471547164773,
+      "n": 256,
+      "t_stats": {
+        "mkt_rf": 11.546339315436741,
+        "smb": 3.629381555416922,
+        "hml": -0.262052448370747,
+        "alpha": -1.388465265072749
+      },
+      "factor_source": "etf_proxy",
+      "factor_proxy": true
+    },
+    "rebalances": 10
+  },
+  {
+    "label": "Appaloosa LP (Tepper)",
+    "summary": {
+      "start_date": "2025-02-10",
+      "end_date": "2026-04-24",
+      "n_days": 303,
+      "start_nav": 999527.857757975,
+      "end_nav": 1208113.0563153648,
+      "total_return": 0.20868372696011095,
+      "cagr": 0.1712264673314452,
+      "sharpe": 0.7615205926597945,
+      "max_drawdown": 0.2333093604743717
+    },
+    "benchmark": {
+      "n_days": 303,
+      "total_return_strategy": 0.20868372696011095,
+      "total_return_benchmark": 0.18035881831654166,
+      "cagr_strategy": 0.1712264673314452,
+      "cagr_benchmark": 0.14829324850487446,
+      "info_ratio": 0.24184897149979454,
+      "alpha_annual": 0.016211291452835636,
+      "beta": 1.1073392294736386,
+      "r_squared": 0.7047435745188975,
+      "up_capture": 1.1639241016894468,
+      "down_capture": 1.155214907529374,
+      "max_drawdown_strategy": 0.2333093604743717,
+      "max_drawdown_benchmark": 0.18998904129504904
+    },
+    "factors": {
+      "alpha_daily": 0.00012314389017904266,
+      "alpha_annual": 0.03103226032511875,
+      "loadings": {
+        "mkt_rf": 0.9405683932813064,
+        "smb": 0.2752348676506041,
+        "hml": -0.3678080283389553
+      },
+      "r_squared": 0.7335115363790015,
+      "n": 302,
+      "t_stats": {
+        "mkt_rf": 18.556564271906225,
+        "smb": 3.742642614199977,
+        "hml": -5.15500252660678,
+        "alpha": 0.2629028666850344
+      },
+      "factor_source": "etf_proxy",
+      "factor_proxy": true
+    },
+    "rebalances": 8
+  },
+  {
+    "label": "Third Point (Loeb)",
+    "summary": {
+      "start_date": "2025-02-14",
+      "end_date": "2026-04-24",
+      "n_days": 299,
+      "start_nav": 999571.1947843339,
+      "end_nav": 1032103.4776165104,
+      "total_return": 0.03254623882913665,
+      "cagr": 0.0273208485292169,
+      "sharpe": 0.2354312493542036,
+      "max_drawdown": 0.19698141337741218
+    },
+    "benchmark": {
+      "n_days": 299,
+      "total_return_strategy": 0.03254623882913665,
+      "total_return_benchmark": 0.1709693097381455,
+      "cagr_strategy": 0.0273208485292169,
+      "cagr_benchmark": 0.14205549706603415,
+      "info_ratio": -1.6323652492248206,
+      "alpha_annual": -0.10213743138636998,
+      "beta": 0.9816882938967327,
+      "r_squared": 0.8930742308407361,
+      "up_capture": 0.9670311979954154,
+      "down_capture": 1.0835402250803607,
+      "max_drawdown_strategy": 0.19698141337741218,
+      "max_drawdown_benchmark": 0.18998904129504912
+    },
+    "factors": {
+      "alpha_daily": -0.00041134957877235815,
+      "alpha_annual": -0.10366009385063425,
+      "loadings": {
+        "mkt_rf": 0.9216129577816919,
+        "smb": 0.23191642749027253,
+        "hml": -0.11431367035241524
+      },
+      "r_squared": 0.9080355263518387,
+      "n": 298,
+      "t_stats": {
+        "mkt_rf": 39.01934666960015,
+        "smb": 6.75739908531015,
+        "hml": -3.4353879058297063,
+        "alpha": -1.8762633758281777
+      },
+      "factor_source": "etf_proxy",
+      "factor_proxy": true
+    },
+    "rebalances": 5
+  },
+  {
+    "label": "Akre Capital (Akre)",
+    "summary": {
+      "start_date": "2025-02-13",
+      "end_date": "2026-04-24",
+      "n_days": 300,
+      "start_nav": 999500.6724951934,
+      "end_nav": 847423.2070809527,
+      "total_return": -0.1521534398116896,
+      "cagr": -0.12941492257398313,
+      "sharpe": -0.539596504245811,
+      "max_drawdown": 0.25141085583959333
+    },
+    "benchmark": {
+      "n_days": 300,
+      "total_return_strategy": -0.1521534398116896,
+      "total_return_benchmark": 0.17091175653285284,
+      "cagr_strategy": -0.12941492257398313,
+      "cagr_benchmark": 0.14165969981371362,
+      "info_ratio": -1.9940607175236835,
+      "alpha_annual": -0.25129734128958076,
+      "beta": 0.898541835529305,
+      "r_squared": 0.6213006360398191,
+      "up_capture": 0.800833451498654,
+      "down_capture": 1.0776035586571004,
+      "max_drawdown_strategy": 0.25141085583959333,
+      "max_drawdown_benchmark": 0.1899890412950491
+    },
+    "factors": {
+      "alpha_daily": -0.0010958635608507086,
+      "alpha_annual": -0.2761576173343786,
+      "loadings": {
+        "mkt_rf": 1.0758630654452679,
+        "smb": -0.028844849741705203,
+        "hml": 0.419237548332003
+      },
+      "r_squared": 0.6693355621665189,
+      "n": 299,
+      "t_stats": {
+        "mkt_rf": 21.957375638346836,
+        "smb": -0.4050882381948887,
+        "hml": 6.073946361262073,
+        "alpha": -2.4133545634825744
+      },
+      "factor_source": "etf_proxy",
+      "factor_proxy": true
+    },
+    "rebalances": 7
+  },
+  {
+    "label": "Harris Associates (Nygren)",
+    "summary": {
+      "start_date": "2025-02-14",
+      "end_date": "2026-04-24",
+      "n_days": 299,
+      "start_nav": 999511.0289044922,
+      "end_nav": 1004810.2238970507,
+      "total_return": 0.005301787413358294,
+      "cagr": 0.004460060669631005,
+      "sharpe": 0.12052231511843503,
+      "max_drawdown": 0.21287499461519374
+    },
+    "benchmark": {
+      "n_days": 299,
+      "total_return_strategy": 0.005301787413358294,
+      "total_return_benchmark": 0.17096930973814572,
+      "cagr_strategy": 0.004460060669631005,
+      "cagr_benchmark": 0.14205549706603415,
+      "info_ratio": -1.2271024895402343,
+      "alpha_annual": -0.11088111985417694,
+      "beta": 0.8906210066071208,
+      "r_squared": 0.7322134553061599,
+      "up_capture": 0.7772221593493581,
+      "down_capture": 0.8865289459973472,
+      "max_drawdown_strategy": 0.21287499461519374,
+      "max_drawdown_benchmark": 0.18998904129504904
+    },
+    "factors": {
+      "alpha_daily": -0.0005666598699693368,
+      "alpha_annual": -0.14279828723227286,
+      "loadings": {
+        "mkt_rf": 1.0501114701347927,
+        "smb": 0.16257428976430227,
+        "hml": 0.4088030635924056
+      },
+      "r_squared": 0.8152133379750961,
+      "n": 298,
+      "t_stats": {
+        "mkt_rf": 31.414886136979135,
+        "smb": 3.3470992330528295,
+        "hml": 8.680813414453652,
+        "alpha": -1.8263073571777475
+      },
+      "factor_source": "etf_proxy",
+      "factor_proxy": true
+    },
+    "rebalances": 7
+  },
+  {
+    "label": "Oaktree Capital (Marks)",
+    "summary": {
+      "start_date": "2025-02-12",
+      "end_date": "2026-04-24",
+      "n_days": 301,
+      "start_nav": 999556.6149663293,
+      "end_nav": 1457291.7128779204,
+      "total_return": 0.45793814082958195,
+      "cagr": 0.3714154856060812,
+      "sharpe": 1.7521182618920046,
+      "max_drawdown": 0.1702779002541443
+    },
+    "benchmark": {
+      "n_days": 301,
+      "total_return_strategy": 0.45793814082958195,
+      "total_return_benchmark": 0.1832737002362057,
+      "cagr_strategy": 0.3714154856060812,
+      "cagr_benchmark": 0.15139841588435532,
+      "info_ratio": 1.2807001073646027,
+      "alpha_annual": 0.21625922212519846,
+      "beta": 0.7484263311200441,
+      "r_squared": 0.5438331179097522,
+      "up_capture": 0.9047425245387561,
+      "down_capture": 0.6800654960919301,
+      "max_drawdown_strategy": 0.1702779002541443,
+      "max_drawdown_benchmark": 0.18998904129504907
+    },
+    "factors": {
+      "alpha_daily": 0.0007924510026467026,
+      "alpha_annual": 0.19969765266696907,
+      "loadings": {
+        "mkt_rf": 0.7512138007528755,
+        "smb": 0.35358426878461013,
+        "hml": 0.04803370713202615
+      },
+      "r_squared": 0.5929381856275759,
+      "n": 300,
+      "t_stats": {
+        "mkt_rf": 15.504772336428536,
+        "smb": 5.018914948294013,
+        "hml": 0.7033924472095033,
+        "alpha": 1.7665990642362575
+      },
+      "factor_source": "etf_proxy",
+      "factor_proxy": true
+    },
+    "rebalances": 13
+  },
+  {
+    "label": "Berkshire Hathaway (Buffett)",
+    "summary": {
+      "start_date": "2025-02-14",
+      "end_date": "2026-04-24",
+      "n_days": 299,
+      "start_nav": 999503.7615697412,
+      "end_nav": 1074248.6725282986,
+      "total_return": 0.07478202067110673,
+      "cagr": 0.062573363958627,
+      "sharpe": 0.41169770917896725,
+      "max_drawdown": 0.20475531558573706
+    },
+    "benchmark": {
+      "n_days": 299,
+      "total_return_strategy": 0.07478202067110673,
+      "total_return_benchmark": 0.1709693097381455,
+      "cagr_strategy": 0.062573363958627,
+      "cagr_benchmark": 0.14205549706603415,
+      "info_ratio": -0.6654069981355054,
+      "alpha_annual": -0.05046174683070073,
+      "beta": 0.860008938688053,
+      "r_squared": 0.7080556961006462,
+      "up_capture": 0.7123874150876532,
+      "down_capture": 0.7452159811794499,
+      "max_drawdown_strategy": 0.20475531558573706,
+      "max_drawdown_benchmark": 0.1899890412950491
+    },
+    "factors": {
+      "alpha_daily": -0.0003099570035910076,
+      "alpha_annual": -0.07810916490493391,
+      "loadings": {
+        "mkt_rf": 1.071270871742226,
+        "smb": -0.10162024475092707,
+        "hml": 0.49261806608934355
+      },
+      "r_squared": 0.7833890679822538,
+      "n": 298,
+      "t_stats": {
+        "mkt_rf": 30.096337947697013,
+        "smb": -1.9647677916023443,
+        "hml": 9.823604863427741,
+        "alpha": -0.938138880882966
+      },
+      "factor_source": "etf_proxy",
+      "factor_proxy": true
+    },
+    "rebalances": 7
+  },
+  {
+    "label": "Duquesne FO (Druckenmiller)",
+    "summary": {
+      "start_date": "2025-02-14",
+      "end_date": "2026-04-24",
+      "n_days": 299,
+      "start_nav": 999546.9203510302,
+      "end_nav": 1285658.9699463055,
+      "total_return": 0.2862417399023107,
+      "cagr": 0.2359610675386865,
+      "sharpe": 1.026171656338956,
+      "max_drawdown": 0.23230129461458818
+    },
+    "benchmark": {
+      "n_days": 299,
+      "total_return_strategy": 0.2862417399023107,
+      "total_return_benchmark": 0.1709693097381455,
+      "cagr_strategy": 0.2359610675386865,
+      "cagr_benchmark": 0.14205549706603415,
+      "info_ratio": 0.7607421392991368,
+      "alpha_annual": 0.07760564879895665,
+      "beta": 1.0751722470300236,
+      "r_squared": 0.7538129941889555,
+      "up_capture": 1.1355996151983216,
+      "down_capture": 1.0557587250033627,
+      "max_drawdown_strategy": 0.23230129461458818,
+      "max_drawdown_benchmark": 0.18998904129504912
+    },
+    "factors": {
+      "alpha_daily": 0.00030612666435927315,
+      "alpha_annual": 0.07714391941853684,
+      "loadings": {
+        "mkt_rf": 0.9496015666580907,
+        "smb": 0.42637400612993814,
+        "hml": -0.23413748615803565
+      },
+      "r_squared": 0.7883017955823745,
+      "n": 298,
+      "t_stats": {
+        "mkt_rf": 22.30307579938812,
+        "smb": 6.891768697454914,
+        "hml": -3.9033768419666184,
+        "alpha": 0.7745970176513548
+      },
+      "factor_source": "etf_proxy",
+      "factor_proxy": true
+    },
+    "rebalances": 8
+  },
+  {
+    "label": "Equal-weight (N=12)",
+    "summary": {
+      "start_date": "2025-02-10",
+      "end_date": "2026-04-24",
+      "n_days": 303,
+      "start_nav": 999960.6548131643,
+      "end_nav": 1246492.8071072581,
+      "total_return": 0.24654185252934435,
+      "cagr": 0.20173953145257184,
+      "sharpe": 1.0740599684941197,
+      "max_drawdown": 0.1938046889542876
+    },
+    "benchmark": {
+      "n_days": 303,
+      "total_return_strategy": 0.24654185252934435,
+      "total_return_benchmark": 0.18035881831654166,
+      "cagr_strategy": 0.20173953145257184,
+      "cagr_benchmark": 0.14829324850487446,
+      "info_ratio": 0.6174120530059647,
+      "alpha_annual": 0.057998757675662316,
+      "beta": 0.9208316239617211,
+      "r_squared": 0.8508540180068691,
+      "up_capture": 1.0425886479270594,
+      "down_capture": 0.9966215440872087,
+      "max_drawdown_strategy": 0.1938046889542876,
+      "max_drawdown_benchmark": 0.18998904129504915
+    },
+    "factors": {
+      "alpha_daily": 0.00020544380777859865,
+      "alpha_annual": 0.05177183956020686,
+      "loadings": {
+        "mkt_rf": 0.8590889436309956,
+        "smb": 0.4394096815822109,
+        "hml": -0.08931426051785718
+      },
+      "r_squared": 0.9097936562792384,
+      "n": 302,
+      "t_stats": {
+        "mkt_rf": 38.52074174596101,
+        "smb": 13.579814916866894,
+        "hml": -2.844970756825128,
+        "alpha": 0.9968385629470422
+      },
+      "factor_source": "etf_proxy",
+      "factor_proxy": true
+    },
+    "rebalances": 16
+  },
+  {
+    "label": "Value-weight (N=12)",
+    "summary": {
+      "start_date": "2025-02-10",
+      "end_date": "2026-04-24",
+      "n_days": 303,
+      "start_nav": 999527.857757975,
+      "end_nav": 1071757.1890680862,
+      "total_return": 0.0722634499373811,
+      "cagr": 0.05990892088803812,
+      "sharpe": 0.40841541037685447,
+      "max_drawdown": 0.20268273033637266
+    },
+    "benchmark": {
+      "n_days": 303,
+      "total_return_strategy": 0.0722634499373811,
+      "total_return_benchmark": 0.18035881831654166,
+      "cagr_strategy": 0.05990892088803812,
+      "cagr_benchmark": 0.14829324850487446,
+      "info_ratio": -0.9265257892149551,
+      "alpha_annual": -0.06050729883981258,
+      "beta": 0.8695478652140763,
+      "r_squared": 0.7920303585526415,
+      "up_capture": 0.7589428721745664,
+      "down_capture": 0.8099114138900618,
+      "max_drawdown_strategy": 0.20268273033637266,
+      "max_drawdown_benchmark": 0.18998904129504904
+    },
+    "factors": {
+      "alpha_daily": -0.0003377670792699109,
+      "alpha_annual": -0.08511730397601755,
+      "loadings": {
+        "mkt_rf": 1.0368463192768953,
+        "smb": 0.006090768114047629,
+        "hml": 0.4026175508406433
+      },
+      "r_squared": 0.8556680993125018,
+      "n": 302,
+      "t_stats": {
+        "mkt_rf": 37.612976384779586,
+        "smb": 0.15228709223359202,
+        "hml": 10.375678400398607,
+        "alpha": -1.3259156374967582
+      },
+      "factor_source": "etf_proxy",
+      "factor_proxy": true
+    },
+    "rebalances": 16
+  },
+  {
+    "label": "Consensus (>=2 of 12)",
+    "summary": {
+      "start_date": "2025-02-10",
+      "end_date": "2026-04-24",
+      "n_days": 303,
+      "start_nav": 1000000.0,
+      "end_nav": 1151378.7048338235,
+      "total_return": 0.15137870483382354,
+      "cagr": 0.1247347218688819,
+      "sharpe": 0.6789065311192654,
+      "max_drawdown": 0.19580953797547668
+    },
+    "benchmark": {
+      "n_days": 303,
+      "total_return_strategy": 0.15137870483382354,
+      "total_return_benchmark": 0.18035881831654166,
+      "cagr_strategy": 0.1247347218688819,
+      "cagr_benchmark": 0.14829324850487446,
+      "info_ratio": -0.2368136424291744,
+      "alpha_annual": -0.01914644514985847,
+      "beta": 1.0106356894387098,
+      "r_squared": 0.8687247363541641,
+      "up_capture": 1.0541694512604693,
+      "down_capture": 1.0847108741827478,
+      "max_drawdown_strategy": 0.19580953797547668,
+      "max_drawdown_benchmark": 0.18998904129504907
+    },
+    "factors": {
+      "alpha_daily": -0.00010207472550488535,
+      "alpha_annual": -0.02572283082723111,
+      "loadings": {
+        "mkt_rf": 0.997518121911697,
+        "smb": 0.24694748087157492,
+        "hml": 0.0018524213987956006
+      },
+      "r_squared": 0.8871800802356494,
+      "n": 302,
+      "t_stats": {
+        "mkt_rf": 36.837725227824976,
+        "smb": 6.285565089043299,
+        "hml": 0.048597316386834545,
+        "alpha": -0.4079110721331204
+      },
+      "factor_source": "etf_proxy",
+      "factor_proxy": true
+    },
+    "rebalances": 35
+  },
+  {
+    "label": "Consensus (>=3 of 12)",
+    "summary": {
+      "start_date": "2025-02-10",
+      "end_date": "2026-04-24",
+      "n_days": 303,
+      "start_nav": 1000000.0,
+      "end_nav": 1191755.1736417573,
+      "total_return": 0.19175517364175731,
+      "cagr": 0.15753115985636645,
+      "sharpe": 0.680007411923762,
+      "max_drawdown": 0.26243126893420354
+    },
+    "benchmark": {
+      "n_days": 303,
+      "total_return_strategy": 0.19175517364175731,
+      "total_return_benchmark": 0.18035881831654166,
+      "cagr_strategy": 0.15753115985636645,
+      "cagr_benchmark": 0.14829324850487446,
+      "info_ratio": 0.2050699193778113,
+      "alpha_annual": -0.018099674485638283,
+      "beta": 1.2838567445198383,
+      "r_squared": 0.8129486139574855,
+      "up_capture": 1.3148379337892,
+      "down_capture": 1.3418426120256077,
+      "max_drawdown_strategy": 0.26243126893420354,
+      "max_drawdown_benchmark": 0.18998904129504907
+    },
+    "factors": {
+      "alpha_daily": 4.297975971389537e-06,
+      "alpha_annual": 0.0010830899447901634,
+      "loadings": {
+        "mkt_rf": 1.0820234412902194,
+        "smb": 0.3023277230586967,
+        "hml": -0.43991332241815106
+      },
+      "r_squared": 0.8450420762753773,
+      "n": 302,
+      "t_stats": {
+        "mkt_rf": 25.978374958600757,
+        "smb": 5.002890557479975,
+        "hml": -7.503137654256182,
+        "alpha": 0.011166435395698683
+      },
+      "factor_source": "etf_proxy",
+      "factor_proxy": true
+    },
+    "rebalances": 21
+  }
+]

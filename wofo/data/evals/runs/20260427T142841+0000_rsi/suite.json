@@ -1,0 +1,43 @@
+{
+  "name": "rsi_default",
+  "cases": [
+    {
+      "name": "rubric:empty",
+      "kind": "rubric",
+      "inputs": {
+        "note": "Hello."
+      }
+    },
+    {
+      "name": "rubric:vague",
+      "kind": "rubric",
+      "inputs": {
+        "note": "I think tech stocks will go up next quarter. Buy NVDA."
+      }
+    },
+    {
+      "name": "rubric:moderate",
+      "kind": "rubric",
+      "inputs": {
+        "note": "Situational Awareness LP added Bloom Energy in Q4 2025. BE is a fuel-cell maker \u2014 relevant to the AI-power thesis."
+      }
+    },
+    {
+      "name": "rubric:strong",
+      "kind": "rubric",
+      "inputs": {
+        "note": "On 2026-02-11, Situational Awareness LP filed its 13F-HR (CIK 0002045724) for the period ending 2025-12-31, accession 0002045724-26-000002. The fund reported $5.5 billion in long positions, with CoreW..."
+      }
+    },
+    {
+      "name": "signal:outperform_synthetic",
+      "kind": "signal",
+      "inputs": {
+        "s_dates": "<series len=200>",
+        "s_nav": "<series len=200>",
+        "b_dates": "<series len=200>",
+        "b_nav": "<series len=200>"
+      }
+    }
+  ]
+}

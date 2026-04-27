@@ -18,6 +18,7 @@ from urllib.request import Request, urlopen
 
 EDGAR_SEARCH = "https://efts.sec.gov/LATEST/search-index"
 EDGAR_ARCHIVE = "https://www.sec.gov/Archives/edgar/data"
+EDGAR_SUBMISSIONS = "https://data.sec.gov/submissions"
 
 # SEC fair-access guidance: <=10 req/s. We pace conservatively.
 _REQUEST_INTERVAL_S = 0.2
@@ -33,12 +34,28 @@ def _ua() -> str:
     return ua
 
 
-def _get(url: str) -> bytes:
-    req = Request(url, headers={"User-Agent": _ua(), "Accept-Encoding": "identity"})
-    with urlopen(req, timeout=30) as resp:
-        data = resp.read()
-    time.sleep(_REQUEST_INTERVAL_S)
-    return data
+def _get(url: str, *, retries: int = 4) -> bytes:
+    """GET with bounded exponential backoff on transient errors.
+
+    SEC's hosts (data.sec.gov, www.sec.gov) occasionally throw 5xx; we
+    want analyses to succeed without operator intervention.
+    """
+    delay = 1.0
+    last_exc: Exception | None = None
+    for attempt in range(retries + 1):
+        req = Request(url, headers={"User-Agent": _ua(), "Accept-Encoding": "identity"})
+        try:
+            with urlopen(req, timeout=30) as resp:
+                data = resp.read()
+            time.sleep(_REQUEST_INTERVAL_S)
+            return data
+        except Exception as e:
+            last_exc = e
+            if attempt == retries:
+                break
+            time.sleep(delay)
+            delay = min(delay * 2, 16.0)
+    raise RuntimeError(f"SEC fetch failed after {retries + 1} attempts: {url}: {last_exc}")
 
 
 @dataclass(frozen=True)
@@ -60,23 +77,57 @@ class FilingRef:
 
 
 def list_filings(cik: str, forms: Iterable[str] = ("13F-HR", "13F-HR/A")) -> list[FilingRef]:
-    """Return all 13F filings for a CIK, newest first."""
+    """Return all 13F filings for a CIK, newest first.
+
+    Uses the canonical `data.sec.gov/submissions/CIK{...}.json` index.
+    The EFTS search endpoint is rate-limited and sometimes truncates
+    results, so we avoid it here.
+    """
     cik10 = cik.zfill(10)
-    forms_q = ",".join(forms)
-    url = f"{EDGAR_SEARCH}?q=&forms={forms_q}&ciks={cik10}"
+    url = f"{EDGAR_SUBMISSIONS}/CIK{cik10}.json"
     payload = json.loads(_get(url))
+    forms_set = set(forms)
     out: list[FilingRef] = []
-    for hit in payload.get("hits", {}).get("hits", []):
-        s = hit["_source"]
+    recent = payload.get("filings", {}).get("recent", {}) or {}
+    forms_arr = recent.get("form", [])
+    accs = recent.get("accessionNumber", [])
+    fdates = recent.get("filingDate", [])
+    pdates = recent.get("reportDate", [])
+    for i, form in enumerate(forms_arr):
+        if form not in forms_set:
+            continue
         out.append(
             FilingRef(
                 cik=cik10,
-                accession=s["adsh"],
-                period_ending=s["period_ending"],
-                file_date=s["file_date"],
-                form=s["form"],
+                accession=accs[i],
+                period_ending=pdates[i],
+                file_date=fdates[i],
+                form=form,
             )
         )
+    # Older filings live in a separate paginated structure under "files".
+    for f in payload.get("filings", {}).get("files", []) or []:
+        more_url = f"{EDGAR_SUBMISSIONS}/{f['name']}"
+        try:
+            more = json.loads(_get(more_url))
+        except Exception:
+            continue
+        forms_arr = more.get("form", [])
+        accs = more.get("accessionNumber", [])
+        fdates = more.get("filingDate", [])
+        pdates = more.get("reportDate", [])
+        for i, form in enumerate(forms_arr):
+            if form not in forms_set:
+                continue
+            out.append(
+                FilingRef(
+                    cik=cik10,
+                    accession=accs[i],
+                    period_ending=pdates[i],
+                    file_date=fdates[i],
+                    form=form,
+                )
+            )
     out.sort(key=lambda f: f.period_ending, reverse=True)
     return out
 

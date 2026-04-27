@@ -1,0 +1,326 @@
+<?xml version="1.0" ?>
+<informationTable xsi:schemaLocation="http://www.sec.gov/edgar/document/thirteenf/informationtable eis_13FDocument.xsd" xmlns="http://www.sec.gov/edgar/document/thirteenf/informationtable" xmlns:n1="http://www.sec.gov/edgar/document/thirteenf/informationtable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <infoTable>
+    <nameOfIssuer>AIRBNB INC</nameOfIssuer>
+    <titleOfClass>COM CL A</titleOfClass>
+    <cusip>009066101</cusip>
+    <figi>BBG001Y2XS07</figi>
+    <value>459648979</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>3473243</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>3473243</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>AMERICAN TOWER CORP NEW</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>03027X100</cusip>
+    <figi>BBG000B9Y2N0</figi>
+    <value>202288334</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>915249</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>915249</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>BERKSHIRE HATHAWAY INC DEL</nameOfIssuer>
+    <titleOfClass>CL B NEW</titleOfClass>
+    <cusip>084670702</cusip>
+    <figi>BBG000DWG505</figi>
+    <value>6793493</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>13985</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>13985</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>BROOKFIELD CORP</nameOfIssuer>
+    <titleOfClass>CL A LTD VT SH</titleOfClass>
+    <cusip>11271J107</cusip>
+    <figi>BBG000C9KL89</figi>
+    <value>1188713075</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>19219290</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>19219290</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>CCC INTELLIGENT SOLUTIONS HL</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>12510Q100</cusip>
+    <figi>BBG00WNSJM49</figi>
+    <value>138986904</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>14770128</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>14770128</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>CARMAX INC</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>143130102</cusip>
+    <figi>BBG000BLMZK6</figi>
+    <value>10121826</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>150600</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>150600</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>COPART INC</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>217204106</cusip>
+    <figi>BBG000BM9RH1</figi>
+    <value>58884000</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>1200000</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>1200000</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>COSTAR GROUP INC</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>22160N109</cusip>
+    <figi>BBG000D7JKW9</figi>
+    <value>748462253</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>9309232</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>9309232</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>DANAHER CORPORATION</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>235851102</cusip>
+    <figi>BBG000BH3JF8</figi>
+    <value>350712516</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>1775400</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>1775400</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>FAIR ISAAC CORP</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>303250104</cusip>
+    <figi>BBG000DW76Y6</figi>
+    <value>16722178</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>9148</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>9148</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>GOOSEHEAD INS INC</nameOfIssuer>
+    <titleOfClass>COM CL A</titleOfClass>
+    <cusip>38267D109</cusip>
+    <figi>BBG00KHHBMC5</figi>
+    <value>38629849</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>366125</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>366125</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>KKR &amp; CO L P DEL</nameOfIssuer>
+    <titleOfClass>COM UNITS</titleOfClass>
+    <cusip>48251w104</cusip>
+    <figi>BBG000BCQ6J8</figi>
+    <value>1176991380</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>8847564</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>8847564</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>MASTERCARD INCORPORATED</nameOfIssuer>
+    <titleOfClass>CL A</titleOfClass>
+    <cusip>57636Q104</cusip>
+    <figi>BBG000F1ZSQ2</figi>
+    <value>1851753015</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>3295286</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>3295286</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>MOODYS CORP</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>615369105</cusip>
+    <figi>BBG000F86GP6</figi>
+    <value>1156377624</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>2305424</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>2305424</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>OREILLY AUTOMOTIVE INC</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>67103H107</cusip>
+    <figi>BBG000BGYWY6</figi>
+    <value>848187653</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>9410714</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>9410714</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>ROPER TECHNOLOGIES INC</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>776696106</cusip>
+    <figi>BBG000F1ZSN5</figi>
+    <value>815948041</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>1439468</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>1439468</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>SOPHIA GENETICS SA</nameOfIssuer>
+    <titleOfClass>ORDINARY SHARES</titleOfClass>
+    <cusip>H82027105</cusip>
+    <figi>BBG011PFK7Q9</figi>
+    <value>11529334</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>3719140</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>3719140</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>VERISK ANALYTICS INC</nameOfIssuer>
+    <titleOfClass>CL A</titleOfClass>
+    <cusip>92345Y106</cusip>
+    <figi>BBG000BCZL41</figi>
+    <value>2691048</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>8639</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>8639</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>VISA INC</nameOfIssuer>
+    <titleOfClass>COM CL A</titleOfClass>
+    <cusip>92826C839</cusip>
+    <figi>BBG000PSKYX7</figi>
+    <value>1127368962</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>3175240</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+    <votingAuthority>
+      <Sole>3175240</Sole>
+      <Shared>0</Shared>
+      <None>0</None>
+    </votingAuthority>
+  </infoTable>
+</informationTable>

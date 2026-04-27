@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edgarSubmission xmlns="http://www.sec.gov/edgar/thirteenffiler" xmlns:com="http://www.sec.gov/edgar/common">
+  <schemaVersion>X0202</schemaVersion>
+  <headerData>
+    <submissionType>13F-HR</submissionType>
+    <filerInfo>
+      <liveTestFlag>LIVE</liveTestFlag>
+      <flags>
+        <confirmingCopyFlag>false</confirmingCopyFlag>
+        <returnCopyFlag>true</returnCopyFlag>
+        <overrideInternetFlag>false</overrideInternetFlag>
+      </flags>
+      <filer>
+        <credentials>
+          <cik>0000949509</cik>
+          <ccc>XXXXXXXX</ccc>
+        </credentials>
+      </filer>
+      <periodOfReport>03-31-2025</periodOfReport>
+    </filerInfo>
+  </headerData>
+  <formData>
+    <coverPage>
+      <reportCalendarOrQuarter>03-31-2025</reportCalendarOrQuarter>
+      <filingManager>
+        <name>OAKTREE CAPITAL MANAGEMENT LP</name>
+        <address>
+          <com:street1>333 S GRAND AVE 28TH FL</com:street1>
+          <com:city>LOS ANGELES</com:city>
+          <com:stateOrCountry>CA</com:stateOrCountry>
+          <com:zipCode>90071</com:zipCode>
+        </address>
+      </filingManager>
+      <reportType>13F COMBINATION REPORT</reportType>
+      <form13FFileNumber>028-05050</form13FFileNumber>
+      <otherManagersInfo>
+        <otherManager>
+          <cik>0001692234</cik>
+          <form13FFileNumber>028-17598</form13FFileNumber>
+          <name>Russell Investments Group, Ltd.</name>
+        </otherManager>
+        <otherManager>
+          <cik>0001597857</cik>
+          <form13FFileNumber>028-17875</form13FFileNumber>
+          <name>Hartree Partners, LP</name>
+        </otherManager>
+      </otherManagersInfo>
+      <provideInfoForInstruction5>N</provideInfoForInstruction5>
+    </coverPage>
+    <signatureBlock>
+      <name>Bart Bixler</name>
+      <title>Vice President</title>
+      <phone>213-356-3252</phone>
+      <signature>Bart Bixler</signature>
+      <city>Los Angeles</city>
+      <stateOrCountry>CA</stateOrCountry>
+      <signatureDate>05-14-2025</signatureDate>
+    </signatureBlock>
+    <summaryPage>
+      <otherIncludedManagersCount>2</otherIncludedManagersCount>
+      <tableEntryTotal>170</tableEntryTotal>
+      <tableValueTotal>5169601827</tableValueTotal>
+      <isConfidentialOmitted>false</isConfidentialOmitted>
+      <otherManagers2Info>
+        <otherManager2>
+          <sequenceNumber>1</sequenceNumber>
+          <otherManager>
+            <cik>0001001085</cik>
+            <form13FFileNumber>028-14349</form13FFileNumber>
+            <name>BROOKFIELD Corp /ON/</name>
+          </otherManager>
+        </otherManager2>
+        <otherManager2>
+          <sequenceNumber>2</sequenceNumber>
+          <otherManager>
+            <cik>0001790787</cik>
+            <form13FFileNumber>028-20007</form13FFileNumber>
+            <name>Oaktree Capital Holdings, LLC</name>
+          </otherManager>
+        </otherManager2>
+      </otherManagers2Info>
+    </summaryPage>
+  </formData>
+</edgarSubmission>
