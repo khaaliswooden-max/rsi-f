@@ -154,3 +154,116 @@ def _mdd(nav: Sequence[float]) -> float:
         if peak > 0:
             mdd = max(mdd, (peak - v) / peak)
     return mdd
+
+
+def factor_decompose(
+    s_dates: Sequence[date],
+    s_nav: Sequence[float],
+    factor_panel,
+    *,
+    factors: Sequence[str] = ("mkt_rf", "smb", "hml"),
+    periods_per_year: int = 252,
+) -> dict:
+    """Multivariate OLS regression of strategy excess returns on factor returns.
+
+    Returns dict with `alpha_annual`, `loadings` (dict of factor name ->
+    beta), `r_squared`, `n`, `t_stats` (Newey-West-style is overkill for
+    a few hundred bars; we report classical t-stats).
+
+    Pure Python; no numpy. Solves the normal equations via Gauss-Jordan.
+    """
+    by_date = factor_panel.by_date()
+    # Strategy daily returns aligned with available factor rows.
+    rets: list[float] = []
+    Xrows: list[list[float]] = []
+    rfs: list[float] = []
+    for i in range(1, len(s_dates)):
+        d = s_dates[i]
+        if d not in by_date or s_nav[i - 1] <= 0:
+            continue
+        fr = by_date[d]
+        x = []
+        skip = False
+        for f in factors:
+            v = getattr(fr, f, None)
+            if v is None:
+                skip = True
+                break
+            x.append(v)
+        if skip:
+            continue
+        rets.append((s_nav[i] - s_nav[i - 1]) / s_nav[i - 1])
+        Xrows.append([1.0] + x)   # intercept term
+        rfs.append(fr.rf)
+
+    n = len(rets)
+    k = len(factors) + 1
+    if n < k + 5:
+        return {"alpha_annual": 0.0, "loadings": {}, "r_squared": 0.0, "n": n, "t_stats": {}}
+
+    y = [r - rf for r, rf in zip(rets, rfs)]   # strategy excess returns
+    coefs = _ols(Xrows, y)
+
+    # R^2 and t-stats
+    yhat = [sum(c * x for c, x in zip(coefs, row)) for row in Xrows]
+    resid = [yi - yh for yi, yh in zip(y, yhat)]
+    mean_y = sum(y) / n
+    ss_tot = sum((yi - mean_y) ** 2 for yi in y) or 1e-12
+    ss_res = sum(r * r for r in resid) or 0.0
+    r2 = 1 - ss_res / ss_tot
+    sigma2 = ss_res / (n - k) if n > k else 0.0
+    XtX_inv = _matrix_inverse(_matmul(_transpose(Xrows), Xrows))
+    se = [math.sqrt(sigma2 * XtX_inv[i][i]) if XtX_inv[i][i] > 0 else 0.0 for i in range(k)]
+    t_stats = {f: (coefs[i + 1] / se[i + 1] if se[i + 1] else 0.0) for i, f in enumerate(factors)}
+    t_stats["alpha"] = coefs[0] / se[0] if se[0] else 0.0
+
+    return {
+        "alpha_daily": coefs[0],
+        "alpha_annual": coefs[0] * periods_per_year,
+        "loadings": {f: coefs[i + 1] for i, f in enumerate(factors)},
+        "r_squared": r2,
+        "n": n,
+        "t_stats": t_stats,
+        "factor_source": factor_panel.source,
+        "factor_proxy": factor_panel.proxy,
+    }
+
+
+# --- Tiny linear algebra (avoids the numpy dependency) ---------------------
+
+
+def _transpose(M):
+    return [list(row) for row in zip(*M)]
+
+
+def _matmul(A, B):
+    Bt = _transpose(B)
+    return [[sum(a * b for a, b in zip(rowA, colB)) for colB in Bt] for rowA in A]
+
+
+def _matrix_inverse(M):
+    n = len(M)
+    A = [list(row) + [1.0 if i == j else 0.0 for j in range(n)] for i, row in enumerate(M)]
+    for i in range(n):
+        # Pivot
+        pivot = max(range(i, n), key=lambda r: abs(A[r][i]))
+        A[i], A[pivot] = A[pivot], A[i]
+        if abs(A[i][i]) < 1e-12:
+            # Singular — return zeros to signal degenerate fit.
+            return [[0.0] * n for _ in range(n)]
+        f = A[i][i]
+        A[i] = [v / f for v in A[i]]
+        for r in range(n):
+            if r == i:
+                continue
+            f = A[r][i]
+            A[r] = [a - f * b for a, b in zip(A[r], A[i])]
+    return [row[n:] for row in A]
+
+
+def _ols(X, y):
+    Xt = _transpose(X)
+    XtX = _matmul(Xt, X)
+    XtX_inv = _matrix_inverse(XtX)
+    Xty = [sum(Xt[i][j] * y[j] for j in range(len(y))) for i in range(len(Xt))]
+    return [sum(XtX_inv[i][j] * Xty[j] for j in range(len(Xty))) for i in range(len(XtX_inv))]

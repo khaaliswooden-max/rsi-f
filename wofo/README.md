@@ -10,40 +10,36 @@ separate concern that lives alongside it for now.
 ```
 wofo/
 ├── thirteenf/        # SEC 13F-HR fetch / parse / analyze pipeline
-│   ├── fetch.py      # EDGAR pull via canonical submissions API
-│   ├── parse.py      # XML → dataclasses
-│   ├── analyze.py    # panel + qoq + concentration
-│   └── cli.py        # `python -m wofo.thirteenf.cli {pull,analyze}`
-├── prices/           # Pluggable price data sources
-│   ├── source.py     # PriceSource protocol
-│   ├── synthetic.py  # Deterministic random walk (tests / offline)
-│   ├── stooq.py      # Stooq daily-CSV adapter (now requires apikey)
-│   ├── yahoo.py      # Yahoo v8 chart adapter (free, unauthenticated)
-│   └── cache.py      # Filesystem-cached PriceSource wrapper
+├── prices/           # Pluggable price sources (Yahoo, Stooq, synthetic, cache)
+├── factors/          # Factor models (ETF-proxy, synthetic) for performance attribution
 ├── research/         # Strategy generators
 │   ├── follow_the_filer.py     # 13F panel → dated target weights
 │   ├── issuer_map.py           # Issuer name → ticker (heuristic + overrides)
+│   ├── overrides.py            # Curated CUSIP / issuer → ticker overrides
 │   └── portfolio_of_filers.py  # Multi-manager combiners (eq / value / consensus)
-├── backtest/         # Minimal portfolio backtester
-│   ├── portfolio.py  # Target weights × prices → daily NAV
-│   └── metrics.py    # CAGR / Sharpe / max drawdown
-├── evals/            # Eval harness for the RSI loop
-│   ├── signal.py     # Alpha / beta / info ratio / capture ratios
-│   ├── rubric.py     # Rubric scoring (LLM judge + heuristic fallback)
-│   └── registry.py   # Suite runner + versioned on-disk reports
-├── agent/            # Phase-1 (research-only) agent
+├── backtest/         # Minimal portfolio backtester (no numpy dep)
+├── evals/            # Eval harness — signal evals, rubric, factor decomp
+├── rsi/              # Recursive self-improvement loop
+│   ├── proposal.py         # Proposal + Outcome dataclasses
+│   ├── proposers.py        # Mock / file / Anthropic proposers
+│   ├── sandbox.py          # Apply proposal in tmp tree + run eval
+│   ├── judge.py            # IMPROVE / REGRESS / INCONCLUSIVE classifier
+│   ├── loop.py             # Orchestrator + on-disk artifacts
+│   ├── eval_runner.py      # Default eval suite for the loop
+│   ├── demo_proposals.py   # Three canned proposals (good / bad / neutral)
+│   └── cli.py              # `python -m wofo.rsi.cli {demo,file <path>}`
+├── agent/            # Phase-1 (research-only) agent + demo runners
 │   ├── tools.py            # Read-only tools the agent may call
 │   ├── runner.py           # Claude tool-use loop
 │   ├── demo_e2e.py         # Plumbing demo (synthetic prices)
 │   ├── backtest_real.py    # SA LP backtest with cached Yahoo prices
-│   └── multi_filer.py      # SA LP + Scion + Pabrai comparison
+│   ├── multi_filer.py      # 3-filer comparison (SA LP + Scion + Pabrai)
+│   └── multi_filer_n.py    # N=12 comparison + 3-factor decomposition
 └── data/
-    ├── 13f/
-    │   ├── raw/         # SA LP filings (default location)
-    │   ├── scion/raw/   # Scion Asset Management (Michael Burry)
-    │   ├── pabrai/raw/  # Dalal Street LLC (Mohnish Pabrai)
-    │   └── processed/   # JSON outputs + REPORT.md + MULTI_FILER_REPORT.md
-    └── prices/          # Cached daily bars (CSV per ticker × window)
+    ├── 13f/{salp,scion,pabrai,baupost,...}/raw  # 13F filings per manager
+    ├── prices/                                  # Cached daily bars (Yahoo)
+    ├── evals/runs/                              # Versioned eval-suite outputs
+    └── rsi/runs/                                # Versioned RSI loop reports
 ```
 
 ## Architecture, governance, and counsel
@@ -98,23 +94,55 @@ Delete it and re-run to refresh from Yahoo. To swap in a paid feed,
 implement the `wofo.prices.PriceSource` protocol — see
 `wofo/prices/yahoo.py` for a reference.
 
-## Multi-filer findings (so far)
+## Multi-filer findings
 
-The latest `multi_filer.py` run produces something like:
+`multi_filer_n.py` runs the full N=12 roster (SA LP + Scion + Pabrai +
+Baupost + Pershing + Appaloosa + Third Point + Akre + Harris + Oaktree
++ Berkshire + Duquesne) over Feb 2025 → Apr 2026.
 
-| Strategy | Total ret | Sharpe | MaxDD | α (annual) | β |
-|---|---:|---:|---:|---:|---:|
-| SA LP solo | 94.5% | 1.45 | 35.7% | 42.5% | 1.63 |
-| Scion solo | -5.2% | -0.04 | 26.3% | -9.3% | 0.54 |
-| Pabrai solo | 52.0% | 1.10 | 26.2% | 34.9% | 0.52 |
-| Equal-weight 3 | 51.9% | **1.43** | **21.3%** | 25.3% | 0.90 |
-| Value-weight 3 | 61.4% | 1.31 | 29.2% | 29.1% | 1.17 |
-| Consensus (≥2) | -2.9% | -0.09 | 10.7% | -3.4% | 0.14 |
+Top of the table (Sharpe-ranked):
 
-Key observation: equal-weighting three orthogonal mandates produces
-roughly the same Sharpe as the best single manager with materially
-lower drawdown. Consensus is mostly empty because the mandates don't
-overlap — a real signal, not a bug.
+| Strategy | Total | Sharpe | MaxDD | SPY α | β | 3-factor α |
+|---|---:|---:|---:|---:|---:|---:|
+| Oaktree (Marks) | 45.8% | **1.75** | 17.0% | 21.6% | 0.75 | 20.0% |
+| Situational Awareness LP | 113.1% | 1.43 | 46.0% | 47.0% | 2.15 | 51.0% |
+| Baupost (Klarman) | 30.6% | 1.34 | **14.2%** | 12.6% | 0.76 | 9.1% |
+| Pabrai | 51.6% | 1.10 | 26.2% | 34.7% | 0.52 | 29.9% |
+| Equal-weight (N=12) | 24.7% | 1.07 | 19.4% | 5.8% | 0.92 | 5.2% |
+| Duquesne (Druckenmiller) | 28.6% | 1.03 | 23.2% | 7.8% | 1.08 | 7.7% |
+
+Two important observations from the 3-factor decomposition:
+
+1. **3-factor α is more conservative than SPY-only α** — SMB and HML
+   absorb size and value tilts that single-factor regressions
+   attribute to "skill." E.g. Pabrai's 35% SPY α drops to 30% once you
+   account for his small-cap-value loading. SA LP's 47% SPY α is
+   actually mostly small-cap-growth beta (β_smb 1.54, β_hml -1.54).
+2. **Equal-weight (N=12) loses most of the alpha** but keeps Sharpe
+   high (1.07) at 19.4% drawdown. The diversification benefit is real,
+   but the cost is that you're averaging skill with non-skill — a
+   curated subset (top-Sharpe filers only) might dominate; that's the
+   next experiment.
+
+Full report: `wofo/data/13f/processed/MULTI_FILER_N_REPORT.md`.
+
+## RSI (recursive self-improvement) loop
+
+The agent proposes diffs to its own code; the loop applies each diff
+in a sandbox, runs the eval suite, and classifies the change as
+**IMPROVE**, **REGRESS**, or **INCONCLUSIVE**. Humans review and merge.
+
+```bash
+# Demo with three canned proposals (one good, one bad, one neutral)
+python -m wofo.rsi.cli demo
+
+# Run from a JSON file the agent (or a human) wrote earlier
+python -m wofo.rsi.cli file path/to/proposals.json
+```
+
+Reports land in `wofo/data/rsi/runs/{ts}_{label}/report.md`. The loop
+never writes to `main` and never auto-merges anything. See
+`docs/wofo-architecture.md` for why this is the bar.
 
 ## Quick start: agent loop (Phase 1, research only)
 

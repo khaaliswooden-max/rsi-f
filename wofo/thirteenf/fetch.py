@@ -34,12 +34,28 @@ def _ua() -> str:
     return ua
 
 
-def _get(url: str) -> bytes:
-    req = Request(url, headers={"User-Agent": _ua(), "Accept-Encoding": "identity"})
-    with urlopen(req, timeout=30) as resp:
-        data = resp.read()
-    time.sleep(_REQUEST_INTERVAL_S)
-    return data
+def _get(url: str, *, retries: int = 4) -> bytes:
+    """GET with bounded exponential backoff on transient errors.
+
+    SEC's hosts (data.sec.gov, www.sec.gov) occasionally throw 5xx; we
+    want analyses to succeed without operator intervention.
+    """
+    delay = 1.0
+    last_exc: Exception | None = None
+    for attempt in range(retries + 1):
+        req = Request(url, headers={"User-Agent": _ua(), "Accept-Encoding": "identity"})
+        try:
+            with urlopen(req, timeout=30) as resp:
+                data = resp.read()
+            time.sleep(_REQUEST_INTERVAL_S)
+            return data
+        except Exception as e:
+            last_exc = e
+            if attempt == retries:
+                break
+            time.sleep(delay)
+            delay = min(delay * 2, 16.0)
+    raise RuntimeError(f"SEC fetch failed after {retries + 1} attempts: {url}: {last_exc}")
 
 
 @dataclass(frozen=True)

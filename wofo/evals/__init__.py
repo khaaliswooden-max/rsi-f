@@ -18,6 +18,7 @@ from .signal import (
     info_ratio,
     jensens_alpha,
     capture_ratios,
+    factor_decompose,
     SignalEvalResult,
 )
 from .rubric import score_research_note, RubricResult, default_rubric
@@ -28,6 +29,7 @@ __all__ = [
     "info_ratio",
     "jensens_alpha",
     "capture_ratios",
+    "factor_decompose",
     "SignalEvalResult",
     "score_research_note",
     "RubricResult",

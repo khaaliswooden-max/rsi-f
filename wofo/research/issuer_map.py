@@ -40,15 +40,38 @@ class IssuerOverride:
 
 _TRIM_TOKENS = re.compile(
     r"\b(CORP|CORPORATION|INC|INCORPORATED|LTD|LIMITED|LLC|PLC|HLDGS?|HOLDINGS?|"
-    r"GROUP|CO|COMPANY|CL|CLASS|COM|COMMON|NEW|THE|TR|TRUST|REIT)\b",
+    r"GROUP|CO|COMPANY|CL|CLASS|COM|COMMON|NEW|THE|TR|TRUST|REIT|"
+    r"SA|S A|N V|NV|AG|PETE|PETROLEUM)\b",
     re.IGNORECASE,
 )
 _PUNCT = re.compile(r"[^\w\s]")
+
+# Common 13F abbreviations -> canonical token. Applied after stripping
+# corporate suffixes, before lower-casing the result.
+_ABBREVIATIONS: list[tuple[re.Pattern[str], str]] = [
+    (re.compile(r"\bFINL\b", re.I), "FINANCIAL"),
+    (re.compile(r"\bMGMT\b", re.I), "MANAGEMENT"),
+    (re.compile(r"\bINTL\b", re.I), "INTERNATIONAL"),
+    (re.compile(r"\bINDL\b", re.I), "INDUSTRIAL"),
+    (re.compile(r"\bMATLS\b", re.I), "MATERIALS"),
+    (re.compile(r"\bSVCS?\b", re.I), "SERVICES"),
+    (re.compile(r"\bBK\b", re.I), "BANK"),
+    (re.compile(r"\bAIRLS\b", re.I), "AIRLINES"),
+    (re.compile(r"\bCOMMUN(IC)?\b", re.I), "COMMUNICATIONS"),
+    (re.compile(r"\bTRANSP(N)?\b", re.I), "TRANSPORTATION"),
+    (re.compile(r"\bRES(O?UR(CES?)?)?\b", re.I), "RESOURCES"),
+    (re.compile(r"\bMFG\b", re.I), "MANUFACTURING"),
+    (re.compile(r"\bTECHS?\b", re.I), "TECHNOLOGIES"),
+    (re.compile(r"\bDEL\b", re.I), ""),
+    (re.compile(r"\bMA\b", re.I), ""),
+]
 
 
 def _norm(s: str) -> str:
     s = _PUNCT.sub(" ", s)
     s = _TRIM_TOKENS.sub(" ", s)
+    for pat, repl in _ABBREVIATIONS:
+        s = pat.sub(repl, s)
     return " ".join(s.lower().split())
 
 
@@ -100,12 +123,14 @@ def resolve_tickers(
     src: dict[str, str] = {}
     for cusip, name in issuers.items():
         if cusip.upper() in over_cusip:
-            out[cusip] = over_cusip[cusip.upper()].upper()
+            v = over_cusip[cusip.upper()]
+            out[cusip] = v.upper() if v else None
             src[cusip] = "override-cusip"
             continue
         n = _norm(name)
         if n in over_issuer:
-            out[cusip] = over_issuer[n].upper()
+            v = over_issuer[n]
+            out[cusip] = v.upper() if v else None
             src[cusip] = "override-issuer"
             continue
         if n in sec_index:

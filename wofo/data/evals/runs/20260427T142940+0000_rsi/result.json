@@ -1,0 +1,140 @@
+{
+  "suite": "rsi_default",
+  "label": "rsi",
+  "timestamp_utc": "2026-04-27T14:29:40+00:00",
+  "git_sha": null,
+  "python": "3.11.15",
+  "platform": "Linux-6.18.5-x86_64-with-glibc2.39",
+  "results": [
+    {
+      "name": "rubric:empty",
+      "kind": "rubric",
+      "result": {
+        "judge": "heuristic",
+        "criteria_scores": {
+          "provenance": 0,
+          "staleness_ack": 0,
+          "concrete_numbers": 0,
+          "fact_vs_opinion": 0,
+          "no_fabrication": 3,
+          "actionable": 0
+        },
+        "rationales": {
+          "provenance": "heuristic: 0/3",
+          "staleness_ack": "heuristic: 0/3",
+          "concrete_numbers": "heuristic: 0/3",
+          "fact_vs_opinion": "heuristic: 0/3",
+          "no_fabrication": "heuristic: 3/3",
+          "actionable": "heuristic: 0/3"
+        },
+        "total": 3,
+        "max_total": 18,
+        "score_fraction": 0.16666666666666666
+      }
+    },
+    {
+      "name": "rubric:vague",
+      "kind": "rubric",
+      "result": {
+        "judge": "heuristic",
+        "criteria_scores": {
+          "provenance": 0,
+          "staleness_ack": 0,
+          "concrete_numbers": 0,
+          "fact_vs_opinion": 1,
+          "no_fabrication": 3,
+          "actionable": 2
+        },
+        "rationales": {
+          "provenance": "heuristic: 0/3",
+          "staleness_ack": "heuristic: 0/3",
+          "concrete_numbers": "heuristic: 0/3",
+          "fact_vs_opinion": "heuristic: 1/3",
+          "no_fabrication": "heuristic: 3/3",
+          "actionable": "heuristic: 2/3"
+        },
+        "total": 6,
+        "max_total": 18,
+        "score_fraction": 0.3333333333333333
+      }
+    },
+    {
+      "name": "rubric:moderate",
+      "kind": "rubric",
+      "result": {
+        "judge": "heuristic",
+        "criteria_scores": {
+          "provenance": 0,
+          "staleness_ack": 0,
+          "concrete_numbers": 0,
+          "fact_vs_opinion": 1,
+          "no_fabrication": 3,
+          "actionable": 0
+        },
+        "rationales": {
+          "provenance": "heuristic: 0/3",
+          "staleness_ack": "heuristic: 0/3",
+          "concrete_numbers": "heuristic: 0/3",
+          "fact_vs_opinion": "heuristic: 1/3",
+          "no_fabrication": "heuristic: 3/3",
+          "actionable": "heuristic: 0/3"
+        },
+        "total": 4,
+        "max_total": 18,
+        "score_fraction": 0.2222222222222222
+      }
+    },
+    {
+      "name": "rubric:strong",
+      "kind": "rubric",
+      "result": {
+        "judge": "heuristic",
+        "criteria_scores": {
+          "provenance": 3,
+          "staleness_ack": 3,
+          "concrete_numbers": 1,
+          "fact_vs_opinion": 2,
+          "no_fabrication": 3,
+          "actionable": 2
+        },
+        "rationales": {
+          "provenance": "heuristic: 3/3",
+          "staleness_ack": "heuristic: 3/3",
+          "concrete_numbers": "heuristic: 1/3",
+          "fact_vs_opinion": "heuristic: 2/3",
+          "no_fabrication": "heuristic: 3/3",
+          "actionable": "heuristic: 2/3"
+        },
+        "total": 14,
+        "max_total": 18,
+        "score_fraction": 0.7777777777777778
+      }
+    },
+    {
+      "name": "signal:outperform_synthetic",
+      "kind": "signal",
+      "result": {
+        "n_days": 200,
+        "total_return_strategy": 0.2695427985603529,
+        "total_return_benchmark": 0.22006064470412912,
+        "cagr_strategy": 0.36983597518491296,
+        "cagr_benchmark": 0.2998757812090018,
+        "info_ratio": 58440602578425.81,
+        "alpha_annual": 0.30828117635763136,
+        "beta": -0.023338001419085933,
+        "r_squared": 0.0006489428107850147,
+        "up_capture": 1.2000000000002193,
+        "down_capture": 0.0,
+        "max_drawdown_strategy": 0.0,
+        "max_drawdown_benchmark": 0.0
+      }
+    }
+  ],
+  "summary": {
+    "rubric_mean_fraction": 0.375,
+    "rubric_n": 4,
+    "signal_mean_alpha_annual": 0.30828117635763136,
+    "signal_mean_info_ratio": 58440602578425.81,
+    "signal_n": 1
+  }
+}

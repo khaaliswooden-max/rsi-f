@@ -34,19 +34,28 @@ class YahooPriceSource:
             time.sleep(self.request_interval_s - elapsed)
         self._last_request = time.monotonic()
 
-    def _fetch(self, url: str) -> dict:
-        self._pace()
+    def _fetch(self, url: str, *, retries: int = 4) -> dict:
         ua = os.environ.get("WOFO_HTTP_UA", "Mozilla/5.0 (compatible; wofo-research/0.1)")
-        req = Request(url, headers={"User-Agent": ua, "Accept": "application/json"})
-        try:
-            with urlopen(req, timeout=self.timeout_s) as resp:
-                return json.loads(resp.read())
-        except HTTPError as e:
-            if e.code == 404:
-                raise NotFound(url) from e
-            raise
-        except URLError as e:
-            raise RuntimeError(f"yahoo fetch failed: {e}") from e
+        delay = 1.0
+        last_exc: Exception | None = None
+        for attempt in range(retries + 1):
+            self._pace()
+            req = Request(url, headers={"User-Agent": ua, "Accept": "application/json"})
+            try:
+                with urlopen(req, timeout=self.timeout_s) as resp:
+                    return json.loads(resp.read())
+            except HTTPError as e:
+                # 404 is a real "not found" — don't retry.
+                if e.code == 404:
+                    raise NotFound(url) from e
+                last_exc = e
+                # 429 / 5xx: retry with backoff.
+            except URLError as e:
+                last_exc = e
+            if attempt < retries:
+                time.sleep(delay)
+                delay = min(delay * 2, 16.0)
+        raise RuntimeError(f"yahoo fetch failed after {retries + 1} attempts: {url}: {last_exc}")
 
     @staticmethod
     def _epoch(d: date) -> int:

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edgarSubmission xmlns="http://www.sec.gov/edgar/thirteenffiler" xmlns:ns1="http://www.sec.gov/edgar/common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <schemaVersion>X0202</schemaVersion>
+  <headerData>
+    <submissionType>13F-HR</submissionType>
+    <filerInfo>
+      <liveTestFlag>LIVE</liveTestFlag>
+      <flags>
+        <confirmingCopyFlag>false</confirmingCopyFlag>
+        <returnCopyFlag>false</returnCopyFlag>
+        <overrideInternetFlag>false</overrideInternetFlag>
+      </flags>
+      <filer>
+        <credentials>
+          <cik>0000813917</cik>
+          <ccc>XXXXXXXX</ccc>
+        </credentials>
+      </filer>
+      <periodOfReport>12-31-2025</periodOfReport>
+    </filerInfo>
+  </headerData>
+  <formData>
+    <coverPage>
+      <reportCalendarOrQuarter>12-31-2025</reportCalendarOrQuarter>
+      <filingManager>
+        <name> HARRIS ASSOCIATES L P</name>
+        <address>
+          <ns1:street1>111 S. WACKER DRIVE</ns1:street1>
+          <ns1:street2>SUITE 4600</ns1:street2>
+          <ns1:city>CHICAGO</ns1:city>
+          <ns1:stateOrCountry>IL</ns1:stateOrCountry>
+          <ns1:zipCode>60606</ns1:zipCode>
+        </address>
+      </filingManager>
+      <reportType>13F HOLDINGS REPORT</reportType>
+      <form13FFileNumber>028-02013</form13FFileNumber>
+      <crdNumber>000106960</crdNumber>
+      <secFileNumber>801-50333</secFileNumber>
+      <provideInfoForInstruction5>N</provideInfoForInstruction5>
+    </coverPage>
+    <signatureBlock>
+      <name>Joseph J. Allessie</name>
+      <title>General Counsel and Secretary</title>
+      <phone>312-646-3600</phone>
+      <signature>Joseph J. Allessie</signature>
+      <city>Chicago</city>
+      <stateOrCountry>IL</stateOrCountry>
+      <signatureDate>02-17-2026</signatureDate>
+    </signatureBlock>
+    <summaryPage>
+      <otherIncludedManagersCount>1</otherIncludedManagersCount>
+      <tableEntryTotal>228</tableEntryTotal>
+      <tableValueTotal>79121382151</tableValueTotal>
+      <isConfidentialOmitted>false</isConfidentialOmitted>
+      <otherManagers2Info>
+        <otherManager2>
+          <sequenceNumber>1</sequenceNumber>
+          <otherManager>
+            <cik>0001018331</cik>
+            <form13FFileNumber>028-05788</form13FFileNumber>
+            <crdNumber>000106800</crdNumber>
+            <secFileNumber>801-48408</secFileNumber>
+            <name>NATIXIS ADVISORS, LLC</name>
+          </otherManager>
+        </otherManager2>
+      </otherManagers2Info>
+    </summaryPage>
+  </formData>
+</edgarSubmission>

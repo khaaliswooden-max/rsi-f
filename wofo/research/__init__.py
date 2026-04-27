@@ -6,6 +6,7 @@ target-weight series that backtest and paper-trade modules consume.
 from .follow_the_filer import follow_the_filer, TargetWeights, Snapshot
 from .issuer_map import resolve_tickers, IssuerOverride
 from .portfolio_of_filers import equal_weight, value_weight, consensus
+from .overrides import COMMON_OVERRIDES
 
 __all__ = [
     "follow_the_filer",
@@ -13,6 +14,7 @@ __all__ = [
     "Snapshot",
     "resolve_tickers",
     "IssuerOverride",
+    "COMMON_OVERRIDES",
     "equal_weight",
     "value_weight",
     "consensus",

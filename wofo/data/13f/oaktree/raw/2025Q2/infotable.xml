@@ -1,0 +1,3033 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns1:informationTable xmlns:ns1="http://www.sec.gov/edgar/document/thirteenf/informationtable">
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>LCI INDUSTRIES</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>501812AB7</ns1:cusip>
+		<ns1:value>155485</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>161000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>161000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>BIOXCEL THERAPEUTICS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>09075P204</ns1:cusip>
+		<ns1:value>436551</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>241188</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>241188</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>BLOCK INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>852234AJ2</ns1:cusip>
+		<ns1:value>492540</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>514000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>514000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>SUNNOVA ENERGY INTERNATIONAL INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>86745KAH7</ns1:cusip>
+		<ns1:value>768362</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>61469000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>61469000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>SEAGATE TECHNOLOGY HOLDINGS PLC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>81180WBL4</ns1:cusip>
+		<ns1:value>900187</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>500000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>500000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ALNYLAM PHARMACEUTICALS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>02043QAB3</ns1:cusip>
+		<ns1:value>976125</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>750000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>750000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>BLACKLINE INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>09239BAD1</ns1:cusip>
+		<ns1:value>983075</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1020000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1020000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>PAGERDUTY INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>69553PAB6</ns1:cusip>
+		<ns1:value>1033000</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1033000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1033000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>LANTHEUS HOLDINGS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>516544AB9</ns1:cusip>
+		<ns1:value>1145475</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>900000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>900000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>VENTAS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>92277GAZ0</ns1:cusip>
+		<ns1:value>1198000</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1000000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1000000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>UBER TECHNOLOGIES INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>90353TAJ9</ns1:cusip>
+		<ns1:value>1199500</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1000000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1000000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>TYLER TECHNOLOGIES INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>902252AB1</ns1:cusip>
+		<ns1:value>1234000</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1000000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1000000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>PAR TECHNOLOGY CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>698884AE3</ns1:cusip>
+		<ns1:value>1262937</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1100000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1100000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>GROUPON INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>399473AF4</ns1:cusip>
+		<ns1:value>1311952</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1336000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1336000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>SUNNOVA ENERGY INTERNATIONAL INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>86745KAF1</ns1:cusip>
+		<ns1:value>1327487</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>106199000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>106199000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>IRHYTHM TECHNOLOGIES INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>450056AB2</ns1:cusip>
+		<ns1:value>1349775</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1050000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1050000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>TRAVERE THERAPEUTICS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>761299AB2</ns1:cusip>
+		<ns1:value>1357996</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1377000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1377000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>BIOMARIN PHARMACEUTICAL INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>09061GAK7</ns1:cusip>
+		<ns1:value>1399613</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1481000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1481000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ESPERION THERAPEUTICS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>29664WAB1</ns1:cusip>
+		<ns1:value>1434654</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1463000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1463000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>BRASKEM SA</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>105532105</ns1:cusip>
+		<ns1:value>1486387</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>453167</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>453167</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>POST HOLDINGS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>737446AT1</ns1:cusip>
+		<ns1:value>1487200</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1300000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1300000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>AMERICAN AIRLINES GROUP INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>02376RAF9</ns1:cusip>
+		<ns1:value>1501311</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1500000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1500000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ASCENDIS PHARMA A/S</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>04351PAD3</ns1:cusip>
+		<ns1:value>1635184</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1304000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1304000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>SNAP INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>83304AAF3</ns1:cusip>
+		<ns1:value>1816788</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>2002000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>2002000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>BENTLEY SYSTEMS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>08265TAD1</ns1:cusip>
+		<ns1:value>1940166</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>2052000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>2052000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>PG&amp;E CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>69331CAL2</ns1:cusip>
+		<ns1:value>1964730</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1975000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1975000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>HALOZYME THERAPEUTICS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>40637HAD1</ns1:cusip>
+		<ns1:value>1997500</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>2000000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>2000000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>BLOCK INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>852234AK9</ns1:cusip>
+		<ns1:value>2208360</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>2464000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>2464000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ON SEMICONDUCTOR CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>682189AS4</ns1:cusip>
+		<ns1:value>2315917</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1950000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1950000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>NOVOCURE LTD</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>67011XAB9</ns1:cusip>
+		<ns1:value>2334435</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>2385000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>2385000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>REDFIN CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>75737FAC2</ns1:cusip>
+		<ns1:value>2334570</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>2381000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>2381000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>TOPGOLF CALLAWAY BRANDS CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>131193AE4</ns1:cusip>
+		<ns1:value>2339472</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>2397000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>2397000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>CLOUDFLARE INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>18915MAC1</ns1:cusip>
+		<ns1:value>2369700</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>2000000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>2000000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>BILL HOLDINGS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>090043AD2</ns1:cusip>
+		<ns1:value>2487195</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>2722000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>2722000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>SSR MINING INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>784730AB9</ns1:cusip>
+		<ns1:value>2510317</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>2419000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>2419000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>BRIDGEBIO PHARMA INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>10806XAB8</ns1:cusip>
+		<ns1:value>2622109</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>2100000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>2100000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>WAYFAIR INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>94419LAP6</ns1:cusip>
+		<ns1:value>2952070</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>2585000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>2585000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>UNITY SOFTWARE INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>91332UAB7</ns1:cusip>
+		<ns1:value>3010176</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>3216000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>3216000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>SPOTIFY TECHNOLOGY SA</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>84921RAB6</ns1:cusip>
+		<ns1:value>3034800</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>2000000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>2000000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>NEOGENOMICS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>64049MAB6</ns1:cusip>
+		<ns1:value>3279566</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>3819000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>3819000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>HERBALIFE LTD</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>42703MAF0</ns1:cusip>
+		<ns1:value>3405220</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>3742000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>3742000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>JBS NV</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>N4732M103</ns1:cusip>
+		<ns1:value>3486092</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>238610</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>238610</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>PELOTON INTERACTIVE INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>70614WAB6</ns1:cusip>
+		<ns1:value>3549757</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>3669000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>3669000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>SAREPTA THERAPEUTICS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>803607AD2</ns1:cusip>
+		<ns1:value>3554700</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>4920000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>4920000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>TRANSPORTADORA DE GAS DEL SUR SA</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>893870204</ns1:cusip>
+		<ns1:value>3564617</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>137630</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>137630</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>BANDWIDTH INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>05988JAD5</ns1:cusip>
+		<ns1:value>3619291</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>4301000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>4301000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>CERENCE INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>156727AD1</ns1:cusip>
+		<ns1:value>3729022</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>4865000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>4865000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>NABORS INDUSTRIES LTD</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>62957HAL9</ns1:cusip>
+		<ns1:value>3753750</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>6500000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>6500000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>REDWOOD TRUST INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>758075AF2</ns1:cusip>
+		<ns1:value>3808422</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>3845000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>3845000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>BATTALION OIL CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>07134L107</ns1:cusip>
+		<ns1:value>3882786</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>3009912</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>3009912</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>LI AUTO INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>50202MAB8</ns1:cusip>
+		<ns1:value>3922190</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>3297000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>3297000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>TPI COMPOSITES INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>87266J104</ns1:cusip>
+		<ns1:value>3961375</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>4610003</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>4610003</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>DUKE ENERGY CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>26441CBY0</ns1:cusip>
+		<ns1:value>3972187</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>3750000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>3750000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>AFFIRM HOLDINGS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>00827BAB2</ns1:cusip>
+		<ns1:value>4039976</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>4291000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>4291000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>BANCO MACRO SA</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>05961W105</ns1:cusip>
+		<ns1:value>4254094</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>60591</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>60591</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>HAEMONETICS CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>405024AB6</ns1:cusip>
+		<ns1:value>4367502</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>4509000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>4509000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>TRIP.COM GROUP LTD</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>89677QAB3</ns1:cusip>
+		<ns1:value>4453542</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>3996000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>3996000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>OKTA INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>679295AF2</ns1:cusip>
+		<ns1:value>4466063</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>4657000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>4657000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>UBER TECHNOLOGIES INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>90353TAM2</ns1:cusip>
+		<ns1:value>4527834</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>3163000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>3163000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>GUARDANT HEALTH INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>40131MAB5</ns1:cusip>
+		<ns1:value>4562402</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>5017000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>5017000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>HUDSON TECHNOLOGIES INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>444144109</ns1:cusip>
+		<ns1:value>4568815</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>562662</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>562662</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>GUESS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>401617AF2</ns1:cusip>
+		<ns1:value>4679295</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>4923000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>4923000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>TWO HARBORS INVESTMENT CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>90187BAB7</ns1:cusip>
+		<ns1:value>4686377</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>4765000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>4765000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ARRAY TECHNOLOGIES INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>04271TAB6</ns1:cusip>
+		<ns1:value>5130618</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>6448000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>6448000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>FIVERR INTERNATIONAL LTD</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>33835LAA3</ns1:cusip>
+		<ns1:value>5159091</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>5259000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>5259000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ZIFF DAVIS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>48123VAE2</ns1:cusip>
+		<ns1:value>5194122</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>5446000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>5446000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>PENNYMAC MORTGAGE INVESTMENT TRUST</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>70932AAF0</ns1:cusip>
+		<ns1:value>5375828</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>5411000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>5411000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>MESA LABORATORIES INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>59064RAA7</ns1:cusip>
+		<ns1:value>5408066</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>5438000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>5438000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>FUBOTV INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>35953DAB0</ns1:cusip>
+		<ns1:value>5438658</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>5561000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>5561000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>HAEMONETICS CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>405024AD2</ns1:cusip>
+		<ns1:value>5448013</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>5463000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>5463000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>INTEGRA LIFESCIENCES HOLDINGS CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>457985AM1</ns1:cusip>
+		<ns1:value>5710591</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>5761000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>5761000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>REPLIGEN CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>759916AD1</ns1:cusip>
+		<ns1:value>5769918</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>5796000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>5796000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>WORKIVA INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>98139AAD7</ns1:cusip>
+		<ns1:value>5802829</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>6248000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>6248000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>MERITAGE HOMES CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>59001ABF8</ns1:cusip>
+		<ns1:value>5914288</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>6077000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>6077000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ON SEMICONDUCTOR CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>682189AU9</ns1:cusip>
+		<ns1:value>5920320</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>6380000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>6380000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>UPWORK INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>91688FAB0</ns1:cusip>
+		<ns1:value>6028708</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>6373000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>6373000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>NICE LTD</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>653656AB4</ns1:cusip>
+		<ns1:value>6062830</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>6124000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>6124000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>LUMENTUM HOLDINGS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>55024UAH2</ns1:cusip>
+		<ns1:value>6139392</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>3997000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>3997000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>REDFIN CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>75737FAE8</ns1:cusip>
+		<ns1:value>6340755</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>7025000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>7025000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>MAGNITE INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>55955DAB6</ns1:cusip>
+		<ns1:value>6415432</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>6637000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>6637000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>HDFC BANK LTD</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>40415F101</ns1:cusip>
+		<ns1:value>6504912</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>84843</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>84843</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>MARRIOTT VACATIONS WORLDWIDE CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>57164YAD9</ns1:cusip>
+		<ns1:value>6533351</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>6746000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>6746000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>FLUOR CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>343412AJ1</ns1:cusip>
+		<ns1:value>6580695</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>5011000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>5011000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ALIBABA GROUP HOLDING LTD</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>01609WBG6</ns1:cusip>
+		<ns1:value>6901814</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>5397000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>5397000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>BLACKSTONE MORTGAGE TRUST INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>09257WAE0</ns1:cusip>
+		<ns1:value>6979376</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>7151000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>7151000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>CYTOKINETICS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>23282WAC4</ns1:cusip>
+		<ns1:value>7137017</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>6692000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>6692000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>VAIL RESORTS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>91879QAN9</ns1:cusip>
+		<ns1:value>7271550</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>7458000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>7458000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>H WORLD GROUP LTD</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>44332NAB2</ns1:cusip>
+		<ns1:value>7283271</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>6884000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>6884000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>TRAVERE THERAPEUTICS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>89422GAA5</ns1:cusip>
+		<ns1:value>7392820</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>7741000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>7741000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>BLACKLINE INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>09239BAF6</ns1:cusip>
+		<ns1:value>7410894</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>6945000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>6945000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>SMARTRENT INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>83193G107</ns1:cusip>
+		<ns1:value>7430242</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>7505294</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>7505294</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>VERINT SYSTEMS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>92343XAC4</ns1:cusip>
+		<ns1:value>7533352</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>7835000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>7835000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>PARSONS CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>70202LAD4</ns1:cusip>
+		<ns1:value>7692803</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>7203000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>7203000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>DEXCOM INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>252131AM9</ns1:cusip>
+		<ns1:value>7815583</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>8288000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>8288000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>TETRA TECH INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>88162GAB9</ns1:cusip>
+		<ns1:value>7866258</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>6969000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>6969000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>NEXTERA ENERGY INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>65339KCY4</ns1:cusip>
+		<ns1:value>8137169</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>7141000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>7141000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ALVOTECH SA</ns1:nameOfIssuer>
+		<ns1:titleOfClass>WARRANT</ns1:titleOfClass>
+		<ns1:cusip>L01800116</ns1:cusip>
+		<ns1:value>8236667</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>4666667</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>4666667</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>WEC ENERGY GROUP INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>92939UAR7</ns1:cusip>
+		<ns1:value>8273601</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>7154000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>7154000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>GUARDANT HEALTH INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>40131MAD1</ns1:cusip>
+		<ns1:value>8402614</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>7193000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>7193000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>BAUSCH HEALTH COS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>071734107</ns1:cusip>
+		<ns1:value>8458200</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1270000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1270000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>SHAKE SHACK INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>819047AB7</ns1:cusip>
+		<ns1:value>9466035</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>8821000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>8821000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>CRACKER BARREL OLD COUNTRY STORE INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>22410JAB2</ns1:cusip>
+		<ns1:value>9500315</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>9922000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>9922000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>LIVANOVA PLC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>53802LAB8</ns1:cusip>
+		<ns1:value>10198101</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>9995000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>9995000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>YPF SA</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>984245100</ns1:cusip>
+		<ns1:value>10200178</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>324330</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>324330</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>BERRY CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>08579X101</ns1:cusip>
+		<ns1:value>10240690</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>3697000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>3697000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>EXPAND ENERGY CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>WARRANT</ns1:titleOfClass>
+		<ns1:cusip>165167180</ns1:cusip>
+		<ns1:value>10318434</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>95294</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>95294</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>COINBASE GLOBAL INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>19260QAF4</ns1:cusip>
+		<ns1:value>10345086</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>7894000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>7894000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>UPSTART HOLDINGS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>91680MAB3</ns1:cusip>
+		<ns1:value>11305950</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>11901000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>11901000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>MAGNACHIP SEMICONDUCTOR CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>55933J203</ns1:cusip>
+		<ns1:value>11342434</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>2849858</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>2849858</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>CMS ENERGY CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>125896BX7</ns1:cusip>
+		<ns1:value>11738613</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>11017000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>11017000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>MKS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>55306NAB0</ns1:cusip>
+		<ns1:value>11871142</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>11985000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>11985000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ENPHASE ENERGY INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>29355AAK3</ns1:cusip>
+		<ns1:value>12003192</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>14755000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>14755000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>PPL CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>69352PAS2</ns1:cusip>
+		<ns1:value>12320532</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>11381000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>11381000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>SHIFT4 PAYMENTS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>82452JAD1</ns1:cusip>
+		<ns1:value>12806474</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>11913000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>11913000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>JD.COM INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>47215PAJ5</ns1:cusip>
+		<ns1:value>12914016</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>12352000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>12352000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ANYWHERE REAL ESTATE INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>75606DAP6</ns1:cusip>
+		<ns1:value>12985500</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>13200000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>13200000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>SEA LTD</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>81141R100</ns1:cusip>
+		<ns1:value>13357069</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>83513</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>83513</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ALVOTECH SA</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>L01800108</ns1:cusip>
+		<ns1:value>14260725</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1563676</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1563676</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>LIBERTY LATIN AMERICA LTD</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>G9001E128</ns1:cusip>
+		<ns1:value>14483369</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>2328516</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>2328516</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>UNITI GROUP INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>91325V108</ns1:cusip>
+		<ns1:value>14677597</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>3397592</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>3397592</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>SOUTHERN CO/THE</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>842587DZ7</ns1:cusip>
+		<ns1:value>14872343</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>13459000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>13459000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>DEXCOM INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>252131AK3</ns1:cusip>
+		<ns1:value>15865307</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>16111000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>16111000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ALTICE USA INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>02156K103</ns1:cusip>
+		<ns1:value>16050000</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>7500000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>7500000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>BRIDGEBIO PHARMA INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>10806XAD4</ns1:cusip>
+		<ns1:value>16900415</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>18056000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>18056000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>DAYFORCE INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>15677JAD0</ns1:cusip>
+		<ns1:value>17483360</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>18080000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>18080000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>FIRST MAJESTIC SILVER CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>32076VAD5</ns1:cusip>
+		<ns1:value>19646867</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>20605000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>20605000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>VALE SA</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>91912E105</ns1:cusip>
+		<ns1:value>19747285</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>2033706</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>2033706</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>OKTA INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>679295AD7</ns1:cusip>
+		<ns1:value>20139795</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>20241000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>20241000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ENVISTA HOLDINGS CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>29415FAD6</ns1:cusip>
+		<ns1:value>20735256</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>22281000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>22281000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>WIX.COM LTD</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>92940WAD1</ns1:cusip>
+		<ns1:value>21063209</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>21116000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>21116000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>FULL TRUCK ALLIANCE CO LTD</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>35969L108</ns1:cusip>
+		<ns1:value>21757999</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1842337</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1842337</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ENPHASE ENERGY INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>29355AAH0</ns1:cusip>
+		<ns1:value>22531413</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>23501000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>23501000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>TELECOM ARGENTINA SA</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>879273209</ns1:cusip>
+		<ns1:value>23348842</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>2644263</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>2644263</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>MARRIOTT VACATIONS WORLDWIDE CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>57164YAF4</ns1:cusip>
+		<ns1:value>24115105</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>25833000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>25833000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ALARM.COM HOLDINGS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>011642AB1</ns1:cusip>
+		<ns1:value>24322350</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>24946000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>24946000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>OAKTREE SPECIALTY LENDING CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>67401P405</ns1:cusip>
+		<ns1:value>25304548</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1852456</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1852456</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ECHOSTAR CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>278768AB2</ns1:cusip>
+		<ns1:value>25308120</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>21447560</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>21447560</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>SNAP INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>83304AAH9</ns1:cusip>
+		<ns1:value>25566034</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>29437000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>29437000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>CONMED CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>207410AH4</ns1:cusip>
+		<ns1:value>26318850</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>27705000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>27705000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>KE HOLDINGS INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>482497104</ns1:cusip>
+		<ns1:value>26841311</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1513039</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1513039</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ETSY INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>29786AAN6</ns1:cusip>
+		<ns1:value>27377875</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>31807000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>31807000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>TERNIUM SA</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>880890108</ns1:cusip>
+		<ns1:value>27683240</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>919709</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>919709</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>KANZHUN LTD</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>48553T106</ns1:cusip>
+		<ns1:value>28031492</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1571272</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1571272</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>TELADOC HEALTH INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>87918AAF2</ns1:cusip>
+		<ns1:value>28056684</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>30338000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>30338000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>SEA LTD</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>81141RAG5</ns1:cusip>
+		<ns1:value>28430239</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>30069000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>30069000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>SUMMIT HOTEL PROPERTIES INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>866082AA8</ns1:cusip>
+		<ns1:value>29541350</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>30455000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>30455000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ECOPETROL SA</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>279158109</ns1:cusip>
+		<ns1:value>31415924</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>3549822</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>3549822</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>BAUSCH PLUS LOMB CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>071705107</ns1:cusip>
+		<ns1:value>32801397</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>2521245</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>2521245</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>AIRBNB INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>009066AB7</ns1:cusip>
+		<ns1:value>35083827</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>36300000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>36300000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>TALEN ENERGY CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>87422Q109</ns1:cusip>
+		<ns1:value>37750378</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>129829</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>129829</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>CABLE ONE INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>12685JAE5</ns1:cusip>
+		<ns1:value>49148863</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>51812000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>51812000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>STAR BULK CARRIERS CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>Y8162K204</ns1:cusip>
+		<ns1:value>55726590</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>3230527</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>3230527</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>JETBLUE AIRWAYS CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>477143AP6</ns1:cusip>
+		<ns1:value>57581760</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>59981000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>59981000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>GRAB HOLDINGS LTD</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>G4124C109</ns1:cusip>
+		<ns1:value>58193553</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>11569295</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>11569295</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>PEBBLEBROOK HOTEL TRUST</ns1:nameOfIssuer>
+		<ns1:titleOfClass>CONVERTIBLE BOND</ns1:titleOfClass>
+		<ns1:cusip>70509VAA8</ns1:cusip>
+		<ns1:value>59150940</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>62423000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>PRN</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>62423000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>CALIFORNIA RESOURCES CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>13057Q305</ns1:cusip>
+		<ns1:value>62876309</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1376753</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1376753</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>KILROY REALTY CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>49427F108</ns1:cusip>
+		<ns1:value>63473877</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1850011</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1850011</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>TRANSALTA CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>89346D107</ns1:cusip>
+		<ns1:value>65512910</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>6085253</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>6085253</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>BARRICK MINING CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>06849F108</ns1:cusip>
+		<ns1:value>65743022</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>3157686</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>3157686</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ITAU UNIBANCO HOLDING SA</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>465562106</ns1:cusip>
+		<ns1:value>74720521</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>11004494</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>11004494</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>CBL &amp; ASSOCIATES PROPERTIES INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>124830878</ns1:cusip>
+		<ns1:value>76300174</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>3005126</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>3005126</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>LIBERTY GLOBAL LTD</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>G61188101</ns1:cusip>
+		<ns1:value>82204031</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>8212191</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>8212191</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>FREEPORT-MCMORAN INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>35671D857</ns1:cusip>
+		<ns1:value>86529851</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1996075</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1996075</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>NOKIA OYJ</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>654902204</ns1:cusip>
+		<ns1:value>97136546</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>18752229</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>18752229</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>VISTA ENERGY SAB DE CV</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>92837L109</ns1:cusip>
+		<ns1:value>98563231</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>2061561</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>2061561</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>CEMEX SAB DE CV</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>151290889</ns1:cusip>
+		<ns1:value>102834491</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>14839032</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>14839032</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>RUNWAY GROWTH FINANCE CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>78163D100</ns1:cusip>
+		<ns1:value>104935838</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>9779667</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>9779667</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>SUNOPTA INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>8676EP108</ns1:cusip>
+		<ns1:value>120187007</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>20726126</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>20726126</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ANGLOGOLD ASHANTI PLC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>G0378L100</ns1:cusip>
+		<ns1:value>225468375</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>4947737</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>4947737</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>SITIO ROYALTIES CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>82983N108</ns1:cusip>
+		<ns1:value>237939227</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>12945551</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>12945551</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>GARRETT MOTION INC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>366505105</ns1:cusip>
+		<ns1:value>387764516</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>36894816</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>36894816</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>EXPAND ENERGY CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>165167735</ns1:cusip>
+		<ns1:value>591992875</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>5062364</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>5062364</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>TORM PLC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>G89479102</ns1:cusip>
+		<ns1:value>681587614</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>40581120</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>40581120</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>ISHARES RUSSELL 2000 ETF</ns1:nameOfIssuer>
+		<ns1:titleOfClass>ETF</ns1:titleOfClass>
+		<ns1:cusip>464287655</ns1:cusip>
+		<ns1:value>51789600</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>240000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:putCall>Put</ns1:putCall>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>240000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>STATE STREET CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>ETF</ns1:titleOfClass>
+		<ns1:cusip>78462F103</ns1:cusip>
+		<ns1:value>630207000</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>1020000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:putCall>Put</ns1:putCall>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>1020000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>STATE STREET CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>ETF</ns1:titleOfClass>
+		<ns1:cusip>78464A888</ns1:cusip>
+		<ns1:value>68013300</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>690000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:putCall>Put</ns1:putCall>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>690000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>TALEN ENERGY CORP</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>87422Q109</ns1:cusip>
+		<ns1:value>18900050</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>65000</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:putCall>Call</ns1:putCall>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>65000</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+	<ns1:infoTable>
+		<ns1:nameOfIssuer>Indivior PLC</ns1:nameOfIssuer>
+		<ns1:titleOfClass>COMMON STOCK</ns1:titleOfClass>
+		<ns1:cusip>G4766E116</ns1:cusip>
+		<ns1:value>162274503</ns1:value>
+		<ns1:shrsOrPrnAmt>
+			<ns1:sshPrnamt>11009125</ns1:sshPrnamt>
+			<ns1:sshPrnamtType>SH</ns1:sshPrnamtType>
+		</ns1:shrsOrPrnAmt>
+		<ns1:investmentDiscretion>DFND</ns1:investmentDiscretion>
+		<ns1:otherManager>1,2</ns1:otherManager>
+		<ns1:votingAuthority>
+			<ns1:Sole>11009125</ns1:Sole>
+			<ns1:Shared>0</ns1:Shared>
+			<ns1:None>0</ns1:None>
+		</ns1:votingAuthority>
+	</ns1:infoTable>
+</ns1:informationTable>
